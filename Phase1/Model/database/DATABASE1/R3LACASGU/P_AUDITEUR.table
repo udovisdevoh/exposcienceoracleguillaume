@@ -1,0 +1,1201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <name>P_AUDITEUR</name>
+    <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+    <schemaName>R3LACASGU</schemaName>
+    <type>TABLE</type>
+  </ID>
+  <name>P_AUDITEUR</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOAUDITEUR</name>
+        <identifier class="java.lang.String">f96c6457-b12b-42c5-82d7-8e4765480c43</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOAUDITEUR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3e34579e-d1f3-4b2b-8c54-8f3a0ce5fd0f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOAUDITEUR</name>
+            <identifier class="java.lang.String">f96c6457-b12b-42c5-82d7-8e4765480c43</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOAUDITEUR</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOAUDITEUR</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CODEAUDITEUR</name>
+        <identifier class="java.lang.String">765d504e-1121-40ee-ac67-b5009e0fe126</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CODEAUDITEUR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">df7c692e-5fd7-43b2-babd-159b990af1b6</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CODEAUDITEUR</name>
+            <identifier class="java.lang.String">765d504e-1121-40ee-ac67-b5009e0fe126</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">7</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CODEAUDITEUR</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CODEAUDITEUR</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>MOTDEPASSE</name>
+        <identifier class="java.lang.String">84b99987-a542-43d8-8237-1c72765e66aa</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>MOTDEPASSE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">38cd477c-15c7-48a0-ac42-2f067ebc6330</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MOTDEPASSE</name>
+            <identifier class="java.lang.String">84b99987-a542-43d8-8237-1c72765e66aa</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">7</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>MOTDEPASSE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MOTDEPASSE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOM</name>
+        <identifier class="java.lang.String">04d19ac3-9272-4678-8255-ad67b58eae8e</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOM</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0bb3c40a-70c2-45fd-99e6-afb5c1a9e142</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOM</name>
+            <identifier class="java.lang.String">04d19ac3-9272-4678-8255-ad67b58eae8e</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">60</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOM</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOM</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PRENOM</name>
+        <identifier class="java.lang.String">35d1cf08-bc15-4f07-9878-8d9f90970eae</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>PRENOM</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a39e4b20-5ea3-4997-b39c-a0718488217d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>PRENOM</name>
+            <identifier class="java.lang.String">35d1cf08-bc15-4f07-9878-8d9f90970eae</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">40</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>PRENOM</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PRENOM</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>JUGE</name>
+        <identifier class="java.lang.String">0cbbe926-67ef-47c7-a3ca-1389355f6ebc</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>JUGE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">75a8c1c5-9d96-4ea4-b63b-8612e78c1165</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>JUGE</name>
+            <identifier class="java.lang.String">0cbbe926-67ef-47c7-a3ca-1389355f6ebc</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">1</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>JUGE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>JUGE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>RUE</name>
+        <identifier class="java.lang.String">232df105-62fb-4b76-816b-b1d74ee60583</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>RUE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">fa9fee90-4cba-4613-a538-f93c14fb22c5</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>RUE</name>
+            <identifier class="java.lang.String">232df105-62fb-4b76-816b-b1d74ee60583</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">25</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>RUE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>RUE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>VILLE</name>
+        <identifier class="java.lang.String">87c70d0c-c46f-4775-af29-4abc1b627ef2</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>VILLE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">fa2ba32c-5cd8-4c86-8b17-f30b852e79fa</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>VILLE</name>
+            <identifier class="java.lang.String">87c70d0c-c46f-4775-af29-4abc1b627ef2</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>VILLE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VILLE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CODE_POSTAL</name>
+        <identifier class="java.lang.String">f0fea8ff-d8fc-4972-b60b-e8ec6ddd3ced</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CODE_POSTAL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2aba8619-deef-4d0d-9d07-26a4cf4a05da</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CODE_POSTAL</name>
+            <identifier class="java.lang.String">f0fea8ff-d8fc-4972-b60b-e8ec6ddd3ced</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CODE_POSTAL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CODE_POSTAL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOREGION</name>
+        <identifier class="java.lang.String">3ca30f3f-557b-407a-a843-aa1f6c6e43ed</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOREGION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a9f71226-7f01-4cb2-99a2-b25bc6df2760</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOREGION</name>
+            <identifier class="java.lang.String">3ca30f3f-557b-407a-a843-aa1f6c6e43ed</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">3</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOREGION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOREGION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>TELEPHONE</name>
+        <identifier class="java.lang.String">40a1b93f-0fdf-430a-9c03-816854d10536</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>TELEPHONE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">29fc6137-c583-4292-bd74-7185caee7208</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>TELEPHONE</name>
+            <identifier class="java.lang.String">40a1b93f-0fdf-430a-9c03-816854d10536</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">13</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>TELEPHONE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TELEPHONE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>COURRIEL</name>
+        <identifier class="java.lang.String">b46294a1-3187-4ad5-a318-526db8fe5341</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>COURRIEL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">efbe10b6-1883-4b7d-b79d-ef04cd406d49</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>COURRIEL</name>
+            <identifier class="java.lang.String">b46294a1-3187-4ad5-a318-526db8fe5341</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">25</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>COURRIEL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>COURRIEL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>STATUT</name>
+        <identifier class="java.lang.String">23f78189-313c-4337-9da8-6ee20ebd3e85</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>STATUT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8e9c3c86-4dee-4508-aae4-5d1dc1133a6f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>STATUT</name>
+            <identifier class="java.lang.String">23f78189-313c-4337-9da8-6ee20ebd3e85</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">1</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>STATUT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.math.BigDecimal">93495</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>STATUT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_AUDITEUR_NO_PK</name>
+        <identifier class="java.lang.String">80827160-cd46-4671-a306-f5cfdad4a6d8</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_AUDITEUR_NO_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOAUDITEUR</name>
+          <identifier class="java.lang.String">f96c6457-b12b-42c5-82d7-8e4765480c43</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_AUDITEUR</name>
+            <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>P_AUDITEUR_NO_PK</name>
+            <childObjectNames>
+              <childObjectName>NOAUDITEUR</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.math.BigDecimal">93495</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">r3lacasgu</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>P_AUDITEUR</name>
+        <identifier class="java.math.BigDecimal">93495</identifier>
+        <schemaName>R3LACASGU</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2b593a9e-b6cd-4be8-8485-6f18b6ead8e9</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_AUDITEUR</name>
+            <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>OracleStorageProperties</type>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <maxtrans>255</maxtrans>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>P_AUDITEUR</name>
+                <identifier class="java.math.BigDecimal">93495</identifier>
+                <schemaName>R3LACASGU</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespace>R3</tablespace>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+    <entry>
+      <key>Timestamp</key>
+      <value class="java.lang.Long">1269957831000</value>
+    </entry>
+  </properties>
+  <schema>
+    <ID class="oracle.javatools.db.IdentifierBasedID">
+      <name>R3LACASGU</name>
+      <identifier class="java.lang.String">6371cde2-006b-49f5-a070-08fe9059ac07</identifier>
+      <schemaName>R3LACASGU</schemaName>
+      <type>SCHEMA</type>
+    </ID>
+    <name>R3LACASGU</name>
+  </schema>
+</table>

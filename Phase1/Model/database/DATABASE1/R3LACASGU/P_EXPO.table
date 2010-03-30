@@ -1,0 +1,935 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <name>P_EXPO</name>
+    <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+    <schemaName>R3LACASGU</schemaName>
+    <type>TABLE</type>
+  </ID>
+  <name>P_EXPO</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOEXPO</name>
+        <identifier class="java.lang.String">eff64620-2a14-464e-bb3e-ed68df069315</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOEXPO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">8446fa68-bbd9-458d-b2d6-d710d22858a6</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOEXPO</name>
+            <identifier class="java.lang.String">eff64620-2a14-464e-bb3e-ed68df069315</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOEXPO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOEXPO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DATE_DEBUT</name>
+        <identifier class="java.lang.String">3e9401b1-a5b2-4d06-95f3-81c37cdde8bf</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>DATE_DEBUT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">a2a0b291-8aae-43b8-b6b3-636cbd34d56c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DATE_DEBUT</name>
+            <identifier class="java.lang.String">3e9401b1-a5b2-4d06-95f3-81c37cdde8bf</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DATE_DEBUT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DATE_DEBUT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DATE_FIN</name>
+        <identifier class="java.lang.String">8da15977-5ac6-4920-966f-421d386d842c</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>DATE_FIN</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f85972fb-7cb8-43fe-88f5-308dc0650f10</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DATE_FIN</name>
+            <identifier class="java.lang.String">8da15977-5ac6-4920-966f-421d386d842c</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DATE_FIN</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DATE_FIN</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOMHOTEL</name>
+        <identifier class="java.lang.String">646993eb-f2b2-4d82-a7f2-47606876885d</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOMHOTEL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0c8b1dbf-37b1-44e0-b27b-a7cc69a3788e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOMHOTEL</name>
+            <identifier class="java.lang.String">646993eb-f2b2-4d82-a7f2-47606876885d</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOMHOTEL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOMHOTEL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>RUE</name>
+        <identifier class="java.lang.String">a21c88c5-11c4-4c4c-921f-69a92f98e437</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>RUE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5ca5adbf-a68b-4cdb-9de0-6ae5fe0e674e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>RUE</name>
+            <identifier class="java.lang.String">a21c88c5-11c4-4c4c-921f-69a92f98e437</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">25</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>RUE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>RUE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>VILLE</name>
+        <identifier class="java.lang.String">b948067d-1ebc-4038-b782-de37d34153b5</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>VILLE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">69a4baa1-0e70-4223-ba4c-ce111097dddd</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>VILLE</name>
+            <identifier class="java.lang.String">b948067d-1ebc-4038-b782-de37d34153b5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>VILLE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VILLE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CODE_POSTAL</name>
+        <identifier class="java.lang.String">b9aebe70-81c9-4f22-8f47-b3afa8f9eaf6</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CODE_POSTAL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">17a0eb32-e7ac-4f48-b257-28e4c45715cf</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CODE_POSTAL</name>
+            <identifier class="java.lang.String">b9aebe70-81c9-4f22-8f47-b3afa8f9eaf6</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CODE_POSTAL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CODE_POSTAL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>TELEPHONE</name>
+        <identifier class="java.lang.String">6d2c2506-f105-4204-9978-549313b022e7</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>TELEPHONE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">85471b0b-ccc5-4735-9f7e-f8bba6103f78</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>TELEPHONE</name>
+            <identifier class="java.lang.String">6d2c2506-f105-4204-9978-549313b022e7</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>TELEPHONE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TELEPHONE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>COURRIEL</name>
+        <identifier class="java.lang.String">491a7829-dc8d-4b29-985f-5eb34c98ec94</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>COURRIEL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0b2c4a32-c182-4e2c-91af-d1db17b6e65a</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>COURRIEL</name>
+            <identifier class="java.lang.String">491a7829-dc8d-4b29-985f-5eb34c98ec94</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>COURRIEL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>COURRIEL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CREEPAR</name>
+        <identifier class="java.lang.String">f9f7c8d8-6837-4402-b816-3587861136a5</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CREEPAR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">029d0058-65d3-4521-94c0-44ef1e8da43c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CREEPAR</name>
+            <identifier class="java.lang.String">f9f7c8d8-6837-4402-b816-3587861136a5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_EXPO</name>
+              <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>CREEPAR</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPO</name>
+                  <identifier class="java.math.BigDecimal">93505</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CREEPAR</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EXPO_NOEXPO_PK</name>
+        <identifier class="java.lang.String">dbbcae91-c65a-45f4-a086-21c9b3f540bb</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPO</name>
+          <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_EXPO_NOEXPO_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOEXPO</name>
+          <identifier class="java.lang.String">eff64620-2a14-464e-bb3e-ed68df069315</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EXPO</name>
+            <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>P_EXPO_NOEXPO_PK</name>
+            <childObjectNames>
+              <childObjectName>NOEXPO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_EXPO</name>
+              <identifier class="java.math.BigDecimal">93505</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">r3lacasgu</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>P_EXPO</name>
+        <identifier class="java.math.BigDecimal">93505</identifier>
+        <schemaName>R3LACASGU</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">4ebeed5a-fc79-453f-8fb1-bb4ef75679e1</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EXPO</name>
+            <identifier class="java.lang.String">31fde67a-fde5-4031-aff1-04d625093a49</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>OracleStorageProperties</type>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <maxtrans>255</maxtrans>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>P_EXPO</name>
+                <identifier class="java.math.BigDecimal">93505</identifier>
+                <schemaName>R3LACASGU</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespace>R3</tablespace>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+    <entry>
+      <key>Timestamp</key>
+      <value class="java.lang.Long">1269957831000</value>
+    </entry>
+  </properties>
+  <schema>
+    <ID class="oracle.javatools.db.IdentifierBasedID">
+      <name>R3LACASGU</name>
+      <identifier class="java.lang.String">6371cde2-006b-49f5-a070-08fe9059ac07</identifier>
+      <schemaName>R3LACASGU</schemaName>
+      <type>SCHEMA</type>
+    </ID>
+    <name>R3LACASGU</name>
+  </schema>
+</table>
