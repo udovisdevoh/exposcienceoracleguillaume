@@ -1218,6 +1218,140 @@
         </entry>
       </properties>
     </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOEXPOSANT</name>
+        <identifier class="java.lang.String">ca0dd7fa-cc00-4555-af44-c35b9d9f4621</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOEXPOSANT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">4283b2f7-347a-41cb-8a12-b17c5b36856e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOEXPOSANT</name>
+            <identifier class="java.lang.String">ca0dd7fa-cc00-4555-af44-c35b9d9f4621</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOEXPOSANT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_EXPOSANT</name>
+                  <identifier class="java.math.BigDecimal">93507</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOCATEGORIE</name>
+        <identifier class="java.lang.String">9b675e35-3faf-426a-88d6-36b001553278</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOCATEGORIE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">03ece27d-3b6b-45d8-b18a-331545616086</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOCATEGORIE</name>
+            <identifier class="java.lang.String">9b675e35-3faf-426a-88d6-36b001553278</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">5</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOCATEGORIE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_CATEGORIE</name>
+                  <identifier class="java.math.BigDecimal">93497</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.FKConstraint">
@@ -1399,6 +1533,92 @@
         <parent class="oracle.javatools.db.IdentifierBasedID">
           <name>P_LOCAL</name>
           <identifier class="java.lang.String">7b99359b-ec87-49d9-bf63-842ec0cb4637</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_P_CATEGORIE_FK</name>
+        <identifier class="java.lang.String">73884470-eeee-446b-98ca-9b41e7d7fa83</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_P_CATEGORIE_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOCATEGORIE</name>
+          <identifier class="java.lang.String">9b675e35-3faf-426a-88d6-36b001553278</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER</name>
+            <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_CATEGORIE_PK</name>
+        <identifier class="java.lang.String">fc374abe-1b07-4e24-b381-aabcf0fb4716</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_CATEGORIE</name>
+          <identifier class="java.lang.String">a354b403-da81-4f1e-bcea-c240d887984c</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_P_EXPOSANT_FK</name>
+        <identifier class="java.lang.String">873901bd-937b-4fde-8511-e294947485af</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_P_EXPOSANT_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOEXPOSANT</name>
+          <identifier class="java.lang.String">ca0dd7fa-cc00-4555-af44-c35b9d9f4621</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER</name>
+            <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EXPOSANT_NOEXPOSANT_PK</name>
+        <identifier class="java.lang.String">215adafe-6928-483b-b100-a66b4b559869</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPOSANT</name>
+          <identifier class="java.lang.String">2a20e4b3-8452-4df7-905e-54804863ecf9</identifier>
           <schemaName>R3LACASGU</schemaName>
           <type>TABLE</type>
         </parent>

@@ -10,88 +10,6 @@
   <columns>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
-        <name>NOCRITERE</name>
-        <identifier class="java.lang.String">3782acfc-f600-4a7b-a24a-791762fac286</identifier>
-        <parent class="oracle.javatools.db.IdentifierBasedID">
-          <name>P_CRITERE</name>
-          <identifier class="java.lang.String">956a88dd-ae59-4731-9720-6ed39eb76c6f</identifier>
-          <schemaName>R3LACASGU</schemaName>
-          <type>TABLE</type>
-        </parent>
-        <schemaName>R3LACASGU</schemaName>
-        <type>COLUMN</type>
-      </ID>
-      <name>NOCRITERE</name>
-      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
-        <ID class="oracle.javatools.db.IdentifierBasedID">
-          <identifier class="java.lang.String">5867eb7c-2dcc-438e-9ef4-d09fecf0f7bd</identifier>
-          <parent class="oracle.javatools.db.IdentifierBasedID">
-            <name>NOCRITERE</name>
-            <identifier class="java.lang.String">3782acfc-f600-4a7b-a24a-791762fac286</identifier>
-            <parent class="oracle.javatools.db.IdentifierBasedID">
-              <name>P_CRITERE</name>
-              <identifier class="java.lang.String">956a88dd-ae59-4731-9720-6ed39eb76c6f</identifier>
-              <schemaName>R3LACASGU</schemaName>
-              <type>TABLE</type>
-            </parent>
-            <schemaName>R3LACASGU</schemaName>
-            <type>COLUMN</type>
-          </parent>
-          <schemaName>R3LACASGU</schemaName>
-          <type>DataTypeUsage</type>
-        </ID>
-        <attributeValues>
-          <entry>
-            <key>precision</key>
-            <value class="java.lang.String">2</value>
-          </entry>
-          <entry>
-            <key>scale</key>
-            <value class="java.lang.Long">0</value>
-          </entry>
-        </attributeValues>
-        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
-          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
-          <typeName>NUMBER</typeName>
-        </dataTypeID>
-        <properties>
-          <entry>
-            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
-            <value class="oracle.javatools.db.ReferenceID">
-              <parent class="oracle.javatools.db.ReferenceID">
-                <name>NOCRITERE</name>
-                <parent class="oracle.javatools.db.ReferenceID">
-                  <name>P_CRITERE</name>
-                  <identifier class="java.math.BigDecimal">93499</identifier>
-                  <schemaName>R3LACASGU</schemaName>
-                  <type>TABLE</type>
-                </parent>
-                <type>COLUMN</type>
-              </parent>
-              <type>DataTypeUsage</type>
-            </value>
-          </entry>
-        </properties>
-      </dataTypeUsage>
-      <notNull>true</notNull>
-      <properties>
-        <entry>
-          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
-          <value class="oracle.javatools.db.ReferenceID">
-            <name>NOCRITERE</name>
-            <parent class="oracle.javatools.db.ReferenceID">
-              <name>P_CRITERE</name>
-              <identifier class="java.math.BigDecimal">93499</identifier>
-              <schemaName>R3LACASGU</schemaName>
-              <type>TABLE</type>
-            </parent>
-            <type>COLUMN</type>
-          </value>
-        </entry>
-      </properties>
-    </column>
-    <column>
-      <ID class="oracle.javatools.db.IdentifierBasedID">
         <name>NOMCRITERE</name>
         <identifier class="java.lang.String">b6425cf6-fe41-4af1-a35c-6dc1198061e6</identifier>
         <parent class="oracle.javatools.db.IdentifierBasedID">
@@ -161,6 +79,88 @@
           <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
           <value class="oracle.javatools.db.ReferenceID">
             <name>NOMCRITERE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>P_CRITERE</name>
+              <identifier class="java.math.BigDecimal">93499</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOCRITERE</name>
+        <identifier class="java.lang.String">3782acfc-f600-4a7b-a24a-791762fac286</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_CRITERE</name>
+          <identifier class="java.lang.String">956a88dd-ae59-4731-9720-6ed39eb76c6f</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOCRITERE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5867eb7c-2dcc-438e-9ef4-d09fecf0f7bd</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOCRITERE</name>
+            <identifier class="java.lang.String">3782acfc-f600-4a7b-a24a-791762fac286</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_CRITERE</name>
+              <identifier class="java.lang.String">956a88dd-ae59-4731-9720-6ed39eb76c6f</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">2</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>NOCRITERE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>P_CRITERE</name>
+                  <identifier class="java.math.BigDecimal">93499</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOCRITERE</name>
             <parent class="oracle.javatools.db.ReferenceID">
               <name>P_CRITERE</name>
               <identifier class="java.math.BigDecimal">93499</identifier>
