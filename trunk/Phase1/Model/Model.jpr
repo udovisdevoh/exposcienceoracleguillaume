@@ -79,6 +79,7 @@
       <list n="technologyScope">
          <string v="ADFbc"/>
          <string v="Java"/>
+         <string v="Database"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
