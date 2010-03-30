@@ -420,6 +420,92 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EVALUATION_P_ATELIER_FK</name>
+        <identifier class="java.lang.String">da0cf1fd-fccf-4937-a24e-5ebfbf882ad6</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EVALUATION</name>
+          <identifier class="java.lang.String">a47e2e5b-be61-4cfe-86b6-5d9f96bea4cd</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_EVALUATION_P_ATELIER_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOATEL</name>
+          <identifier class="java.lang.String">5094c5fc-d033-446f-8d23-34931b863296</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EVALUATION</name>
+            <identifier class="java.lang.String">a47e2e5b-be61-4cfe-86b6-5d9f96bea4cd</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIERS_NO_PK</name>
+        <identifier class="java.lang.String">b7d9e57e-f604-4e93-814c-2519757d7f7d</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EVALUATION_P_CRITERE_FK</name>
+        <identifier class="java.lang.String">9a08bcb5-31c5-4943-906e-db3c9dd62381</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EVALUATION</name>
+          <identifier class="java.lang.String">a47e2e5b-be61-4cfe-86b6-5d9f96bea4cd</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_EVALUATION_P_CRITERE_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOCRITERE</name>
+          <identifier class="java.lang.String">636e5acd-5913-420b-a5ef-ddf1bb9d5ac4</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EVALUATION</name>
+            <identifier class="java.lang.String">a47e2e5b-be61-4cfe-86b6-5d9f96bea4cd</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_CRITERE_PK</name>
+        <identifier class="java.lang.String">d7b06256-253f-4125-884d-9bcfe0ce040a</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_CRITERE</name>
+          <identifier class="java.lang.String">956a88dd-ae59-4731-9720-6ed39eb76c6f</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
       <ID class="oracle.javatools.db.IdentifierBasedID">
         <name>P_EVALUATION_PK</name>
