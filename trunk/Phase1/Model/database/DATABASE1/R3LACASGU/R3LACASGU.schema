@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <name>R3LACASGU</name>
+    <identifier class="java.lang.String">6371cde2-006b-49f5-a070-08fe9059ac07</identifier>
+    <schemaName>R3LACASGU</schemaName>
+    <type>SCHEMA</type>
+  </ID>
+  <name>R3LACASGU</name>
+</schema>
