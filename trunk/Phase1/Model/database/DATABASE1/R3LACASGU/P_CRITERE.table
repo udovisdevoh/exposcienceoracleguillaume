@@ -158,6 +158,28 @@
       <notNull>true</notNull>
       <properties>
         <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>SEQ_CRITERE</name>
+            <identifier class="java.lang.String">71be3853-5d58-47d6-b6c7-6e09ff5e3bf9</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_CRITERE_TRG</name>
+            <identifier class="java.lang.String">94fe226a-af4a-4b5b-b0f5-90b7a0f43b8c</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+        <entry>
           <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
           <value class="oracle.javatools.db.ReferenceID">
             <name>NOCRITERE</name>
