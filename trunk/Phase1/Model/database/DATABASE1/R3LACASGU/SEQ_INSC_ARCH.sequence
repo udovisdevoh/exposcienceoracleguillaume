@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<sequence xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <name>SEQ_INSC_ARCH</name>
+    <identifier class="java.lang.String">eddd6536-7100-46ed-b0d2-0517f20292de</identifier>
+    <schemaName>R3LACASGU</schemaName>
+    <type>SEQUENCE</type>
+  </ID>
+  <name>SEQ_INSC_ARCH</name>
+  <cycleFlag>false</cycleFlag>
+  <incrementBy>1</incrementBy>
+  <orderFlag>false</orderFlag>
+  <schema>
+    <ID class="oracle.javatools.db.IdentifierBasedID">
+      <name>R3LACASGU</name>
+      <identifier class="java.lang.String">6371cde2-006b-49f5-a070-08fe9059ac07</identifier>
+      <schemaName>R3LACASGU</schemaName>
+      <type>SCHEMA</type>
+    </ID>
+    <name>R3LACASGU</name>
+  </schema>
+  <startWith>10</startWith>
+</sequence>
