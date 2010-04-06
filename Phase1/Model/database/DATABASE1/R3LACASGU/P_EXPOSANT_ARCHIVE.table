@@ -237,6 +237,49 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EXPOSANT_ARCHIVE_FK</name>
+        <identifier class="java.lang.String">2a832e26-cb9a-47ae-859c-ff45ae727863</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPOSANT_ARCHIVE</name>
+          <identifier class="java.lang.String">5cf595d5-09a5-4900-9b89-913dedc9e309</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_EXPOSANT_ARCHIVE_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOEXPOSANT</name>
+          <identifier class="java.lang.String">f85fc6eb-e9cb-42ea-954d-9a44c9244e47</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EXPOSANT_ARCHIVE</name>
+            <identifier class="java.lang.String">5cf595d5-09a5-4900-9b89-913dedc9e309</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_EXPOSANT_NOEXPOSANT_PK</name>
+        <identifier class="java.lang.String">215adafe-6928-483b-b100-a66b4b559869</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_EXPOSANT</name>
+          <identifier class="java.lang.String">2a20e4b3-8452-4df7-905e-54804863ecf9</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
       <ID class="oracle.javatools.db.IdentifierBasedID">
         <name>P_EXPOSANT_ARCHIVE_PK</name>

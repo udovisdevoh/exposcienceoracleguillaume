@@ -450,38 +450,10 @@
           <schemaName>R3LACASGU</schemaName>
           <type>DataTypeUsage</type>
         </ID>
-        <attributeValues>
-          <entry>
-            <key>precision</key>
-            <value class="java.lang.String">1</value>
-          </entry>
-          <entry>
-            <key>scale</key>
-            <value class="java.lang.Long">0</value>
-          </entry>
-        </attributeValues>
         <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
           <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
-          <typeName>NUMBER</typeName>
+          <typeName>DATE</typeName>
         </dataTypeID>
-        <properties>
-          <entry>
-            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
-            <value class="oracle.javatools.db.ReferenceID">
-              <parent class="oracle.javatools.db.ReferenceID">
-                <name>JUGE</name>
-                <parent class="oracle.javatools.db.ReferenceID">
-                  <name>P_AUDITEUR</name>
-                  <identifier class="java.math.BigDecimal">93495</identifier>
-                  <schemaName>R3LACASGU</schemaName>
-                  <type>TABLE</type>
-                </parent>
-                <type>COLUMN</type>
-              </parent>
-              <type>DataTypeUsage</type>
-            </value>
-          </entry>
-        </properties>
       </dataTypeUsage>
       <notNull>false</notNull>
       <properties>
@@ -1073,6 +1045,45 @@
           </value>
         </entry>
       </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CANDIDATJUGE</name>
+        <identifier class="java.lang.String">7b04b0f1-82f2-4088-805e-5d4188440720</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CANDIDATJUGE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">22f51cb1-aaca-4528-a0da-9a25e7f3d17f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CANDIDATJUGE</name>
+            <identifier class="java.lang.String">7b04b0f1-82f2-4088-805e-5d4188440720</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
     </column>
   </columns>
   <constraints>
