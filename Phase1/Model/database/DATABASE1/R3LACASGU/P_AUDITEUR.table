@@ -1076,6 +1076,190 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_AUDITEUR_CHK_STATUT</name>
+        <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_AUDITEUR_CHK_STATUT</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">cae4bb46-8481-4284-a78b-3c51f9b71e4e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_AUDITEUR_CHK_STATUT</name>
+            <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_AUDITEUR</name>
+              <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>CONSTRAINT</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>WHERE</type>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">1a33f1bd-0b49-409a-960e-e3745759158e</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_AUDITEUR_CHK_STATUT</name>
+                <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">e5815fc8-d041-4009-91dd-4c89f214ac18</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR_CHK_STATUT</name>
+                  <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_AUDITEUR</name>
+                    <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>STATUT</name>
+                <identifier class="java.lang.String">23f78189-313c-4337-9da8-6ee20ebd3e85</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">62f22ec9-603d-4ea5-a000-b743068715e9</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR_CHK_STATUT</name>
+                  <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_AUDITEUR</name>
+                    <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>&apos;R&apos;</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">5ad8a4bd-5a84-4b72-b0a9-59969a577aa9</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_AUDITEUR_CHK_STATUT</name>
+                <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">f9e6588f-97b8-4797-aa19-45ff0c96f3d7</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR_CHK_STATUT</name>
+                  <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_AUDITEUR</name>
+                    <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>STATUT</name>
+                <identifier class="java.lang.String">23f78189-313c-4337-9da8-6ee20ebd3e85</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR</name>
+                  <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">43263660-b1fd-4c27-a984-f040b3cc3f5e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_AUDITEUR_CHK_STATUT</name>
+                  <identifier class="java.lang.String">ed6f4fdb-6da7-42be-b03b-f1fd44d7ddee</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_AUDITEUR</name>
+                    <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>&apos;E&apos;</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
     <constraint class="oracle.javatools.db.PKConstraint">
       <ID class="oracle.javatools.db.IdentifierBasedID">
         <name>P_AUDITEUR_NO_PK</name>
