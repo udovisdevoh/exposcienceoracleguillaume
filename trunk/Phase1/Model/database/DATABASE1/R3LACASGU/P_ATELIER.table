@@ -1421,6 +1421,888 @@
     </column>
   </columns>
   <constraints>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_CHK_ACETATE</name>
+        <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_CHK_ACETATE</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">73ea56d4-1184-47ea-8688-77d8f10beb26</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER_CHK_ACETATE</name>
+            <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>CONSTRAINT</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>WHERE</type>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">ef9fa51b-e045-494b-9626-34b27cf97e02</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_ACETATE</name>
+                <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">6c199e10-d2f5-4562-9469-679a12a8d8c8</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_ACETATE</name>
+                  <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>ACETATE_ELEC</name>
+                <identifier class="java.lang.String">17446f17-468f-44f1-a513-fca185267866</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">a6d5e269-e20e-4d81-be14-c912dd9153e8</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_ACETATE</name>
+                  <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>0</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">00ebc57a-57ea-4caf-ac3c-9d43b7411930</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_ACETATE</name>
+                <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">3e384d12-ec18-4c7d-ae51-5a00285892b3</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_ACETATE</name>
+                  <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>ACETATE_ELEC</name>
+                <identifier class="java.lang.String">17446f17-468f-44f1-a513-fca185267866</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">93ac77d0-725b-46e0-8a25-3d1c9824c1be</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_ACETATE</name>
+                  <identifier class="java.lang.String">dec80efc-12cf-4ce1-94a6-1339334cf0fa</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>1</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_CHK_DUREE</name>
+        <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_CHK_DUREE</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f27f3828-391d-49c2-a5d3-bf517dd8207b</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER_CHK_DUREE</name>
+            <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>CONSTRAINT</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>WHERE</type>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">abd5fcf7-a7c7-480b-8fe3-2ef96f6a60bb</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_DUREE</name>
+                <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">8fdefcc7-720e-4d23-98eb-c997405bd356</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>DUREE</name>
+                <identifier class="java.lang.String">b45b3631-a523-4295-81af-e44fcba52a6e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">c10933be-cdc6-4e7c-ba3e-b1e2ce7a6a84</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>30</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">eb717a1e-679a-4ed3-8c4b-e200d415a11a</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_DUREE</name>
+                <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">fe64407b-4be0-48e0-b322-9191ea50eb76</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>DUREE</name>
+                <identifier class="java.lang.String">b45b3631-a523-4295-81af-e44fcba52a6e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">498fac79-0a78-44f7-bb64-f1dd378f74e6</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>45</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">5cfb8d58-0128-47ee-b865-a08793432858</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_DUREE</name>
+                <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">fc44de05-ddd6-4f9f-8830-be20ff5c337d</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>DUREE</name>
+                <identifier class="java.lang.String">b45b3631-a523-4295-81af-e44fcba52a6e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">a9988c62-3b29-4913-907f-fabb840ee94e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>60</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">91f7cb0c-e6b4-435a-9ac7-dc1412219bf0</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_DUREE</name>
+                <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">60403f20-958c-4bcb-8db5-73ad1d218e4f</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>DUREE</name>
+                <identifier class="java.lang.String">b45b3631-a523-4295-81af-e44fcba52a6e</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">761d9e5a-95ff-4584-897c-22547d38f8f7</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_DUREE</name>
+                  <identifier class="java.lang.String">2789d473-d8dc-4019-b42a-8949bec390b5</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>90</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_CHK_LANGUE</name>
+        <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_CHK_LANGUE</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">99166587-407c-42f9-988b-d3dbdeba8246</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER_CHK_LANGUE</name>
+            <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>CONSTRAINT</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>WHERE</type>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">0aed7f80-739f-49f3-9741-ffb8da011b4a</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_LANGUE</name>
+                <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">d2a354f5-a16e-425b-8e73-69a5c1b057e0</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_LANGUE</name>
+                  <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>LANGUE</name>
+                <identifier class="java.lang.String">826d8544-2f5d-420f-8e5a-5c0f120d0f26</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">641fe0b1-de06-4a46-bfff-e3073cefa489</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_LANGUE</name>
+                  <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>&apos;F&apos;</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">f6610901-d6cf-409b-b009-8411a59f4e30</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_LANGUE</name>
+                <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">153bd50c-2558-4dcb-accd-18c91f38ab5c</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_LANGUE</name>
+                  <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>LANGUE</name>
+                <identifier class="java.lang.String">826d8544-2f5d-420f-8e5a-5c0f120d0f26</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">81e9e2ea-c082-4215-8dd2-e876a35b5918</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_LANGUE</name>
+                  <identifier class="java.lang.String">cb01f61b-1918-44a3-810b-f8ed03b334e4</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>&apos;A&apos;</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
+    <constraint class="oracle.javatools.db.CheckConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_ATELIER_CHK_PORTABLE</name>
+        <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_ATELIER</name>
+          <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_ATELIER_CHK_PORTABLE</name>
+      <checkConditionFragment class="oracle.javatools.db.sql.WhereObject">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">53cfee22-ffc2-4301-9da6-3a695501d219</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_ATELIER_CHK_PORTABLE</name>
+            <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_ATELIER</name>
+              <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>CONSTRAINT</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>WHERE</type>
+        </ID>
+        <arguments>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">bc349666-0358-45ee-9881-53cb2ecae92a</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_PORTABLE</name>
+                <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">37861edd-7b93-4d9d-8bbb-3945920fd144</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_PORTABLE</name>
+                  <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>PORTABLE</name>
+                <identifier class="java.lang.String">70238626-9ea8-4015-a635-3d635c17d178</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">cd791def-943a-410a-b421-cb2f6ed05ca3</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_PORTABLE</name>
+                  <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>0</SQLText>
+            </rightExpression>
+          </argument>
+          <argument class="oracle.javatools.db.sql.Comparison">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">078c7291-ac6f-4bb4-a9b0-373f5d5544e0</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>P_ATELIER_CHK_PORTABLE</name>
+                <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>CONSTRAINT</type>
+              </parent>
+              <schemaName>R3LACASGU</schemaName>
+              <type>SQLFragment</type>
+            </ID>
+            <comparator>5</comparator>
+            <leftExpression class="oracle.javatools.db.sql.ColumnUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">48f5e1e2-2477-44d0-af60-39636d2e3fc9</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_PORTABLE</name>
+                  <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>PORTABLE</name>
+                <identifier class="java.lang.String">70238626-9ea8-4015-a635-3d635c17d178</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER</name>
+                  <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>COLUMN</type>
+              </objectID>
+              <outerJoin>false</outerJoin>
+              <qualified>false</qualified>
+            </leftExpression>
+            <rightExpression class="oracle.javatools.db.sql.SimpleSQLFragment">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">0271e238-cae1-482f-84bc-6203bac8ed50</identifier>
+                <parent class="oracle.javatools.db.IdentifierBasedID">
+                  <name>P_ATELIER_CHK_PORTABLE</name>
+                  <identifier class="java.lang.String">64ca76fa-354d-4012-b628-74cdee8b3902</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>P_ATELIER</name>
+                    <identifier class="java.lang.String">c4a809d1-48e6-4925-9fb6-cd1ef521d7ce</identifier>
+                    <schemaName>R3LACASGU</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>R3LACASGU</schemaName>
+                  <type>CONSTRAINT</type>
+                </parent>
+                <schemaName>R3LACASGU</schemaName>
+                <type>SQLFragment</type>
+              </ID>
+              <SQLText>1</SQLText>
+            </rightExpression>
+          </argument>
+        </arguments>
+        <operator>373</operator>
+      </checkConditionFragment>
+      <enabled>true</enabled>
+    </constraint>
     <constraint class="oracle.javatools.db.FKConstraint">
       <ID class="oracle.javatools.db.IdentifierBasedID">
         <name>P_ATELIER_ECOLE_FK</name>
