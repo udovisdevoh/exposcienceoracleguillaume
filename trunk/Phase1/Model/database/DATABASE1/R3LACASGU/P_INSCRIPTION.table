@@ -696,6 +696,51 @@
       </dataTypeUsage>
       <notNull>false</notNull>
     </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>CREEPAR</name>
+        <identifier class="java.lang.String">6ab53b08-e997-4e60-8b46-2f7f31accd59</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION</name>
+          <identifier class="java.lang.String">cd85c9c6-c867-494b-8f15-47b66e89b317</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>CREEPAR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">6db1b936-cba3-4126-906b-396ee03d01aa</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>CREEPAR</name>
+            <identifier class="java.lang.String">6ab53b08-e997-4e60-8b46-2f7f31accd59</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION</name>
+              <identifier class="java.lang.String">cd85c9c6-c867-494b-8f15-47b66e89b317</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
   </columns>
   <constraints>
     <constraint class="oracle.javatools.db.FKConstraint">
