@@ -56,6 +56,30 @@
         </dataTypeID>
       </dataTypeUsage>
       <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>SEQ_EXP_ARCH</name>
+            <identifier class="java.lang.String">e37af66d-0d6c-47a8-a097-fbe2bfa9c302</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>SEQUENCE</type>
+          </value>
+        </entry>
+        <entry>
+          <key>AUTO_GENERATED_SEQUENCE_TRIGGER</key>
+          <value class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_EXPOSANT_ARCHIVE_TRG</name>
+            <identifier class="java.lang.String">bf063db8-774e-43eb-83e2-057c1b0ba3ed</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TRIGGER</type>
+          </value>
+        </entry>
+        <entry>
+          <key>ColumnSequenceExpander.TriggerNullCheck</key>
+          <value class="java.lang.Boolean">true</value>
+        </entry>
+      </properties>
     </column>
     <column>
       <ID class="oracle.javatools.db.IdentifierBasedID">
