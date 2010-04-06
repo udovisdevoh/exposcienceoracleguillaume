@@ -1,0 +1,511 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <name>P_INSCRIPTION_ARCHIVE</name>
+    <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+    <schemaName>R3LACASGU</schemaName>
+    <type>TABLE</type>
+  </ID>
+  <name>P_INSCRIPTION_ARCHIVE</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NO_INS_ARCH</name>
+        <identifier class="java.lang.String">dcd3fedb-8110-41fe-a66f-d8a9dff1821b</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NO_INS_ARCH</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">689f5d40-f404-4a87-9f9a-80cde67ab87d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NO_INS_ARCH</name>
+            <identifier class="java.lang.String">dcd3fedb-8110-41fe-a66f-d8a9dff1821b</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">8</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOAUDITEUR</name>
+        <identifier class="java.lang.String">a080c1a3-56fc-4a65-be91-dfbed1b0422c</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOAUDITEUR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">dc2f5343-2169-479a-85a2-4be78db0f63d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOAUDITEUR</name>
+            <identifier class="java.lang.String">a080c1a3-56fc-4a65-be91-dfbed1b0422c</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NOATEL</name>
+        <identifier class="java.lang.String">ad8937ef-057f-4bd8-bf5d-8710ca75e236</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NOATEL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">27a2d80b-24c4-4a59-8518-5212b0f380a4</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NOATEL</name>
+            <identifier class="java.lang.String">ad8937ef-057f-4bd8-bf5d-8710ca75e236</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DATEINSCRIPTION</name>
+        <identifier class="java.lang.String">002e8a51-e2f7-4f33-b8b3-780341f24987</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>DATEINSCRIPTION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2b785bbb-7a48-4ac3-97d6-723cfcd2363d</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DATEINSCRIPTION</name>
+            <identifier class="java.lang.String">002e8a51-e2f7-4f33-b8b3-780341f24987</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>MODE_PAIEMENT</name>
+        <identifier class="java.lang.String">ca65e472-818b-4a20-af6e-c8e8bc149aa5</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>MODE_PAIEMENT</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">250b6e5f-edd5-4799-8277-9448b162cd15</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>MODE_PAIEMENT</name>
+            <identifier class="java.lang.String">ca65e472-818b-4a20-af6e-c8e8bc149aa5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">1</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NO_CARTE</name>
+        <identifier class="java.lang.String">5dd32cab-7462-4f1d-9044-bb07565096e6</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NO_CARTE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">35231e15-8671-4c25-9da4-d46773729822</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NO_CARTE</name>
+            <identifier class="java.lang.String">5dd32cab-7462-4f1d-9044-bb07565096e6</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>NO_CHEQUE</name>
+        <identifier class="java.lang.String">2017488b-522e-4643-a0c2-4382c4ad9066</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>NO_CHEQUE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">1b92e91e-1eb2-4356-9474-8ae16b8502ce</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>NO_CHEQUE</name>
+            <identifier class="java.lang.String">2017488b-522e-4643-a0c2-4382c4ad9066</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.Long">7</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>evenement </name>
+        <identifier class="java.lang.String">abfb8201-a6ca-4727-92db-1145a2335c70</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>evenement </name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">44e11055-fb96-4c96-a878-0482ae5b7131</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>evenement </name>
+            <identifier class="java.lang.String">abfb8201-a6ca-4727-92db-1145a2335c70</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DATEMODIF</name>
+        <identifier class="java.lang.String">1c4d1f44-22c6-4a47-b81a-2be23ae4aec3</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>COLUMN</type>
+      </ID>
+      <name>DATEMODIF</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">beceb8bc-cb65-447f-a84a-4d60c00aa76a</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DATEMODIF</name>
+            <identifier class="java.lang.String">1c4d1f44-22c6-4a47-b81a-2be23ae4aec3</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>P_INSCRIPTION_ARCHIVE</name>
+              <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+              <schemaName>R3LACASGU</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>R3LACASGU</schemaName>
+            <type>COLUMN</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>DataTypeUsage</type>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_INSCRIPTION_ARCHIVE_P_A_FK1</name>
+        <identifier class="java.lang.String">f8a24441-dbfe-4d8b-a479-3bc696fbd8bd</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_INSCRIPTION_ARCHIVE_P_A_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NOAUDITEUR</name>
+          <identifier class="java.lang.String">a080c1a3-56fc-4a65-be91-dfbed1b0422c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_INSCRIPTION_ARCHIVE</name>
+            <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_AUDITEUR_NO_PK</name>
+        <identifier class="java.lang.String">80827160-cd46-4671-a306-f5cfdad4a6d8</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_AUDITEUR</name>
+          <identifier class="java.lang.String">2f24fff0-6d58-4328-8196-6b44a212a162</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <name>P_INSCRIPTION_ARCHIVE_PK</name>
+        <identifier class="java.lang.String">821c10e4-f068-4c80-8b10-89f283d81d03</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>P_INSCRIPTION_ARCHIVE</name>
+          <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+          <schemaName>R3LACASGU</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>R3LACASGU</schemaName>
+        <type>CONSTRAINT</type>
+      </ID>
+      <name>P_INSCRIPTION_ARCHIVE_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>NO_INS_ARCH</name>
+          <identifier class="java.lang.String">dcd3fedb-8110-41fe-a66f-d8a9dff1821b</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>P_INSCRIPTION_ARCHIVE</name>
+            <identifier class="java.lang.String">4f008363-8b98-4e01-9f8d-737916c5ae1e</identifier>
+            <schemaName>R3LACASGU</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>R3LACASGU</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <ID class="oracle.javatools.db.IdentifierBasedID">
+      <name>R3LACASGU</name>
+      <identifier class="java.lang.String">6371cde2-006b-49f5-a070-08fe9059ac07</identifier>
+      <schemaName>R3LACASGU</schemaName>
+      <type>SCHEMA</type>
+    </ID>
+    <name>R3LACASGU</name>
+  </schema>
+</table>
