@@ -14,7 +14,7 @@
 	&lt;&lt;COLUMN_SEQUENCES&gt;&gt;
 	BEGIN    
     vCode := RPAD(:NEW.NOM, 4, &apos;x&apos;) || RPAD(:NEW.PRENOM, 4, &apos;x&apos;);
-    SELECT vCode || COUNT(*) INTO vCode FROM P_EXPOSANT WHERE RPAD(CODEETUDIANT, 0, 8) = vCode;
+    SELECT vCode || COUNT(*) INTO vCode FROM P_EXPOSANT WHERE SUBSTR(CODEETUDIANT, 0, 8) = vCode;
     SELECT vCode INTO :NEW.CODEETUDIANT FROM DUAL;
   END COLUMN_SEQUENCES;
 END;</code>
@@ -41,7 +41,7 @@ FOR EACH ROW
 	&lt;&lt;COLUMN_SEQUENCES&gt;&gt;
 	BEGIN    
     vCode := RPAD(:NEW.NOM, 4, &apos;x&apos;) || RPAD(:NEW.PRENOM, 4, &apos;x&apos;);
-    SELECT vCode || COUNT(*) INTO vCode FROM P_EXPOSANT WHERE RPAD(CODEETUDIANT, 0, 8) = vCode;
+    SELECT vCode || COUNT(*) INTO vCode FROM P_EXPOSANT WHERE SUBSTR(CODEETUDIANT, 0, 8) = vCode;
     SELECT vCode INTO :NEW.CODEETUDIANT FROM DUAL;
   END COLUMN_SEQUENCES;
 END;</source>
