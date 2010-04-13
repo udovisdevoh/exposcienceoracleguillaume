@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <af:document binding="#{backingBeanScope.backing_home.document1}"
+                 id="document1">
+      <af:form binding="#{backingBeanScope.backing_home.form1}" id="form1">
+        <af:region value="#{bindings.TF_A1.regionModel}" id="TF_A1"
+                   binding="#{backingBeanScope.backing_home.TF_A1}"/>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_home-->
+</jsp:root>

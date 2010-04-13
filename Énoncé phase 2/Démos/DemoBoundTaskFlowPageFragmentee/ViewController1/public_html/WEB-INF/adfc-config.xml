@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="home">
+    <page>/home.jspx</page>
+  </view>
+  <managed-bean>
+    <managed-bean-name>backing_home</managed-bean-name>
+    <managed-bean-class>model.view.backing.Home</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1home.jspx-->
+  </managed-bean>
+</adfc-config>
