@@ -9,11 +9,23 @@
       <page>/loginAuditeur/enregistrement.jsff</page>
     </view>
     <router id="decisionConnecte"></router>
+    <method-call id="auditeurConnecte"></method-call>
+    <method-call id="createInsert"></method-call>
+    <task-flow-call id="TF_menuAuditeur">
+      <task-flow-reference>
+        <document>/WEB-INF/TF_menuAuditeur.xml</document>
+        <id>TF_menuAuditeur</id>
+      </task-flow-reference>
+    </task-flow-call>
     <control-flow-rule>
       <from-activity-id>enregistrement</from-activity-id>
       <control-flow-case>
         <from-outcome>annuler</from-outcome>
         <to-activity-id>login</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>terminerNouveau</from-outcome>
+        <to-activity-id>TF_menuAuditeur</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <control-flow-rule>
@@ -21,6 +33,35 @@
       <control-flow-case>
         <from-outcome>routeurLogin</from-outcome>
         <to-activity-id>login</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>success</from-outcome>
+        <to-activity-id>TF_menuAuditeur</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>login</from-activity-id>
+      <control-flow-case>
+        <from-outcome>executeAuditeurConnecte</from-outcome>
+        <to-activity-id>auditeurConnecte</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>nouveau</from-outcome>
+        <to-activity-id>createInsert</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>auditeurConnecte</from-activity-id>
+      <control-flow-case>
+        <from-outcome>decision</from-outcome>
+        <to-activity-id>decisionConnecte</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>createInsert</from-activity-id>
+      <control-flow-case>
+        <from-outcome>enregistrer</from-outcome>
+        <to-activity-id>enregistrement</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>
