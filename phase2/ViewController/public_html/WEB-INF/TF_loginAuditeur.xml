@@ -8,10 +8,18 @@
     <view id="enregistrement">
       <page>/loginAuditeur/enregistrement.jsff</page>
     </view>
+    <router id="decisionConnecte"></router>
     <control-flow-rule>
       <from-activity-id>enregistrement</from-activity-id>
       <control-flow-case>
         <from-outcome>annuler</from-outcome>
+        <to-activity-id>login</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>decisionConnecte</from-activity-id>
+      <control-flow-case>
+        <from-outcome>routeurLogin</from-outcome>
         <to-activity-id>login</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
