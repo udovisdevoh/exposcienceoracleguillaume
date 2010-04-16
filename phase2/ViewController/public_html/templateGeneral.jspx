@@ -23,7 +23,7 @@
       <f:facet name="toolbar"/>
       <f:facet name="legend"/>
       <f:facet name="info"/>
-      <af:facetRef facetName="zoneEditable"/>
+      <af:facetRef facetName="main"/>
     </af:panelHeader>
   </af:pageTemplateDef>
 </jsp:root>

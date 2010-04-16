@@ -1,5 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <value n="ADFComponentWizard.LAST_TAG_NS_PREF" v="component"/>
+   <value n="ADFComponentWizard.LAST_TAGLIB_URI_PREF"/>
    <hash n="component-versions">
       <value n="oracle.adfdt.controller.adfc.source.migration.AdfControllerSchemaMigrator" v="11.1.1.0.1"/>
       <value n="oracle.adfdt.controller.adfc.source.migration.MoveMetadataResourcesAgainMigrator" v="11.1.1.0.1"/>
@@ -446,6 +448,14 @@
             <value n="id" v="Trinidad Runtime 11"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -510,6 +520,14 @@
          </hash>
          <hash>
             <value n="id" v="Trinidad Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Support"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Resource Bundle Variable Resolver"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
