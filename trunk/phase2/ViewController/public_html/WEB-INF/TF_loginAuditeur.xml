@@ -5,6 +5,16 @@
     <view id="login">
       <page>/loginAuditeur/login.jsff</page>
     </view>
+    <view id="enregistrement">
+      <page>/loginAuditeur/enregistrement.jsff</page>
+    </view>
+    <control-flow-rule>
+      <from-activity-id>enregistrement</from-activity-id>
+      <control-flow-case>
+        <from-outcome>annuler</from-outcome>
+        <to-activity-id>login</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
     <use-page-fragments/>
   </task-flow-definition>
 </adfc-config>

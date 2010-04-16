@@ -15,12 +15,41 @@
       <property
          name="rawDescription">view - login</property>
       <property
-         name="y">319.5</property>
+         name="y">244.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">204.5</property>
+         name="x">125.5</property>
    </View>
+   <View
+      id="View4">
+      <property
+         name="activityId">enregistrement</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - enregistrement&lt;/p>&lt;/html></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">view - enregistrement</property>
+      <property
+         name="y">436.5</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">371.01953</property>
+      <property
+         name="realized">true</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View4"
+      to="View3">
+      <property
+         name="fromOutcome">annuler</property>
+      <property
+         name="sdm:polyPoints">L50,330.01953,436.5,125.5,298.5,B50</property>
+   </ControlFlowCase>
 </SDM>
