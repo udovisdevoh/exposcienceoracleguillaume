@@ -2,4 +2,25 @@
 <SDM>
    <OverallProperties
       id="OverallProperties1"/>
+   <View
+      id="View3">
+      <property
+         name="activityId">login</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - login&lt;/p>&lt;/html></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">view - login</property>
+      <property
+         name="y">319.5</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="realized">true</property>
+      <property
+         name="x">204.5</property>
+   </View>
 </SDM>
