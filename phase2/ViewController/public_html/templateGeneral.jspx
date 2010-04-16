@@ -28,6 +28,11 @@
       <f:facet name="info"/>
       <af:facetRef facetName="main"/>
     </af:panelHeader>
-    <af:outputText value="Copyright corporation de telecommunications monopolistiques à contrats verbaux et frais implicites à consentement non-requis"/>
+    <af:outputText value="Copyright © corporation de telecommunications monopolistiques à contrats verbaux et frais implicites à consentement non-requis. Tous droits réservés et toute responsabilitée externalisé car une coporation a tous les droits d'un humain sans aucune de ses responsabilités.">
+      <p/>
+      <p>
+         
+      </p>
+    </af:outputText>
   </af:pageTemplateDef>
 </jsp:root>
