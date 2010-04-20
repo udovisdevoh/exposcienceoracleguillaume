@@ -5,10 +5,12 @@
   <af:panelFormLayout>
     <f:facet name="footer"/>
     <af:inputText label="Code usager:"/>
+    <af:outputText value="outputText1"/>
     <af:inputText label="Mot de passe:" secret="true"/>
     <af:panelGroupLayout layout="horizontal">
       <af:commandButton text="login"/>
       <af:commandImageLink text="S'enregistrer"/>
     </af:panelGroupLayout>
+    <af:outputText value="Usager ou mot de passe incorrect"/>
   </af:panelFormLayout>
 </jsp:root>
