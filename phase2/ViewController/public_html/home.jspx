@@ -8,8 +8,11 @@
     <af:document>
       <af:form>
         <af:pageTemplate viewId="/templateGeneral.jspx">
-          <f:facet name="zoneEditable"/>
+          <f:facet name="main">
+            <jsp:include page="/loginAuditeur/login.jsff"/>
+          </f:facet>
         </af:pageTemplate>
+        <jsp:include page="/loginAuditeur/login.jsff"/>
       </af:form>
     </af:document>
   </f:view>
