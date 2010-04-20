@@ -8,8 +8,23 @@
     <view id="enregistrement">
       <page>/loginAuditeur/enregistrement.jsff</page>
     </view>
-    <router id="decisionConnecte"></router>
-    <method-call id="auditeurConnecte"></method-call>
+    <router id="decisionConnecte">
+      <case>
+        <expression>#{pageFlowScope.loginSuccess eq 'true'}</expression>
+        <outcome>success</outcome>
+      </case>
+      <case>
+        <expression>#{pageFlowScope.loginSuccess eq 'false'}</expression>
+        <outcome>routeurLogin</outcome>
+      </case>
+    </router>
+    <method-call id="auditeurConnecte">
+      <method>#{bindings.auditeurConnecte.execute}</method>
+      <return-value>#{pageFlowScope.loginSuccess}</return-value>
+      <outcome>
+        <fixed-outcome>decision</fixed-outcome>
+      </outcome>
+    </method-call>
     <method-call id="createInsert"></method-call>
     <task-flow-call id="TF_menuAuditeur">
       <task-flow-reference>

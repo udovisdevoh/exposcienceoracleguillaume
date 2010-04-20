@@ -38,9 +38,9 @@
       <property
          name="y">436.5</property>
       <property
-         name="x">371.01953</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">371.01953</property>
       <property
          name="realized">true</property>
    </View>
@@ -52,14 +52,14 @@
       <property
          name="fromOutcome">annuler</property>
       <property
-         name="sdm:polyPoints">L50,330.01953,436.5,125.5,298.5,B50</property>
+         name="sdm:polyPoints">L46,330.01953,433.0,129.0,298.5,B56</property>
    </ControlFlowCase>
    <Router
       id="Router6">
       <property
          name="activityId">decisionConnecte</property>
       <property
-         name="statusDescription">Required child missing from element router</property>
+         name="statusDescription">Required child (case|default-outcome) missing from element router; EL token ''loginSuccess'' is unknown; EL token ''loginSuccess'' is unknown</property>
       <property
          name="status">warning</property>
       <property
@@ -81,26 +81,26 @@
       <property
          name="fromOutcome">routeurLogin</property>
       <property
-         name="statusDescription">Outcome ''routeurLogin'' is not found in activity ''decisionConnecte''</property>
+         name="status">ok</property>
       <property
-         name="status">warning</property>
-      <property
-         name="sdm:polyPoints">L50,340.0,109.0,166.5,244.5,R50</property>
+         name="sdm:polyPoints">L54,340.0,112.5,166.5,244.5,R50</property>
    </ControlFlowCase>
    <MethodCall
       id="MethodCall8">
       <property
+         name="status">warning</property>
+      <property
          name="activityId">auditeurConnecte</property>
       <property
-         name="statusDescription">Required child missing from element method-call</property>
-      <property
-         name="status">warning</property>
+         name="statusDescription">EL token ''loginSuccess'' is unknown</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">method-call - auditeurConnecte&lt;/p>&lt;/html></property>
       <property
-         name="rawDescription">method-call - auditeurConnecte</property>
+         name="binding">method</property>
       <property
          name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">method-call - auditeurConnecte</property>
       <property
          name="y">32.0</property>
       <property
@@ -172,9 +172,7 @@
       <property
          name="fromOutcome">success</property>
       <property
-         name="statusDescription">Outcome ''success'' is not found in activity ''decisionConnecte''</property>
-      <property
-         name="status">warning</property>
+         name="status">ok</property>
       <property
          name="sdm:polyPoints">B50,381.0,163.0,582.02344,291.0,L46</property>
    </ControlFlowCase>

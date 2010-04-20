@@ -4,10 +4,11 @@
           xmlns:f="http://java.sun.com/jsf/core">
   <af:panelFormLayout>
     <f:facet name="footer"/>
-    <af:inputText label="Code usager:"/>
-    <af:inputText label="Mot de passe:" secret="true"/>
+    <af:inputText label="Code usager:" value="#{pageFlowScope.codeUsager}"/>
+    <af:inputText label="Mot de passe:" secret="true"
+                  value="#{pageFlowScope.motDePasse}"/>
     <af:panelGroupLayout layout="horizontal">
-      <af:commandButton text="login"/>
+      <af:commandButton text="login" action="executeAuditeurConnecte"/>
       <af:commandImageLink text="S'enregistrer"/>
     </af:panelGroupLayout>
     <af:outputText value="Usager ou mot de passe incorrect"/>
