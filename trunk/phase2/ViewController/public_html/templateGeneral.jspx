@@ -12,27 +12,35 @@
       <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
         <display-name>templateGeneral</display-name>
         <facet>
-          <facet-name>
-            zoneEditable
-          </facet-name>
+          <facet-name>main</facet-name>
         </facet>
       </component>
     </af:xmlContent>
-    <af:panelHeader text="#{viewcontrollerBundle.EXPOSCIENCE}" icon="/images/logo_exposcience.gif">
-      <f:facet name="context">
-        <af:group/>
+    <af:panelBorderLayout>
+      <f:facet name="start"/>
+      <f:facet name="bottom">
+        <af:outputFormatted value="Copywrong Bill Canadia"/>
       </f:facet>
-      <f:facet name="menuBar"/>
-      <f:facet name="toolbar"/>
-      <f:facet name="legend"/>
-      <f:facet name="info"/>
-      <af:facetRef facetName="main"/>
-    </af:panelHeader>
-    <af:outputText value="Copyright © corporation de telecommunications monopolistiques à contrats verbaux et frais implicites à consentement non-requis. Tous droits réservés et toute responsabilitée externalisé car une coporation a tous les droits d'un humain sans aucune de ses responsabilités.">
-      <p/>
-      <p>
-         
-      </p>
-    </af:outputText>
+      <f:facet name="end"/>
+      <f:facet name="top">
+        <af:panelHeader text="#{viewcontrollerBundle.EXPOSCIENCE}" icon="/images/logo_exposcience.gif"
+                        inlineStyle="background-color:Blue;">
+          <f:facet name="context"/>
+          <f:facet name="menuBar"/>
+          <f:facet name="toolbar"/>
+          <f:facet name="legend"/>
+          <f:facet name="info"/>
+        </af:panelHeader>
+      </f:facet>
+      <f:facet name="innerRight"/>
+      <f:facet name="innerEnd"/>
+      <f:facet name="innerLeft"/>
+      <f:facet name="innerTop">
+        <af:panelBox inlineStyle="padding:10px;">
+          <f:facet name="toolbar"/>
+          <af:facetRef facetName="main"/>
+        </af:panelBox>
+      </f:facet>
+    </af:panelBorderLayout>
   </af:pageTemplateDef>
 </jsp:root>
