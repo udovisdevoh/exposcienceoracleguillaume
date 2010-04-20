@@ -4,5 +4,23 @@
           xmlns:f="http://java.sun.com/jsf/core">
   <af:panelFormLayout>
     <f:facet name="footer"/>
+    <af:inputText label="Code auditeur"/>
+    <af:inputText label="Mot de passe" secret="true"/>
+    <af:inputText label="Nom"/>
+    <af:inputText label="Label 1"/>
+    <af:inputText label="Label 2"/>
+    <af:inputText label="Prénom"/>
+    <af:inputText label="Rue"/>
+    <af:inputText label="Ville"/>
+    <af:inputText label="Code postal"/>
+    <af:inputText label="No région"/>
+    <af:inputText label="Télépone"/>
+    <af:inputText label="Courriel"/>
+    <af:inputText label="Statut"/>
+    <af:panelGroupLayout>
+      <af:commandButton text="Réinitialiser"/>
+      <af:commandButton text="Annuler"/>
+      <af:commandButton text="Enregistrer"/>
+    </af:panelGroupLayout>
   </af:panelFormLayout>
 </jsp:root>
