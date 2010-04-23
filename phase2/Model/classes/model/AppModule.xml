@@ -45,4 +45,13 @@
   <ViewUsage
     Name="PLocalView1"
     ViewObjectName="model.view.PLocalView"/>
+  <ViewUsage
+    Name="PRegionView1"
+    ViewObjectName="model.view.PRegionView"/>
+  <ViewUsage
+    Name="PSuiviAtelierView1"
+    ViewObjectName="model.view.PSuiviAtelierView"/>
+  <ViewUsage
+    Name="PTypeView1"
+    ViewObjectName="model.view.PTypeView"/>
 </AppModule>

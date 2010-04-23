@@ -140,6 +140,13 @@
     AssociationOtherEnd="model.assoc.PExposantEcoleFkAssoc.PEcole"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="PRegion"
+    Association="model.assoc.PEcoleRegionFkAssoc"
+    AssociationEnd="model.assoc.PEcoleRegionFkAssoc.PRegion"
+    AssociationOtherEnd="model.assoc.PEcoleRegionFkAssoc.PEcole"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PEcoleNoecolePk"
     PrimaryKey="true">

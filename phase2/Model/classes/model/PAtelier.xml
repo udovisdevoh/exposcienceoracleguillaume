@@ -292,6 +292,13 @@
     AssociationOtherEnd="model.assoc.PAtelierLocalFkAssoc.PAtelier"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PType"
+    Association="model.assoc.PAtelierTypeFkAssoc"
+    AssociationEnd="model.assoc.PAtelierTypeFkAssoc.PType"
+    AssociationOtherEnd="model.assoc.PAtelierTypeFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PAteliersNoPk"
     PrimaryKey="true">
