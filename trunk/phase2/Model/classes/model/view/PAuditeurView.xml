@@ -22,10 +22,10 @@
   FromList="P_AUDITEUR PAuditeur"
   BindingStyle="OracleName"
   CustomQuery="false"
+  ComponentClass="model.view.PAuditeurViewImpl"
   FetchMode="FETCH_AS_NEEDED"
   PageIterMode="Full"
-  UseGlueCode="false"
-  ComponentClass="model.view.PAuditeurViewImpl">
+  UseGlueCode="false">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
   </DesignTime>
@@ -120,6 +120,11 @@
   <ViewLinkAccessor
     Name="PEvaluationView"
     ViewLink="model.view.link.PEvaluationAudjugeFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="PInscriptionView"
+    ViewLink="model.view.link.PInscriptionAuditeurFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

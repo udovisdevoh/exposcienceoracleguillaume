@@ -219,6 +219,19 @@ public class PAuditeurImpl
                 obj.setAttributeInternal(index(), value);
             }
         }
+        ,
+        PInscription
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getPInscription();
+            }
+
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setAttributeInternal(index(), value);
+            }
+        }
         ;
         private static AttributesEnum[] vals = null;
         private static int firstIndex = 0;
@@ -267,6 +280,8 @@ public class PAuditeurImpl
   public static final int CANDIDATJUGE = AttributesEnum.Candidatjuge.index();
 
     public static final int PEVALUATION = AttributesEnum.PEvaluation.index();
+
+    public static final int PINSCRIPTION = AttributesEnum.PInscription.index();
 
     /**
      * This is the default constructor (do not remove).
@@ -585,6 +600,15 @@ public class PAuditeurImpl
     public RowIterator getPEvaluation()
     {
         return (RowIterator) getAttributeInternal(PEVALUATION);
+    }
+
+
+    /**
+     * @return the associated entity oracle.jbo.RowIterator.
+     */
+    public RowIterator getPInscription()
+    {
+        return (RowIterator) getAttributeInternal(PINSCRIPTION);
     }
 
 

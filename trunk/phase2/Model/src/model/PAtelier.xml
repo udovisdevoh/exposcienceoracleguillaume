@@ -271,6 +271,27 @@
     AssociationOtherEnd="model.assoc.PAtelierExpoFkAssoc.PAtelier"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PExposant"
+    Association="model.assoc.PAtelierNoexposantFkAssoc"
+    AssociationEnd="model.assoc.PAtelierNoexposantFkAssoc.PExposant"
+    AssociationOtherEnd="model.assoc.PAtelierNoexposantFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PInscription"
+    Association="model.assoc.PInscriptionAtelierFkAssoc"
+    AssociationEnd="model.assoc.PInscriptionAtelierFkAssoc.PInscription"
+    AssociationOtherEnd="model.assoc.PInscriptionAtelierFkAssoc.PAtelier"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="PLocal"
+    Association="model.assoc.PAtelierLocalFkAssoc"
+    AssociationEnd="model.assoc.PAtelierLocalFkAssoc.PLocal"
+    AssociationOtherEnd="model.assoc.PAtelierLocalFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PAteliersNoPk"
     PrimaryKey="true">

@@ -149,4 +149,9 @@
     ViewLink="model.view.link.PEvaluationAtelierFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="PInscriptionView"
+    ViewLink="model.view.link.PInscriptionAtelierFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
 </ViewObject>

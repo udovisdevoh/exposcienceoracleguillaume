@@ -3,66 +3,91 @@
 <!---->
 <Entity
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="PEcole"
+  Name="PExposant"
   Version="11.1.1.51.88"
   DBObjectType="table"
-  DBObjectName="P_ECOLE"
-  AliasName="PEcole"
+  DBObjectName="P_EXPOSANT"
+  AliasName="PExposant"
   BindingStyle="OracleName"
   UseGlueCode="false">
   <DesignTime>
     <AttrArray Name="_publishEvents"/>
   </DesignTime>
   <Attribute
-    Name="Noecole"
+    Name="Noexposant"
     IsNotNull="true"
     Precision="4"
     Scale="0"
-    ColumnName="NOECOLE"
+    ColumnName="NOEXPOSANT"
     Type="oracle.jbo.domain.Number"
     ColumnType="NUMBER"
     SQLType="NUMERIC"
-    TableName="P_ECOLE"
+    TableName="P_EXPOSANT"
     PrimaryKey="true">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="22"/>
     </DesignTime>
   </Attribute>
   <Attribute
-    Name="Nomecole"
-    Precision="100"
-    ColumnName="NOMECOLE"
+    Name="Nom"
+    Precision="60"
+    ColumnName="NOM"
     Type="java.lang.String"
     ColumnType="VARCHAR2"
     SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
-      <Attr Name="_DisplaySize" Value="100"/>
+      <Attr Name="_DisplaySize" Value="60"/>
     </DesignTime>
   </Attribute>
   <Attribute
-    Name="Noregion"
+    Name="Prenom"
+    Precision="30"
+    ColumnName="PRENOM"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPOSANT">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Codeetu"
+    Precision="15"
+    ColumnName="CODEETU"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPOSANT">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="15"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nocoequipier"
     Precision="3"
     Scale="0"
-    ColumnName="NOREGION"
+    ColumnName="NOCOEQUIPIER"
     Type="oracle.jbo.domain.Number"
     ColumnType="NUMBER"
     SQLType="NUMERIC"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="22"/>
     </DesignTime>
   </Attribute>
   <Attribute
-    Name="Tuteur"
-    Precision="50"
-    ColumnName="TUTEUR"
-    Type="java.lang.String"
-    ColumnType="VARCHAR2"
-    SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    Name="Noecole"
+    Precision="3"
+    Scale="0"
+    ColumnName="NOECOLE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EXPOSANT">
     <DesignTime>
-      <Attr Name="_DisplaySize" Value="50"/>
+      <Attr Name="_DisplaySize" Value="22"/>
     </DesignTime>
   </Attribute>
   <Attribute
@@ -72,7 +97,7 @@
     Type="java.lang.String"
     ColumnType="VARCHAR2"
     SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="25"/>
     </DesignTime>
@@ -84,7 +109,7 @@
     Type="java.lang.String"
     ColumnType="VARCHAR2"
     SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
@@ -96,7 +121,7 @@
     Type="java.lang.String"
     ColumnType="VARCHAR2"
     SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="6"/>
     </DesignTime>
@@ -109,56 +134,68 @@
     Type="oracle.jbo.domain.Number"
     ColumnType="NUMBER"
     SQLType="NUMERIC"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="22"/>
     </DesignTime>
   </Attribute>
   <Attribute
     Name="Courriel"
-    Precision="25"
+    Precision="20"
     ColumnName="COURRIEL"
     Type="java.lang.String"
     ColumnType="VARCHAR2"
     SQLType="VARCHAR"
-    TableName="P_ECOLE">
+    TableName="P_EXPOSANT">
     <DesignTime>
-      <Attr Name="_DisplaySize" Value="25"/>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Creepar"
+    Precision="30"
+    ColumnName="CREEPAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPOSANT">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
     </DesignTime>
   </Attribute>
   <AccessorAttribute
     Name="PAtelier"
-    Association="model.assoc.PAtelierEcoleFkAssoc"
-    AssociationEnd="model.assoc.PAtelierEcoleFkAssoc.PAtelier"
-    AssociationOtherEnd="model.assoc.PAtelierEcoleFkAssoc.PEcole"
+    Association="model.assoc.PAtelierNoexposantFkAssoc"
+    AssociationEnd="model.assoc.PAtelierNoexposantFkAssoc.PAtelier"
+    AssociationOtherEnd="model.assoc.PAtelierNoexposantFkAssoc.PExposant"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
-    Name="PExposant"
+    Name="PEcole"
     Association="model.assoc.PExposantEcoleFkAssoc"
-    AssociationEnd="model.assoc.PExposantEcoleFkAssoc.PExposant"
-    AssociationOtherEnd="model.assoc.PExposantEcoleFkAssoc.PEcole"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
+    AssociationEnd="model.assoc.PExposantEcoleFkAssoc.PEcole"
+    AssociationOtherEnd="model.assoc.PExposantEcoleFkAssoc.PExposant"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
-    Name="PEcoleNoecolePk"
+    Name="PExposantNoexposantPk"
     PrimaryKey="true">
     <DesignTime>
-      <Attr Name="_DBObjectName" Value="P_ECOLE_NOECOLE_PK"/>
+      <Attr Name="_DBObjectName" Value="P_EXPOSANT_NOEXPOSANT_PK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.PEcole.Noecole"/>
+      <Item Value="model.PExposant.Noexposant"/>
     </AttrArray>
   </Key>
   <Key
-    Name="PEcoleRegionFk">
+    Name="PExposantEcoleFk">
     <DesignTime>
-      <Attr Name="_referencedKey" Value="P_REGION_PK"/>
+      <Attr Name="_referencedKey" Value="P_ECOLE_NOECOLE_PK"/>
       <Attr Name="_isForeign" Value="true"/>
-      <Attr Name="_DBObjectName" Value="P_ECOLE_REGION_FK"/>
+      <Attr Name="_DBObjectName" Value="P_EXPOSANT_ECOLE_FK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.PEcole.Noregion"/>
+      <Item Value="model.PExposant.Noecole"/>
     </AttrArray>
   </Key>
 </Entity>

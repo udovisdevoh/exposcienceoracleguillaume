@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PExposantArchiveView"
+  Version="11.1.1.51.88"
+  SelectList="PExposantArchive.NO_EXP_ARCH, 
+       PExposantArchive.NOEXPOSANT, 
+       PExposantArchive.NOM, 
+       PExposantArchive.COURRIEL, 
+       PExposantArchive.DATESUPPRESSION"
+  FromList="P_EXPOSANT_ARCHIVE PExposantArchive"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  FetchMode="FETCH_AS_NEEDED"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="VarAccess"/>
+  </DesignTime>
+  <EntityUsage
+    Name="PExposantArchive"
+    Entity="model.PExposantArchive"/>
+  <ViewAttribute
+    Name="NoExpArch"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="NoExpArch"
+    EntityUsage="PExposantArchive"
+    AliasName="NO_EXP_ARCH"/>
+  <ViewAttribute
+    Name="Noexposant"
+    PrecisionRule="true"
+    EntityAttrName="Noexposant"
+    EntityUsage="PExposantArchive"
+    AliasName="NOEXPOSANT"/>
+  <ViewAttribute
+    Name="Nom"
+    PrecisionRule="true"
+    EntityAttrName="Nom"
+    EntityUsage="PExposantArchive"
+    AliasName="NOM"/>
+  <ViewAttribute
+    Name="Courriel"
+    PrecisionRule="true"
+    EntityAttrName="Courriel"
+    EntityUsage="PExposantArchive"
+    AliasName="COURRIEL"/>
+  <ViewAttribute
+    Name="Datesuppression"
+    PrecisionRule="true"
+    EntityAttrName="Datesuppression"
+    EntityUsage="PExposantArchive"
+    AliasName="DATESUPPRESSION"/>
+</ViewObject>
