@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="homePageDef" Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <taskFlow id="TF_loginAuditeur1"
+              taskFlowId="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

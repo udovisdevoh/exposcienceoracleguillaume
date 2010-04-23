@@ -9,8 +9,9 @@
                   value="#{pageFlowScope.motDePasse}"/>
     <af:panelGroupLayout layout="horizontal">
       <af:commandButton text="login" action="executeAuditeurConnecte"/>
-      <af:commandImageLink text="S'enregistrer"/>
+      <af:commandImageLink text="S'enregistrer" action="nouveau"/>
     </af:panelGroupLayout>
-    <af:outputText value="Usager ou mot de passe incorrect"/>
+    <af:outputText value="Usager ou mot de passe incorrect"
+                   rendered="#{pageFlowScope.loginSuccess eq 'false'}"/>
   </af:panelFormLayout>
 </jsp:root>

@@ -1,2 +1,8 @@
 <?xml version='1.0' encoding='windows-1252'?>
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"></jsp:root>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <strong><af:outputLabel value="Changer de mot de passe"/></strong>
+  <af:inputText label="Mot de passe actuel"/>
+  <af:inputText label="Nouveau mot de passe"/>
+  <af:inputText label="Confirmation de mot de passe"/>
+</jsp:root>
