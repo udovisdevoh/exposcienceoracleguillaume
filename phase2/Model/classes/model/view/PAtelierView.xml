@@ -144,4 +144,9 @@
     EntityAttrName="Coutregulier"
     EntityUsage="PAtelier"
     AliasName="COUTREGULIER"/>
+  <ViewLinkAccessor
+    Name="PEvaluationView"
+    ViewLink="model.view.link.PEvaluationAtelierFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
 </ViewObject>

@@ -117,4 +117,9 @@
     EntityAttrName="Candidatjuge"
     EntityUsage="PAuditeur"
     AliasName="CANDIDATJUGE"/>
+  <ViewLinkAccessor
+    Name="PEvaluationView"
+    ViewLink="model.view.link.PEvaluationAudjugeFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
 </ViewObject>

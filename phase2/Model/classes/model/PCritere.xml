@@ -40,6 +40,13 @@
       <Attr Name="_DisplaySize" Value="25"/>
     </DesignTime>
   </Attribute>
+  <AccessorAttribute
+    Name="PEvaluation"
+    Association="model.assoc.PEvaluationCritereFkAssoc"
+    AssociationEnd="model.assoc.PEvaluationCritereFkAssoc.PEvaluation"
+    AssociationOtherEnd="model.assoc.PEvaluationCritereFkAssoc.PCritere"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
   <Key
     Name="PCriterePk"
     PrimaryKey="true">

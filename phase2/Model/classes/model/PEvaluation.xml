@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PEvaluation"
+  Version="11.1.1.51.88"
+  DBObjectType="table"
+  DBObjectName="P_EVALUATION"
+  AliasName="PEvaluation"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="Noeval"
+    IsNotNull="true"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOEVAL"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EVALUATION"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Noauditeur"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOAUDITEUR"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EVALUATION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Noatel"
+    Precision="3"
+    Scale="0"
+    ColumnName="NOATEL"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EVALUATION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nocritere"
+    Precision="1"
+    Scale="0"
+    ColumnName="NOCRITERE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EVALUATION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Cote"
+    Precision="1"
+    Scale="0"
+    ColumnName="COTE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EVALUATION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="PAuditeur"
+    Association="model.assoc.PEvaluationAudjugeFkAssoc"
+    AssociationEnd="model.assoc.PEvaluationAudjugeFkAssoc.PAuditeur"
+    AssociationOtherEnd="model.assoc.PEvaluationAudjugeFkAssoc.PEvaluation"
+    Type="model.PAuditeurImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PAtelier"
+    Association="model.assoc.PEvaluationAtelierFkAssoc"
+    AssociationEnd="model.assoc.PEvaluationAtelierFkAssoc.PAtelier"
+    AssociationOtherEnd="model.assoc.PEvaluationAtelierFkAssoc.PEvaluation"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PCritere"
+    Association="model.assoc.PEvaluationCritereFkAssoc"
+    AssociationEnd="model.assoc.PEvaluationCritereFkAssoc.PCritere"
+    AssociationOtherEnd="model.assoc.PEvaluationCritereFkAssoc.PEvaluation"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="PEvaluationPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="P_EVALUATION_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PEvaluation.Noeval"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PEvaluationAtelierFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_ATELIERS_NO_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_EVALUATION_ATELIER_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PEvaluation.Noatel"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PEvaluationAudjugeFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_AUDITEUR_NO_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_EVALUATION_AUDJUGE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PEvaluation.Noauditeur"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PEvaluationCritereFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_CRITERE_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_EVALUATION_CRITERE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PEvaluation.Nocritere"/>
+    </AttrArray>
+  </Key>
+</Entity>
