@@ -250,6 +250,13 @@
     AssociationOtherEnd="model.assoc.PAtelierCategorieFkAssoc.PAtelier"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="PEcole"
+    Association="model.assoc.PAtelierEcoleFkAssoc"
+    AssociationEnd="model.assoc.PAtelierEcoleFkAssoc.PEcole"
+    AssociationOtherEnd="model.assoc.PAtelierEcoleFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PAteliersNoPk"
     PrimaryKey="true">
