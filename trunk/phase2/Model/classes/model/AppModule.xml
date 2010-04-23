@@ -21,4 +21,7 @@
   <ViewUsage
     Name="PCritereView1"
     ViewObjectName="model.view.PCritereView"/>
+  <ViewUsage
+    Name="PEcoleView1"
+    ViewObjectName="model.view.PEcoleView"/>
 </AppModule>
