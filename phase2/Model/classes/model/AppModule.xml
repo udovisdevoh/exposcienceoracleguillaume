@@ -27,4 +27,7 @@
   <ViewUsage
     Name="PEvaluationView1"
     ViewObjectName="model.view.PEvaluationView"/>
+  <ViewUsage
+    Name="PExpoView1"
+    ViewObjectName="model.view.PExpoView"/>
 </AppModule>
