@@ -18,4 +18,7 @@
   <ViewUsage
     Name="PCategorieView1"
     ViewObjectName="model.view.PCategorieView"/>
+  <ViewUsage
+    Name="PCritereView1"
+    ViewObjectName="model.view.PCritereView"/>
 </AppModule>

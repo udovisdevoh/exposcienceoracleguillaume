@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PCritereView"
+  Version="11.1.1.51.88"
+  SelectList="PCritere.NOCRITERE, 
+       PCritere.NOMCRITERE"
+  FromList="P_CRITERE PCritere"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  FetchMode="FETCH_AS_NEEDED"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="VarAccess"/>
+  </DesignTime>
+  <EntityUsage
+    Name="PCritere"
+    Entity="model.PCritere"/>
+  <ViewAttribute
+    Name="Nocritere"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Nocritere"
+    EntityUsage="PCritere"
+    AliasName="NOCRITERE"/>
+  <ViewAttribute
+    Name="Nomcritere"
+    PrecisionRule="true"
+    EntityAttrName="Nomcritere"
+    EntityUsage="PCritere"
+    AliasName="NOMCRITERE"/>
+</ViewObject>

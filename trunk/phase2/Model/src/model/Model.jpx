@@ -9,7 +9,7 @@
    PackageName="model" >
    <DesignTime>
       <Attr Name="_jprName" Value="../../Model.jpr" />
-      <Attr Name="_appModuleNames0" Value="model.view.AppModule" />
+      <Attr Name="_appModuleNames0" Value="model.AppModule" />
       <Attr Name="_NamedConnection" Value="r3lacasgu" />
    </DesignTime>
    <Containee
@@ -26,6 +26,7 @@
       ObjectType="JboPackage" >
       <DesignTime>
          <Attr Name="_EO" Value="true" />
+         <Attr Name="_AM" Value="true" />
       </DesignTime>
    </Containee>
    <Containee
@@ -42,7 +43,6 @@
       ObjectType="JboPackage" >
       <DesignTime>
          <Attr Name="_VO" Value="true" />
-         <Attr Name="_AM" Value="true" />
       </DesignTime>
    </Containee>
 </JboProject>
