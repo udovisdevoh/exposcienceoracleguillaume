@@ -264,6 +264,13 @@
     AssociationOtherEnd="model.assoc.PEvaluationAtelierFkAssoc.PAtelier"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="PExpo"
+    Association="model.assoc.PAtelierExpoFkAssoc"
+    AssociationEnd="model.assoc.PAtelierExpoFkAssoc.PExpo"
+    AssociationOtherEnd="model.assoc.PAtelierExpoFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PAteliersNoPk"
     PrimaryKey="true">

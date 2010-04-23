@@ -7,7 +7,7 @@
       </AppModuleConfig>
    </AppModuleConfigBag>
    <AppModuleConfigBag ApplicationName="model.AppModule">
-      <AppModuleConfig name="1282C0B047D" ApplicationName="model.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="r3lacasgu">
+      <AppModuleConfig name="1282C0FAE0E" ApplicationName="model.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="r3lacasgu">
          <Security AppModuleJndiName="model.AppModule"/>
          <Tester FullProxyInterfaceName="model.common.AppModule"/>
       </AppModuleConfig>
