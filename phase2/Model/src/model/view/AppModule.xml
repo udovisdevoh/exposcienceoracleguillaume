@@ -15,4 +15,7 @@
   <ViewUsage
     Name="PAtelierView1"
     ViewObjectName="model.view.PAtelierView"/>
+  <ViewUsage
+    Name="PCategorieView1"
+    ViewObjectName="model.view.PCategorieView"/>
 </AppModule>

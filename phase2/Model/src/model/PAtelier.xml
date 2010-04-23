@@ -243,6 +243,13 @@
       <Attr Name="_DisplaySize" Value="22"/>
     </DesignTime>
   </Attribute>
+  <AccessorAttribute
+    Name="PCategorie"
+    Association="model.assoc.PAtelierCategorieFkAssoc"
+    AssociationEnd="model.assoc.PAtelierCategorieFkAssoc.PCategorie"
+    AssociationOtherEnd="model.assoc.PAtelierCategorieFkAssoc.PAtelier"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
   <Key
     Name="PAteliersNoPk"
     PrimaryKey="true">
