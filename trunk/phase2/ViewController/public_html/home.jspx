@@ -9,10 +9,10 @@
       <af:form>
         <af:pageTemplate viewId="/templateGeneral.jspx">
           <f:facet name="main">
-            <af:region value="#{bindings.TG_loginAuditeur.regionModel}"
-                       id="tf_lo1"/>
+            <jsp:include page="/loginAuditeur/login.jsff"/>
           </f:facet>
         </af:pageTemplate>
+        <jsp:include page="/loginAuditeur/login.jsff"/>
       </af:form>
     </af:document>
   </f:view>
