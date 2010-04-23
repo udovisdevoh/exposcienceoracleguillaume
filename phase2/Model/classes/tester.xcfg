@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <BC4JConfig version="11.0" xmlns="http://xmlns.oracle.com/bc4j/configuration">
    <AppModuleConfigBag ApplicationName="model.view.AppModule">
-      <AppModuleConfig name="1282BEB7DAD" ApplicationName="model.view.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="r3lacasgu">
+      <AppModuleConfig name="1282BFC3538" ApplicationName="model.view.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="r3lacasgu">
          <Security AppModuleJndiName="model.view.AppModule"/>
          <Tester FullProxyInterfaceName="model.view.common.AppModule"/>
       </AppModuleConfig>
