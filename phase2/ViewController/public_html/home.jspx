@@ -7,11 +7,7 @@
   <f:view>
     <af:document>
       <af:form>
-        <af:pageTemplate viewId="/templateGeneral.jspx">
-          <f:facet name="main">
-            <jsp:include page="/loginAuditeur/login.jsff"/>
-          </f:facet>
-        </af:pageTemplate>
+        <af:pageTemplate viewId="/templateGeneral.jspx"/>
         <jsp:include page="/loginAuditeur/login.jsff"/>
       </af:form>
     </af:document>
