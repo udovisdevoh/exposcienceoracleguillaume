@@ -188,6 +188,13 @@
       <Attr Name="_DisplaySize" Value="7"/>
     </DesignTime>
   </Attribute>
+  <AccessorAttribute
+    Name="PEvaluation"
+    Association="model.assoc.PEvaluationAudjugeFkAssoc"
+    AssociationEnd="model.assoc.PEvaluationAudjugeFkAssoc.PEvaluation"
+    AssociationOtherEnd="model.assoc.PEvaluationAudjugeFkAssoc.PAuditeur"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
   <Key
     Name="PAuditeurNoPk"
     PrimaryKey="true">

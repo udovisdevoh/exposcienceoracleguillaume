@@ -2,6 +2,7 @@ package model;
 
 import oracle.jbo.AttributeList;
 import oracle.jbo.Key;
+import oracle.jbo.RowIterator;
 import oracle.jbo.domain.Date;
 import oracle.jbo.domain.Number;
 import oracle.jbo.server.AttributeDefImpl;
@@ -24,190 +25,203 @@ public class PAuditeurImpl
    */
   public enum AttributesEnum
   {
-    Noauditeur
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getNoauditeur();
-      }
+        Noauditeur
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getNoauditeur();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setNoauditeur((Number)value);
-      }
-    }
-    ,
-    Codeauditeur
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getCodeauditeur();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setNoauditeur((Number)value);
+            }
+        }
+        ,
+        Codeauditeur
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getCodeauditeur();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setCodeauditeur((String)value);
-      }
-    }
-    ,
-    Motdepasse
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getMotdepasse();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setCodeauditeur((String)value);
+            }
+        }
+        ,
+        Motdepasse
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getMotdepasse();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setMotdepasse((String)value);
-      }
-    }
-    ,
-    Nom
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getNom();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setMotdepasse((String)value);
+            }
+        }
+        ,
+        Nom
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getNom();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setNom((String)value);
-      }
-    }
-    ,
-    Prenom
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getPrenom();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setNom((String)value);
+            }
+        }
+        ,
+        Prenom
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getPrenom();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setPrenom((String)value);
-      }
-    }
-    ,
-    Juge
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getJuge();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setPrenom((String)value);
+            }
+        }
+        ,
+        Juge
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getJuge();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setJuge((Date)value);
-      }
-    }
-    ,
-    Rue
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getRue();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setJuge((Date)value);
+            }
+        }
+        ,
+        Rue
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getRue();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setRue((String)value);
-      }
-    }
-    ,
-    Ville
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getVille();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setRue((String)value);
+            }
+        }
+        ,
+        Ville
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getVille();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setVille((String)value);
-      }
-    }
-    ,
-    CodePostal
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getCodePostal();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setVille((String)value);
+            }
+        }
+        ,
+        CodePostal
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getCodePostal();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setCodePostal((String)value);
-      }
-    }
-    ,
-    Noregion
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getNoregion();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setCodePostal((String)value);
+            }
+        }
+        ,
+        Noregion
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getNoregion();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setNoregion((Number)value);
-      }
-    }
-    ,
-    Telephone
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getTelephone();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setNoregion((Number)value);
+            }
+        }
+        ,
+        Telephone
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getTelephone();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setTelephone((String)value);
-      }
-    }
-    ,
-    Courriel
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getCourriel();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setTelephone((String)value);
+            }
+        }
+        ,
+        Courriel
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getCourriel();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setCourriel((String)value);
-      }
-    }
-    ,
-    Statut
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getStatut();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setCourriel((String)value);
+            }
+        }
+        ,
+        Statut
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getStatut();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setStatut((String)value);
-      }
-    }
-    ,
-    Candidatjuge
-    {
-      public Object get(PAuditeurImpl obj)
-      {
-        return obj.getCandidatjuge();
-      }
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setStatut((String)value);
+            }
+        }
+        ,
+        Candidatjuge
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getCandidatjuge();
+            }
 
-      public void put(PAuditeurImpl obj, Object value)
-      {
-        obj.setCandidatjuge((Date)value);
-      }
-    }
-    ;
-    private static AttributesEnum[] vals = null;
-    private static int firstIndex = 0;
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setCandidatjuge((Date)value);
+            }
+        }
+        ,
+        PEvaluation
+        {
+            public Object get(PAuditeurImpl obj)
+            {
+                return obj.getPEvaluation();
+            }
+
+            public void put(PAuditeurImpl obj, Object value)
+            {
+                obj.setAttributeInternal(index(), value);
+            }
+        }
+        ;
+        private static AttributesEnum[] vals = null;
+        private static int firstIndex = 0;
 
     public abstract Object get(PAuditeurImpl object);
 
@@ -252,17 +266,32 @@ public class PAuditeurImpl
   public static final int STATUT = AttributesEnum.Statut.index();
   public static final int CANDIDATJUGE = AttributesEnum.Candidatjuge.index();
 
-  /**
-   * This is the default constructor (do not remove).
-   */
+    public static final int PEVALUATION = AttributesEnum.PEvaluation.index();
+
+    /**
+     * This is the default constructor (do not remove).
+     */
   public PAuditeurImpl()
   {
   }
 
-  /**
-   * Gets the attribute value for Noauditeur, using the alias name Noauditeur.
-   * @return the Noauditeur
-   */
+
+    /**
+     * @return the definition object for this instance class.
+     */
+    public static synchronized EntityDefImpl getDefinitionObject()
+    {
+        if (mDefinitionObject == null)
+        {
+            mDefinitionObject = (PAuditeurDefImpl)EntityDefImpl.findDefObject("model.PAuditeur");
+        }
+        return mDefinitionObject;
+    }
+
+    /**
+     * Gets the attribute value for Noauditeur, using the alias name Noauditeur.
+     * @return the Noauditeur
+     */
   public Number getNoauditeur()
   {
     return (Number)getAttributeInternal(NOAUDITEUR);
@@ -523,12 +552,12 @@ public class PAuditeurImpl
                                          AttributeDefImpl attrDef)
     throws Exception
   {
-    if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
-    {
-      return AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].get(this);
+        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
+        {
+            return AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].get(this);
+        }
+        return super.getAttrInvokeAccessor(index, attrDef);
     }
-    return super.getAttrInvokeAccessor(index, attrDef);
-  }
 
   /**
    * setAttrInvokeAccessor: generated method. Do not modify.
@@ -542,40 +571,37 @@ public class PAuditeurImpl
                                        AttributeDefImpl attrDef)
     throws Exception
   {
-    if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
-    {
-      AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].put(this, value);
-      return;
+        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
+        {
+            AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].put(this, value);
+            return;
+        }
+        super.setAttrInvokeAccessor(index, value, attrDef);
     }
-    super.setAttrInvokeAccessor(index, value, attrDef);
-  }
 
-  /**
-   * @param noauditeur key constituent
-
-   * @return a Key object based on given key constituents.
-   */
-  public static Key createPrimaryKey(Number noauditeur)
-  {
-    return new Key(new Object[]{noauditeur});
-  }
-
-  /**
-   * @return the definition object for this instance class.
-   */
-  public static synchronized EntityDefImpl getDefinitionObject()
-  {
-    if (mDefinitionObject == null)
+    /**
+     * @return the associated entity oracle.jbo.RowIterator.
+     */
+    public RowIterator getPEvaluation()
     {
-      mDefinitionObject = (PAuditeurDefImpl)EntityDefImpl.findDefObject("model.PAuditeur");
+        return (RowIterator) getAttributeInternal(PEVALUATION);
     }
-    return mDefinitionObject;
-  }
 
-  /**
-   * Add attribute defaulting logic in this method.
-   * @param attributeList list of attribute names/values to initialize the row
-   */
+
+    /**
+     * @param noauditeur key constituent
+
+     * @return a Key object based on given key constituents.
+     */
+    public static Key createPrimaryKey(Number noauditeur)
+    {
+        return new Key(new Object[]{noauditeur});
+    }
+
+    /**
+     * Add attribute defaulting logic in this method.
+     * @param attributeList list of attribute names/values to initialize the row
+     */
   protected void create(AttributeList attributeList)
   {
     super.create(attributeList);
