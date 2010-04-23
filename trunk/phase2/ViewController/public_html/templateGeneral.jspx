@@ -11,9 +11,9 @@
     <af:xmlContent>
       <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
         <display-name>templateGeneral</display-name>
-        <facet>
+        <!--<facet>
           <facet-name>main</facet-name>
-        </facet>
+        </facet>-->
       </component>
     </af:xmlContent>
     <af:panelBorderLayout>
