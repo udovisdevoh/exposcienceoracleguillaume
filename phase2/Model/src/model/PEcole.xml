@@ -133,6 +133,13 @@
     AssociationOtherEnd="model.assoc.PAtelierEcoleFkAssoc.PEcole"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="PExposant"
+    Association="model.assoc.PExposantEcoleFkAssoc"
+    AssociationEnd="model.assoc.PExposantEcoleFkAssoc.PExposant"
+    AssociationOtherEnd="model.assoc.PExposantEcoleFkAssoc.PEcole"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
   <Key
     Name="PEcoleNoecolePk"
     PrimaryKey="true">

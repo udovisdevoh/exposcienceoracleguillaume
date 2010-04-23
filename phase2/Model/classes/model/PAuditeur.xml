@@ -195,6 +195,13 @@
     AssociationOtherEnd="model.assoc.PEvaluationAudjugeFkAssoc.PAuditeur"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="PInscription"
+    Association="model.assoc.PInscriptionAuditeurFkAssoc"
+    AssociationEnd="model.assoc.PInscriptionAuditeurFkAssoc.PInscription"
+    AssociationOtherEnd="model.assoc.PInscriptionAuditeurFkAssoc.PAuditeur"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
   <Key
     Name="PAuditeurNoPk"
     PrimaryKey="true">

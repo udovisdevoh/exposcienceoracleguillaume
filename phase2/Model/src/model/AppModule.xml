@@ -30,4 +30,19 @@
   <ViewUsage
     Name="PExpoView1"
     ViewObjectName="model.view.PExpoView"/>
+  <ViewUsage
+    Name="PExposantView1"
+    ViewObjectName="model.view.PExposantView"/>
+  <ViewUsage
+    Name="PExposantArchiveView1"
+    ViewObjectName="model.view.PExposantArchiveView"/>
+  <ViewUsage
+    Name="PInscriptionView1"
+    ViewObjectName="model.view.PInscriptionView"/>
+  <ViewUsage
+    Name="PInscriptionArchiveView1"
+    ViewObjectName="model.view.PInscriptionArchiveView"/>
+  <ViewUsage
+    Name="PLocalView1"
+    ViewObjectName="model.view.PLocalView"/>
 </AppModule>

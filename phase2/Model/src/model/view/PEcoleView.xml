@@ -86,4 +86,9 @@
     ViewLink="model.view.link.PAtelierEcoleFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="PExposantView"
+    ViewLink="model.view.link.PExposantEcoleFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
 </ViewObject>
