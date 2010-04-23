@@ -12,4 +12,7 @@
   <ViewUsage
     Name="PAuditeurView1"
     ViewObjectName="model.view.PAuditeurView"/>
+  <ViewUsage
+    Name="PAtelierView1"
+    ViewObjectName="model.view.PAtelierView"/>
 </AppModule>

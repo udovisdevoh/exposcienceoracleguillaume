@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PAtelier"
+  Version="11.1.1.51.88"
+  DBObjectType="table"
+  DBObjectName="P_ATELIER"
+  AliasName="PAtelier"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="Noatel"
+    IsNotNull="true"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOATEL"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Noexpo"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOEXPO"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Titre"
+    Precision="30"
+    ColumnName="TITRE"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Langue"
+    Precision="1"
+    ColumnName="LANGUE"
+    Type="java.lang.String"
+    ColumnType="CHAR"
+    SQLType="CHAR"
+    TableName="P_ATELIER"
+    RetrievedOnUpdate="true"
+    RetrievedOnInsert="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="AcetateElec"
+    Precision="1"
+    Scale="0"
+    ColumnName="ACETATE_ELEC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Portable"
+    Precision="1"
+    Scale="0"
+    ColumnName="PORTABLE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Duree"
+    Precision="3"
+    Scale="0"
+    ColumnName="DUREE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nbmaximum"
+    Precision="3"
+    Scale="0"
+    ColumnName="NBMAXIMUM"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Noexposant"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOEXPOSANT"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Noecole"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOECOLE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nocategorie"
+    Precision="5"
+    Scale="0"
+    ColumnName="NOCATEGORIE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Notype"
+    Precision="1"
+    Scale="0"
+    ColumnName="NOTYPE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nolocal"
+    Precision="10"
+    ColumnName="NOLOCAL"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Dateatel"
+    ColumnName="DATEATEL"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    SQLType="TIMESTAMP"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Creepar"
+    Precision="30"
+    ColumnName="CREEPAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Datecreation"
+    ColumnName="DATECREATION"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    SQLType="TIMESTAMP"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Coutetudiant"
+    Precision="5"
+    Scale="2"
+    ColumnName="COUTETUDIANT"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Coutregulier"
+    Precision="5"
+    Scale="2"
+    ColumnName="COUTREGULIER"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_ATELIER">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="PAteliersNoPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="P_ATELIERS_NO_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Noatel"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierCategorieFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_CATEGORIE_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_CATEGORIE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Nocategorie"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierEcoleFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_ECOLE_NOECOLE_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_ECOLE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Noecole"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierExpoFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_EXPO_NOEXPO_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_EXPO_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Noexpo"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierLocalFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_LOCAL_NUMERO_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_LOCAL_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Nolocal"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierNoexposantFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_EXPOSANT_NOEXPOSANT_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_NOEXPOSANT_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Noexposant"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PAtelierTypeFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="P_TYPE_TYPE_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="P_ATELIER_TYPE_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Notype"/>
+    </AttrArray>
+  </Key>
+</Entity>
