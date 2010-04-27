@@ -25,7 +25,9 @@
   ComponentClass="model.view.PAuditeurViewImpl"
   FetchMode="FETCH_AS_NEEDED"
   PageIterMode="Full"
-  UseGlueCode="false">
+  UseGlueCode="false"
+  ComponentInterface="model.view.common.PAuditeurView"
+  ClientProxyName="model.view.client.PAuditeurViewClient">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
   </DesignTime>
@@ -127,4 +129,17 @@
     ViewLink="model.view.link.PInscriptionAuditeurFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <ClientInterface>
+    <Method
+      Name="connecter">
+      <Return
+        Type="boolean"/>
+      <Parameter
+        Name="userName"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="password"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
 </ViewObject>

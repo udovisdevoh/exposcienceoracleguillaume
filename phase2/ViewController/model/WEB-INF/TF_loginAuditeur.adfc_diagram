@@ -38,9 +38,9 @@
       <property
          name="y">436.5</property>
       <property
-         name="x">371.01953</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">371.01953</property>
       <property
          name="realized">true</property>
    </View>
@@ -59,7 +59,7 @@
       <property
          name="activityId">decisionConnecte</property>
       <property
-         name="statusDescription">Required child (case|default-outcome) missing from element router; EL token ''loginSuccess'' is unknown; EL token ''loginSuccess'' is unknown</property>
+         name="statusDescription">EL token ''loginSuccess'' is unknown; EL token ''loginSuccess'' is unknown</property>
       <property
          name="status">warning</property>
       <property
@@ -88,17 +88,19 @@
    <MethodCall
       id="MethodCall8">
       <property
+         name="status">warning</property>
+      <property
          name="activityId">auditeurConnecte</property>
       <property
-         name="statusDescription">EL token ''bindings'' is unknown; EL token ''loginSuccess'' is unknown</property>
-      <property
-         name="status">warning</property>
+         name="statusDescription">EL token ''loginSuccess'' is unknown</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">method-call - auditeurConnecte&lt;/p>&lt;/html></property>
       <property
-         name="rawDescription">method-call - auditeurConnecte</property>
+         name="binding">method</property>
       <property
          name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">method-call - auditeurConnecte</property>
       <property
          name="y">32.0</property>
       <property
@@ -109,11 +111,11 @@
       <property
          name="activityId">createInsert</property>
       <property
-         name="statusDescription">Required child missing from element method-call</property>
-      <property
-         name="status">warning</property>
+         name="status">ok</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">method-call - createInsert&lt;/p>&lt;/html></property>
+      <property
+         name="binding">method</property>
       <property
          name="rawDescription">method-call - createInsert</property>
       <property
