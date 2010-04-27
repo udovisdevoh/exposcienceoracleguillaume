@@ -10,8 +10,7 @@ import oracle.jbo.client.remote.ViewUsageImpl;
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
 public class PAuditeurViewClient
-  extends ViewUsageImpl
-  implements PAuditeurView
+  extends ViewUsageImpl implements PAuditeurView
 {
   /**
    * This is the default constructor (do not remove).
@@ -20,10 +19,10 @@ public class PAuditeurViewClient
   {
   }
 
-  public boolean connecter(String userName, String password)
-  {
-    Object _ret =
-      getApplicationModuleProxy().riInvokeExportedMethod(this,"connecter",new String [] {"java.lang.String","java.lang.String"},new Object[] {userName, password});
-    return ((Boolean)_ret).booleanValue();
-  }
+    public boolean connecter(String userName, String password)
+    {
+        Object _ret =
+            getApplicationModuleProxy().riInvokeExportedMethod(this,"connecter",new String [] {"java.lang.String","java.lang.String"},new Object[] {userName, password});
+        return ((Boolean)_ret).booleanValue();
+    }
 }

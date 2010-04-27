@@ -27,10 +27,19 @@
   PageIterMode="Full"
   UseGlueCode="false"
   ComponentInterface="model.view.common.PAuditeurView"
-  ClientProxyName="model.view.client.PAuditeurViewClient">
+  ClientProxyName="model.view.client.PAuditeurViewClient"
+  Where="UPPER(PAuditeur.CODEAUDITEUR)=UPPER(:userName) AND UPPER(PAuditeur.MOTDEPASSE)=UPPER(:passWord)">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
   </DesignTime>
+  <Variable
+    Name="userName"
+    Kind="where"
+    Type="java.lang.String"/>
+  <Variable
+    Name="passWord"
+    Kind="where"
+    Type="java.lang.String"/>
   <EntityUsage
     Name="PAuditeur"
     Entity="model.PAuditeur"/>
