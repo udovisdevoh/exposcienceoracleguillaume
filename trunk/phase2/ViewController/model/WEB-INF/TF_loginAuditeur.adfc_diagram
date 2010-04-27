@@ -32,6 +32,8 @@
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - enregistrement&lt;/p>&lt;/html></property>
       <property
+         name="binding">data</property>
+      <property
          name="exceptionHandler">false</property>
       <property
          name="rawDescription">view - enregistrement</property>
@@ -40,9 +42,9 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">371.01953</property>
-      <property
          name="realized">true</property>
+      <property
+         name="x">371.01953</property>
    </View>
    <ControlFlowCase
       islink="true"
