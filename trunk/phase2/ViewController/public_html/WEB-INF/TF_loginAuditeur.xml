@@ -17,15 +17,21 @@
         <expression>#{pageFlowScope.loginSuccess eq 'false'}</expression>
         <outcome>routeurLogin</outcome>
       </case>
+      <default-outcome>routeurLogin</default-outcome>
     </router>
     <method-call id="auditeurConnecte">
-      <method>#{bindings.auditeurConnecte.execute}</method>
+      <method>#{bindings.connecter.execute}</method>
       <return-value>#{pageFlowScope.loginSuccess}</return-value>
       <outcome>
         <fixed-outcome>decision</fixed-outcome>
       </outcome>
     </method-call>
-    <method-call id="createInsert"></method-call>
+    <method-call id="createInsert">
+      <method>#{bindings.CreateInsert.execute}</method>
+      <outcome>
+        <fixed-outcome>enregistrer</fixed-outcome>
+      </outcome>
+    </method-call>
     <task-flow-call id="TF_menuAuditeur">
       <task-flow-reference>
         <document>/WEB-INF/TF_menuAuditeur.xml</document>

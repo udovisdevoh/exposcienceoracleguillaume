@@ -9,8 +9,25 @@
   </definitionFactories>
   <pageMap>
     <page path="/home.jspx" usageId="view_homePageDef"/>
+    <page path="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur@createInsert"
+          usageId="view_TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
+    <page path="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur@auditeurConnecte"
+          usageId="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
+    <page id="view_TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"
+          path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
+    <page id="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"
+          path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
   </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
 </Application>
