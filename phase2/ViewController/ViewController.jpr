@@ -670,6 +670,7 @@
             </hash>
             <value n="jspVersion" v="2.1"/>
             <value n="name" v="JSTL Core"/>
+            <value n="runInEditor" v="true"/>
             <value n="tldURL" v="@oracle.home@../modules/glassfish.jstl_1.2.0.1.jar!/META-INF/c.tld"/>
             <value n="URI" v="http://java.sun.com/jsp/jstl/core"/>
             <value n="version" v="1.2"/>

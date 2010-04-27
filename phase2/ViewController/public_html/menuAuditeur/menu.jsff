@@ -6,11 +6,15 @@
     <f:facet name="footer"/>
     <af:outputText value="Menu"/>
     <af:panelGroupLayout layout="vertical">
-      <af:activeOutputText value="Changer de mot de passe"/>
-      <af:activeOutputText value="Changer informations nominales"/>
-      <af:activeOutputText value="Inscriptions aux ateliers"/>
-      <af:activeOutputText value="Évaluations des ateliers"/>
-      <af:activeOutputText value="Devenir juge"/>
+      <af:commandImageLink text="Changer mot de passe"
+                           action="versChangerMotDePasse"/>
+      <af:commandImageLink text="Changer informations nominales"
+                           action="versInfoPersonnelle"/>
+      <af:commandImageLink text="Inscriptions aux ateliers"
+                           action="versIncription"/>
+      <af:commandImageLink text="Évaluations des ateliers"
+                           action="versEvaluationAtelier"/>
+      <af:commandImageLink text="Devenir juge" action="versDevenirJuge"/>
     </af:panelGroupLayout>
   </af:panelFormLayout>
 </jsp:root>

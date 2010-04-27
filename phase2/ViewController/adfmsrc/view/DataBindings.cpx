@@ -13,6 +13,8 @@
           usageId="view_TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
     <page path="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur@auditeurConnecte"
           usageId="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
+    <page path="/loginAuditeur/enregistrement.jsff"
+          usageId="view_enregistrementPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -20,6 +22,8 @@
           path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
     <page id="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"
           path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
+    <page id="view_enregistrementPageDef"
+          path="loginAuditeur.enregistrementPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"

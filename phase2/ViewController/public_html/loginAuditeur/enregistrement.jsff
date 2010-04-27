@@ -1,26 +1,137 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
-          xmlns:f="http://java.sun.com/jsf/core">
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
+  <c:set var="viewcontrollerBundle"
+         value="#{adfBundle['view.ViewControllerBundle']}"/>
   <af:panelFormLayout>
     <f:facet name="footer"/>
-    <af:inputText label="Code auditeur"/>
-    <af:inputText label="Mot de passe" secret="true"/>
-    <af:inputText label="Nom"/>
-    <af:inputText label="Label 1"/>
-    <af:inputText label="Label 2"/>
-    <af:inputText label="Prénom"/>
-    <af:inputText label="Rue"/>
-    <af:inputText label="Ville"/>
-    <af:inputText label="Code postal"/>
-    <af:inputText label="No région"/>
-    <af:inputText label="Télépone"/>
-    <af:inputText label="Courriel"/>
-    <af:inputText label="Statut"/>
     <af:panelGroupLayout>
-      <af:commandButton text="Réinitialiser"/>
-      <af:commandButton text="Annuler"/>
-      <af:commandButton text="Enregistrer"/>
+      <af:panelFormLayout>
+        <af:inputText value="#{bindings.Noauditeur.inputValue}"
+                      label="#{bindings.Noauditeur.hints.label}"
+                      required="#{bindings.Noauditeur.hints.mandatory}"
+                      columns="#{bindings.Noauditeur.hints.displayWidth}"
+                      maximumLength="#{bindings.Noauditeur.hints.precision}"
+                      shortDesc="#{bindings.Noauditeur.hints.tooltip}">
+          <f:validator binding="#{bindings.Noauditeur.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.Noauditeur.format}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Codeauditeur.inputValue}"
+                      label="#{bindings.Codeauditeur.hints.label}"
+                      required="#{bindings.Codeauditeur.hints.mandatory}"
+                      columns="#{bindings.Codeauditeur.hints.displayWidth}"
+                      maximumLength="#{bindings.Codeauditeur.hints.precision}"
+                      shortDesc="#{bindings.Codeauditeur.hints.tooltip}">
+          <f:validator binding="#{bindings.Codeauditeur.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Motdepasse.inputValue}"
+                      label="#{bindings.Motdepasse.hints.label}"
+                      required="#{bindings.Motdepasse.hints.mandatory}"
+                      columns="#{bindings.Motdepasse.hints.displayWidth}"
+                      maximumLength="#{bindings.Motdepasse.hints.precision}"
+                      shortDesc="#{bindings.Motdepasse.hints.tooltip}">
+          <f:validator binding="#{bindings.Motdepasse.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Nom.inputValue}"
+                      label="#{bindings.Nom.hints.label}"
+                      required="#{bindings.Nom.hints.mandatory}"
+                      columns="#{bindings.Nom.hints.displayWidth}"
+                      maximumLength="#{bindings.Nom.hints.precision}"
+                      shortDesc="#{bindings.Nom.hints.tooltip}">
+          <f:validator binding="#{bindings.Nom.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Prenom.inputValue}"
+                      label="#{bindings.Prenom.hints.label}"
+                      required="#{bindings.Prenom.hints.mandatory}"
+                      columns="#{bindings.Prenom.hints.displayWidth}"
+                      maximumLength="#{bindings.Prenom.hints.precision}"
+                      shortDesc="#{bindings.Prenom.hints.tooltip}">
+          <f:validator binding="#{bindings.Prenom.validator}"/>
+        </af:inputText>
+        <af:inputDate value="#{bindings.Juge.inputValue}"
+                      label="#{bindings.Juge.hints.label}"
+                      required="#{bindings.Juge.hints.mandatory}"
+                      shortDesc="#{bindings.Juge.hints.tooltip}">
+          <f:validator binding="#{bindings.Juge.validator}"/>
+          <af:convertDateTime pattern="#{bindings.Juge.format}"/>
+        </af:inputDate>
+        <af:inputText value="#{bindings.Rue.inputValue}"
+                      label="#{bindings.Rue.hints.label}"
+                      required="#{bindings.Rue.hints.mandatory}"
+                      columns="#{bindings.Rue.hints.displayWidth}"
+                      maximumLength="#{bindings.Rue.hints.precision}"
+                      shortDesc="#{bindings.Rue.hints.tooltip}">
+          <f:validator binding="#{bindings.Rue.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Ville.inputValue}"
+                      label="#{bindings.Ville.hints.label}"
+                      required="#{bindings.Ville.hints.mandatory}"
+                      columns="#{bindings.Ville.hints.displayWidth}"
+                      maximumLength="#{bindings.Ville.hints.precision}"
+                      shortDesc="#{bindings.Ville.hints.tooltip}">
+          <f:validator binding="#{bindings.Ville.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.CodePostal.inputValue}"
+                      label="#{bindings.CodePostal.hints.label}"
+                      required="#{bindings.CodePostal.hints.mandatory}"
+                      columns="#{bindings.CodePostal.hints.displayWidth}"
+                      maximumLength="#{bindings.CodePostal.hints.precision}"
+                      shortDesc="#{bindings.CodePostal.hints.tooltip}">
+          <f:validator binding="#{bindings.CodePostal.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Noregion.inputValue}"
+                      label="#{bindings.Noregion.hints.label}"
+                      required="#{bindings.Noregion.hints.mandatory}"
+                      columns="#{bindings.Noregion.hints.displayWidth}"
+                      maximumLength="#{bindings.Noregion.hints.precision}"
+                      shortDesc="#{bindings.Noregion.hints.tooltip}">
+          <f:validator binding="#{bindings.Noregion.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.Noregion.format}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Telephone.inputValue}"
+                      label="#{bindings.Telephone.hints.label}"
+                      required="#{bindings.Telephone.hints.mandatory}"
+                      columns="#{bindings.Telephone.hints.displayWidth}"
+                      maximumLength="#{bindings.Telephone.hints.precision}"
+                      shortDesc="#{bindings.Telephone.hints.tooltip}">
+          <f:validator binding="#{bindings.Telephone.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Courriel.inputValue}"
+                      label="#{bindings.Courriel.hints.label}"
+                      required="#{bindings.Courriel.hints.mandatory}"
+                      columns="#{bindings.Courriel.hints.displayWidth}"
+                      maximumLength="#{bindings.Courriel.hints.precision}"
+                      shortDesc="#{bindings.Courriel.hints.tooltip}">
+          <f:validator binding="#{bindings.Courriel.validator}"/>
+        </af:inputText>
+        <af:inputText value="#{bindings.Statut.inputValue}"
+                      label="#{bindings.Statut.hints.label}"
+                      required="#{bindings.Statut.hints.mandatory}"
+                      columns="#{bindings.Statut.hints.displayWidth}"
+                      maximumLength="#{bindings.Statut.hints.precision}"
+                      shortDesc="#{bindings.Statut.hints.tooltip}">
+          <f:validator binding="#{bindings.Statut.validator}"/>
+        </af:inputText>
+        <af:inputDate value="#{bindings.Candidatjuge.inputValue}"
+                      label="#{bindings.Candidatjuge.hints.label}"
+                      required="#{bindings.Candidatjuge.hints.mandatory}"
+                      shortDesc="#{bindings.Candidatjuge.hints.tooltip}">
+          <f:validator binding="#{bindings.Candidatjuge.validator}"/>
+          <af:convertDateTime pattern="#{bindings.Candidatjuge.format}"/>
+        </af:inputDate>
+        <af:panelGroupLayout>
+          <af:resetButton text="#{viewcontrollerBundle.Reset}"/>
+          <af:commandButton text="#{viewcontrollerBundle.Cancel}"
+                            action="annuler"/>
+          <af:commandButton actionListener="#{bindings.Commit.execute}"
+                            text="#{viewcontrollerBundle.SAVE}"
+                            disabled="#{!bindings.Commit.enabled}"/>
+        </af:panelGroupLayout>
+      </af:panelFormLayout>
     </af:panelGroupLayout>
   </af:panelFormLayout>
 </jsp:root>
