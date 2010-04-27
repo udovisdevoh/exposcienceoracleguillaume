@@ -5,5 +5,12 @@
   <af:panelFormLayout>
     <f:facet name="footer"/>
     <af:outputText value="Menu"/>
+    <af:panelGroupLayout layout="vertical">
+      <af:activeOutputText value="Changer de mot de passe"/>
+      <af:activeOutputText value="Changer informations nominales"/>
+      <af:activeOutputText value="Inscriptions aux ateliers"/>
+      <af:activeOutputText value="Évaluations des ateliers"/>
+      <af:activeOutputText value="Devenir juge"/>
+    </af:panelGroupLayout>
   </af:panelFormLayout>
 </jsp:root>
