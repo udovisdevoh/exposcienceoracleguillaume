@@ -13,7 +13,7 @@
             ReturnName="AppModuleDataControl.methodResults.connecter_AppModuleDataControl_PAuditeurView1_connecter_result">
       <NamedData NDName="userName" NDValue="#{pageFlowScope.codeUsager}"
                  NDType="java.lang.String" NDOption="2"/>
-      <NamedData NDName="password" NDValue="#{pageFlowScope.motDePasser}"
+      <NamedData NDName="password" NDValue="#{pageFlowScope.motDePasse}"
                  NDType="java.lang.String" NDOption="2"/>
     </action>
   </bindings>
