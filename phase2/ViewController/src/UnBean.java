@@ -50,4 +50,16 @@ public class UnBean
     }
     return null;
   }
+
+  public String commandButton_enregistrer()
+  {
+    BindingContainer bindings = getBindings();
+    OperationBinding operationBinding = bindings.getOperationBinding("Commit");
+    Object result = operationBinding.execute();
+    if (!operationBinding.getErrors().isEmpty())
+    {
+      return null;
+    }
+    return null;
+  }
 }
