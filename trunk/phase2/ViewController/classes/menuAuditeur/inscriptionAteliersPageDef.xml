@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="inscriptionAteliersPageDef"
+                Package="menuAuditeur">
+  <parameters/>
+  <executables>
+    <iterator Binds="PAtelierView1" RangeSize="25"
+              DataControl="AppModuleDataControl" id="PAtelierView1Iterator"/>
+    <searchRegion Criteria="PAtelierViewCriteria"
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="PAtelierView1Iterator" id="PAtelierViewCriteriaQuery"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

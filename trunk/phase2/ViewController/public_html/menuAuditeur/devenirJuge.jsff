@@ -5,7 +5,7 @@
   
   <af:panelGroupLayout layout="horizontal">
     <af:commandButton text="Soumettre ma candidature"/>
-    <af:commandButton text="Retour"/>
+    <af:commandButton text="Retour" action="versMenuDevenirJuge"/>
   </af:panelGroupLayout>
   
   <af:panelGroupLayout layout="horizontal">
@@ -13,5 +13,4 @@
     <af:outputText value="date"/>
     <af:commandButton text="Annuler ma canditature"/>
   </af:panelGroupLayout>
-  <af:commandButton text="Retour"/>
 </jsp:root>
