@@ -19,6 +19,8 @@
           usageId="view_infoPersonnellePageDef"/>
     <page path="/menuAuditeur/changeMotDePasse.jsff"
           usageId="view_changeMotDePassePageDef"/>
+    <page path="/menuAuditeur/inscriptionAteliers.jsff"
+          usageId="view_inscriptionAteliersPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -32,6 +34,8 @@
           path="menuAuditeur.infoPersonnellePageDef"/>
     <page id="view_changeMotDePassePageDef"
           path="menuAuditeur.changeMotDePassePageDef"/>
+    <page id="view_inscriptionAteliersPageDef"
+          path="menuAuditeur.inscriptionAteliersPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"

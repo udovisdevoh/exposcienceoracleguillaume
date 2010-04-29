@@ -1,2 +1,18 @@
 <?xml version='1.0' encoding='windows-1252'?>
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"></jsp:root>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelFormLayout>
+    <f:facet name="footer"/>
+    <af:panelGroupLayout layout="vertical">
+      <af:panelHeader text="Recherche-Inscription Ateliers">
+        <af:commandButton text="Retour" action="versMenuInscription"/>
+        <af:query id="qryId1" headerText="Search" disclosed="true"
+                  value="#{bindings.PAtelierViewCriteriaQuery.queryDescriptor}"
+                  model="#{bindings.PAtelierViewCriteriaQuery.queryModel}"
+                  queryListener="#{bindings.PAtelierViewCriteriaQuery.processQuery}"
+                  queryOperationListener="#{bindings.PAtelierViewCriteriaQuery.processQueryOperation}"/>
+      </af:panelHeader>
+    </af:panelGroupLayout>
+  </af:panelFormLayout>
+</jsp:root>

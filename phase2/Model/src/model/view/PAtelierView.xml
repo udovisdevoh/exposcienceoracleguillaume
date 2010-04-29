@@ -144,6 +144,64 @@
     EntityAttrName="Coutregulier"
     EntityUsage="PAtelier"
     AliasName="COUTREGULIER"/>
+  <ViewCriteria
+    Name="PAtelierViewCriteria"
+    ViewObjectName="model.view.PAtelierView"
+    Conjunction="AND">
+    <Properties>
+      <CustomProperties>
+        <Property
+          Name="displayOperators"
+          Value="InAdvancedMode"/>
+        <Property
+          Name="autoExecute"
+          Value="true"/>
+        <Property
+          Name="allowConjunctionOverride"
+          Value="true"/>
+        <Property
+          Name="showInList"
+          Value="true"/>
+        <Property
+          Name="mode"
+          Value="Advanced"/>
+      </CustomProperties>
+    </Properties>
+    <ViewCriteriaRow
+      Name="vcrow1"
+      UpperColumns="1">
+      <ViewCriteriaItem
+        Name="Titre"
+        ViewAttribute="Titre"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="Langue"
+        ViewAttribute="Langue"
+        Operator="STARTSWITH"
+        Conjunction="AND"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="Nocategorie"
+        ViewAttribute="Nocategorie"
+        Operator="="
+        Conjunction="AND"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="Notype"
+        ViewAttribute="Notype"
+        Operator="="
+        Conjunction="AND"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="Dateatel"
+        ViewAttribute="Dateatel"
+        Operator="="
+        Conjunction="AND"
+        Required="Optional"/>
+    </ViewCriteriaRow>
+  </ViewCriteria>
   <ViewLinkAccessor
     Name="PEvaluationView"
     ViewLink="model.view.link.PEvaluationAtelierFkLink"
