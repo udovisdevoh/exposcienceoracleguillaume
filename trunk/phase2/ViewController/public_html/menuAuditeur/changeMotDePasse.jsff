@@ -3,6 +3,13 @@
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
   <strong><af:outputLabel value="Changer de mot de passe"/></strong>
   <af:inputText label="Mot de passe actuel"/>
-  <af:inputText label="Nouveau mot de passe"/>
-  <af:inputText label="Confirmation de mot de passe"/>
+  <af:inputText label="Nouveau mot de passe" secret="true"/>
+  <af:inputText label="Confirmation de mot de passe" secret="true"/>
+  <af:panelGroupLayout>
+    <af:resetButton text="Effacer"/>
+    <af:commandButton text="Appliquer"
+                      action="#{UnBean.commandButton_action}"/>
+    <af:commandButton text="Retour" action="versMenuChangerMotDePasse"/>
+  </af:panelGroupLayout>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:UnBean-->
 </jsp:root>
