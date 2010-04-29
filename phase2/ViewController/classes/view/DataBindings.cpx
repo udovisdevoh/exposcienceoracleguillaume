@@ -15,6 +15,10 @@
           usageId="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
     <page path="/loginAuditeur/enregistrement.jsff"
           usageId="view_enregistrementPageDef"/>
+    <page path="/menuAuditeur/infoPersonnelle.jsff"
+          usageId="view_infoPersonnellePageDef"/>
+    <page path="/menuAuditeur/changeMotDePasse.jsff"
+          usageId="view_changeMotDePassePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -24,6 +28,10 @@
           path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
     <page id="view_enregistrementPageDef"
           path="loginAuditeur.enregistrementPageDef"/>
+    <page id="view_infoPersonnellePageDef"
+          path="menuAuditeur.infoPersonnellePageDef"/>
+    <page id="view_changeMotDePassePageDef"
+          path="menuAuditeur.changeMotDePassePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"

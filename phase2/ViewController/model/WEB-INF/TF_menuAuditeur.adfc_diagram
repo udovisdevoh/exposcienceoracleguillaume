@@ -36,9 +36,9 @@
       <property
          name="y">112.5</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">205.01855</property>
+      <property
+         name="pageFragment">true</property>
       <property
          name="realized">true</property>
    </View>
@@ -49,6 +49,8 @@
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - infoPersonnelle&lt;/p>&lt;/html></property>
       <property
+         name="binding">data</property>
+      <property
          name="exceptionHandler">false</property>
       <property
          name="rawDescription">view - infoPersonnelle</property>
@@ -57,9 +59,9 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">541.3613</property>
-      <property
          name="realized">true</property>
+      <property
+         name="x">541.3613</property>
    </View>
    <View
       id="View5">
@@ -74,9 +76,9 @@
       <property
          name="y">302.5</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">71.68945</property>
+      <property
+         name="pageFragment">true</property>
       <property
          name="realized">true</property>
    </View>
@@ -87,6 +89,8 @@
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - changeMotDePasse&lt;/p>&lt;/html></property>
       <property
+         name="binding">data</property>
+      <property
          name="exceptionHandler">false</property>
       <property
          name="rawDescription">view - changeMotDePasse</property>
@@ -95,9 +99,9 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">678.0322</property>
-      <property
          name="realized">true</property>
+      <property
+         name="x">678.0322</property>
    </View>
    <View
       id="View7">
@@ -112,9 +116,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">357.36133</property>
+      <property
+         name="pageFragment">true</property>
       <property
          name="realized">true</property>
    </View>
