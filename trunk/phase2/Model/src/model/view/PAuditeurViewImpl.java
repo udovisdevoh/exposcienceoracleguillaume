@@ -20,10 +20,10 @@ public class PAuditeurViewImpl extends ViewObjectImpl implements PAuditeurView
 
     public boolean connecter(String userName, String password)
     {
-        System.out.println("Methode connecter");
+        System.out.println("Methode connecter avec " + userName + " et " + password);
         setuserName(userName);
         setpassWord(password);
-        executeQuery();
+        executeQuery();        
         return (getRowCount()>0);
     }
 

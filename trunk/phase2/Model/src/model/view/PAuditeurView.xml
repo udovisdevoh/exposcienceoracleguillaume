@@ -28,7 +28,7 @@
   UseGlueCode="false"
   ComponentInterface="model.view.common.PAuditeurView"
   ClientProxyName="model.view.client.PAuditeurViewClient"
-  Where="UPPER(PAuditeur.CODEAUDITEUR)=UPPER(:userName) AND UPPER(PAuditeur.MOTDEPASSE)=UPPER(:passWord)">
+  Where="PAuditeur.CODEAUDITEUR=:userName AND PAuditeur.MOTDEPASSE=:passWord">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
   </DesignTime>
