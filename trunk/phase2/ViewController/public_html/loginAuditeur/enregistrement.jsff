@@ -126,9 +126,10 @@
         <af:resetButton text="#{viewcontrollerBundle.Reset}"/>
         <af:commandButton text="#{viewcontrollerBundle.Cancel}"
                           action="annuler"/>
-        <af:commandButton actionListener="#{bindings.Commit.execute}"
+        <af:commandButton
                           text="#{viewcontrollerBundle.SAVE}"
-                          disabled="#{!bindings.Commit.enabled}"/>
+                          disabled="#{!bindings.Commit.enabled}"
+                          action="#{UnBean.commandButton_enregistrer}"/>
       </af:panelGroupLayout>
     </af:panelFormLayout>
   </af:panelGroupLayout>
