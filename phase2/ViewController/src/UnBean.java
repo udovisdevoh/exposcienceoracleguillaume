@@ -103,4 +103,14 @@ public class UnBean
     {
         return confirmationMotDePasse;
     }
+
+    public void setBindings(BindingContainer bindings)
+    {
+        this.bindings = bindings;
+    }
+
+    public BindingContainer getBindings1()
+    {
+        return bindings;
+    }
 }
