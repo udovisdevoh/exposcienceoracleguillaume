@@ -28,9 +28,13 @@
   UseGlueCode="false"
   ComponentInterface="model.view.common.PAuditeurView"
   ClientProxyName="model.view.client.PAuditeurViewClient"
-  Where="PAuditeur.CODEAUDITEUR=:userName AND PAuditeur.MOTDEPASSE=:passWord">
+  Where="PAuditeur.CODEAUDITEUR=:userName AND PAuditeur.MOTDEPASSE=:passWord"
+  RowClass="model.view.PAuditeurViewRowImpl"
+  RowInterface="model.view.common.PAuditeurViewRow"
+  ClientRowProxyName="model.view.client.PAuditeurViewRowClient">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
+    <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>
   <Variable
     Name="userName"
@@ -151,4 +155,20 @@
         Type="java.lang.String"/>
     </Method>
   </ClientInterface>
+  <ClientRowInterface>
+    <Method
+      Name="modifierMotDePasse">
+      <Return
+        Type="void"/>
+      <Parameter
+        Name="ancienMotDePasse"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="nouveauMotDePasse"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="confirmationMotDePasse"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientRowInterface>
 </ViewObject>

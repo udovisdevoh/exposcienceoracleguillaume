@@ -3,6 +3,19 @@
                 version="11.1.1.51.88" id="changeMotDePassePageDef"
                 Package="menuAuditeur">
   <parameters/>
-  <executables/>
-  <bindings/>
+  <executables>
+    <iterator id="PAuditeurView1Iterator" RangeSize="10" Binds="PAuditeurView1"
+              DataControl="AppModuleDataControl"/>
+  </executables>
+  <bindings>
+    <methodAction IterBinding="PAuditeurView1Iterator" id="modifierMotDePasse"
+                  InstanceName="bindings.PAuditeurView1Iterator.currentRow"
+                  DataControl="AppModuleDataControl" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="modifierMotDePasse"
+                  IsViewObjectMethod="false" IsLocalObjectReference="true">
+      <NamedData NDName="ancienMotDePasse" NDType="java.lang.String"/>
+      <NamedData NDName="nouveauMotDePasse" NDType="java.lang.String"/>
+      <NamedData NDName="confirmationMotDePasse" NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
 </pageDefinition>
