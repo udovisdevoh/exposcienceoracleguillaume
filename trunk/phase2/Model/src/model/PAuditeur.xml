@@ -127,6 +127,13 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="6"/>
     </DesignTime>
+    <validation:RegExpValidationBean
+      Name="CodePostal_Rule_0"
+      OnAttribute="CodePostal"
+      Pattern="[a-z][0-9][a-z][0-9][a-z][0-9]"
+      Inverse="false"
+      Flags="CaseInsensitive"
+      ResId="model.PAuditeur.CodePostal_Rule_0"/>
   </Attribute>
   <Attribute
     Name="Noregion"
@@ -210,6 +217,7 @@
       <Attr Name="_checkCondition" Value='"CODEAUDITEUR" IS NOT NULL'/>
       <Attr Name="_isCheck" Value="true"/>
     </DesignTime>
+    <AttrArray Name="Attributes"/>
   </Key>
   <Key
     Name="PAuditeurNoPk"
