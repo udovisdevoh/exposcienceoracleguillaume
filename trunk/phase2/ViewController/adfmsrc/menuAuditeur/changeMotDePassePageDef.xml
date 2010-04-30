@@ -13,9 +13,31 @@
                   DataControl="AppModuleDataControl" RequiresUpdateModel="true"
                   Action="invokeMethod" MethodName="modifierMotDePasse"
                   IsViewObjectMethod="false" IsLocalObjectReference="true">
-      <NamedData NDName="ancienMotDePasse" NDType="java.lang.String"/>
-      <NamedData NDName="nouveauMotDePasse" NDType="java.lang.String"/>
-      <NamedData NDName="confirmationMotDePasse" NDType="java.lang.String"/>
+      <NamedData NDName="ancienMotDePasse"
+                 NDValue="#{pageFlowScope.oldPassword}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="nouveauMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword1}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="confirmationMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword2}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+    <methodAction id="modifierMotDePasse1" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="modifierMotDePasse"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.PAuditeurView1"
+                  ReturnName="AppModuleDataControl.methodResults.modifierMotDePasse_AppModuleDataControl_PAuditeurView1_modifierMotDePasse_result"
+                  IterBinding="PAuditeurView1Iterator">
+      <NamedData NDName="ancienMotDePasse"
+                 NDValue="#{pageFlowScope.oldPassword}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="nouveauMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword1}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="confirmationMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword2}"
+                 NDType="java.lang.String"/>
     </methodAction>
   </bindings>
 </pageDefinition>

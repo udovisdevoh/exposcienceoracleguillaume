@@ -55,7 +55,6 @@
     <AttrArray Name="AttrNames">
       <Item Value="Noregion"/>
     </AttrArray>
-    <AttrArray Name="DerivedAttrNames"/>
     <AttrArray Name="ListAttrNames">
       <Item Value="Noregion"/>
     </AttrArray>
@@ -180,6 +179,20 @@
         Type="java.lang.String"/>
       <Parameter
         Name="password"
+        Type="java.lang.String"/>
+    </Method>
+    <Method
+      Name="modifierMotDePasse">
+      <Return
+        Type="boolean"/>
+      <Parameter
+        Name="ancienMotDePasse"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="nouveauMotDePasse"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="confirmationMotDePasse"
         Type="java.lang.String"/>
     </Method>
   </ClientInterface>

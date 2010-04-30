@@ -4,15 +4,21 @@
   <strong><af:outputLabel value="Changer de mot de passe"/></strong>
   <af:inputText label="Mot de passe actuel"
                 validator="#{UnBean.inputText_validator}"
-                binding="#{UnBean.ancienMotDePasse}" secret="true"/>
+                binding="#{UnBean.ancienMotDePasse}" secret="true"
+                value="#{pageFlowScope.oldPassword}"/>
   <af:inputText label="Nouveau mot de passe" secret="true"
-                binding="#{UnBean.nouveauMotDePasse}"/>
+                binding="#{UnBean.nouveauMotDePasse}"
+                value="#{pageFlowScope.newPassword1}"/>
   <af:inputText label="Confirmation de mot de passe" secret="true"
-                binding="#{UnBean.confirmationMotDePasse}"/>
+                binding="#{UnBean.confirmationMotDePasse}"
+                value="#{pageFlowScope.newPassword2}"/>
   <af:panelGroupLayout>
     <af:resetButton text="Effacer"/>
     <af:commandButton text="Appliquer"
                       action="#{UnBean.commandButton_action}"/>
+    <af:commandButton actionListener="#{bindings.modifierMotDePasse1.execute}"
+                      text="modifierMotDePasse1"
+                      disabled="#{!bindings.modifierMotDePasse1.enabled}"/>
     <af:commandButton text="Retour" action="versMenuChangerMotDePasse"/>
   </af:panelGroupLayout>
   <!--oracle-jdev-comment:preferred-managed-bean-name:UnBean-->
