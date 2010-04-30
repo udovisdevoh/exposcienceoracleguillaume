@@ -159,4 +159,22 @@ public class PAuditeurViewImpl extends ViewObjectImpl
         appModuleImpl.getDBTransaction().commit();
         return true;
     }
+    
+    public boolean editProfile(String nom, String prenom, String rue, String ville, String codePostal, String telephone, String courriel)
+    {
+        PAuditeurViewRowImpl row = (PAuditeurViewRowImpl) this.getRowAtRangeIndex(0);
+        row.setNom(nom);
+        row.setPrenom(prenom);
+        row.setRue(rue);
+        row.setVille(ville);
+        row.setCodePostal(codePostal);
+        row.setTelephone(telephone);
+        row.setCourriel(courriel);
+        
+        AppModuleImpl appModuleImpl =
+            (AppModuleImpl) getApplicationModule();
+        appModuleImpl.getDBTransaction().commit();
+        
+        return true;
+    }
 }

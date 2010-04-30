@@ -23,4 +23,8 @@ public interface PAuditeurView
     String getDateDevenuJuge();
 
     boolean annulerDemandeJuge();
+
+    boolean editProfile(String nom, String prenom, String rue,
+                        String ville, String codePostal, String telephone,
+                        String courriel);
 }

@@ -249,6 +249,32 @@
       <Return
         Type="boolean"/>
     </Method>
+    <Method
+      Name="editProfile">
+      <Return
+        Type="boolean"/>
+      <Parameter
+        Name="nom"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="prenom"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="rue"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="ville"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="codePostal"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="telephone"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="courriel"
+        Type="java.lang.String"/>
+    </Method>
   </ClientInterface>
   <ResourceBundle>
     <PropertiesBundle
