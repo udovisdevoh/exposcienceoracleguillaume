@@ -72,17 +72,19 @@
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - devenirJuge&lt;/p>&lt;/html></property>
       <property
+         name="binding">data</property>
+      <property
          name="exceptionHandler">false</property>
       <property
          name="rawDescription">view - devenirJuge</property>
       <property
-         name="y">302.5</property>
-      <property
-         name="x">71.68945</property>
+         name="y">220.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
+      <property
+         name="x">102.68945</property>
    </View>
    <View
       id="View6">
@@ -118,9 +120,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="x">357.36133</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">357.36133</property>
       <property
          name="realized">true</property>
    </View>
@@ -146,33 +148,13 @@
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase10"
-      from="View2"
-      to="View5">
-      <property
-         name="fromOutcome">versDevenirJuge</property>
-      <property
-         name="sdm:polyPoints">L46,315.5,299.0,112.68945,299.0,R46</property>
-   </ControlFlowCase>
-   <ControlFlowCase
-      islink="true"
-      id="ControlFlowCase11"
-      from="View5"
-      to="View2">
-      <property
-         name="fromOutcome">versMenuDevenirJuge</property>
-      <property
-         name="sdm:polyPoints">R54,112.68945,306.0,315.5,306.0,L54</property>
-   </ControlFlowCase>
-   <ControlFlowCase
-      islink="true"
       id="ControlFlowCase12"
       from="View2"
       to="View3">
       <property
          name="fromOutcome">versIncription</property>
       <property
-         name="sdm:polyPoints">T50,356.5,248.5,205.01855,166.5,B50</property>
+         name="sdm:polyPoints">T33,346.0,248.5,201.51855,170.6269,B44</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -192,7 +174,7 @@
       <property
          name="fromOutcome">versInfoPersonnelle</property>
       <property
-         name="sdm:polyPoints">T61,363.5,248.5,500.36133,113.5,L50</property>
+         name="sdm:polyPoints">T56,360.0,245.57237,497.5117,110.0,L46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -223,5 +205,97 @@
          name="fromOutcome">versMenuChangerMotDePasse</property>
       <property
          name="sdm:polyPoints">L54,637.0322,306.0,397.5,306.0,R54</property>
+   </ControlFlowCase>
+   <MethodCall
+      id="MethodCall18">
+      <property
+         name="status">warning</property>
+      <property
+         name="activityId">getDateDevenuJuge</property>
+      <property
+         name="statusDescription">EL token ''dateDevenuCandidatJuge'' is unknown</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">method-call - getDateDevenuJuge&lt;/p>&lt;/html></property>
+      <property
+         name="binding">method</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">method-call - getDateDevenuJuge</property>
+      <property
+         name="y">314.5</property>
+      <property
+         name="x">-102.293945</property>
+   </MethodCall>
+   <MethodCall
+      id="MethodCall19">
+      <property
+         name="status">warning</property>
+      <property
+         name="activityId">getDateDevenuCandidatJuge</property>
+      <property
+         name="statusDescription">EL token ''dateDevenuJuge'' is unknown</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">method-call - getDateDevenuCandidatJuge&lt;/p>&lt;/html></property>
+      <property
+         name="binding">method</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">method-call - getDateDevenuCandidatJuge</property>
+      <property
+         name="y">404.5</property>
+      <property
+         name="x">122.72363</property>
+   </MethodCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase22"
+      from="View2"
+      to="MethodCall19">
+      <property
+         name="fromOutcome">versDevenirCandidatJuge</property>
+      <property
+         name="sdm:polyPoints">L54,315.5,306.0,163.72363,404.5,R50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase23"
+      from="MethodCall19"
+      to="MethodCall18">
+      <property
+         name="fromOutcome">getDateDevenuCandidatJuge</property>
+      <property
+         name="sdm:polyPoints">L50,81.72363,404.5,-61.293945,318.0,R54</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase24"
+      from="MethodCall18"
+      to="View5">
+      <property
+         name="fromOutcome">getDateDevenuJuge</property>
+      <property
+         name="sdm:polyPoints">R46,-61.293945,311.0,61.689453,220.5,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase25"
+      from="View5"
+      to="View2">
+      <property
+         name="fromOutcome">retourMenu</property>
+      <property
+         name="sdm:polyPoints">R50,143.68945,220.5,315.5,299.0,L46</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase26"
+      from="View5"
+      to="MethodCall19">
+      <property
+         name="fromOutcome">refresh</property>
+      <property
+         name="sdm:polyPoints">B50,102.68945,274.5,122.72363,350.5,T50</property>
    </ControlFlowCase>
 </SDM>

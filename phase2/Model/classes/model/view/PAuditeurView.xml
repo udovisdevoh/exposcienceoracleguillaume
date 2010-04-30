@@ -76,7 +76,6 @@
     <AttrArray Name="AttrNames">
       <Item Value="Statut"/>
     </AttrArray>
-    <AttrArray Name="DerivedAttrNames"/>
     <AttrArray Name="ListAttrNames">
       <Item Value="Code"/>
     </AttrArray>
@@ -223,6 +222,26 @@
         Type="java.lang.String"/>
       <Parameter
         Name="confirmationMotDePasse"
+        Type="java.lang.String"/>
+    </Method>
+    <Method
+      Name="soumettreCandidatureJuge">
+      <Return
+        Type="boolean"/>
+    </Method>
+    <Method
+      Name="annulerCandidatureJuge">
+      <Return
+        Type="boolean"/>
+    </Method>
+    <Method
+      Name="getDateDevenuCandidatJuge">
+      <Return
+        Type="java.lang.String"/>
+    </Method>
+    <Method
+      Name="getDateDevenuJuge">
+      <Return
         Type="java.lang.String"/>
     </Method>
   </ClientInterface>

@@ -17,7 +17,8 @@
                            action="versIncription"/>
       <af:commandImageLink text="#{viewcontrollerBundle.EVALUATION_DES_ATELIERS}"
                            action="versEvaluationAtelier"/>
-      <af:commandImageLink text="Devenir juge" action="versDevenirJuge"/>
+      <af:commandImageLink text="Devenir juge"
+                           action="versDevenirCandidatJuge"/>
     </af:panelGroupLayout>
   </af:panelFormLayout>
 </jsp:root>
