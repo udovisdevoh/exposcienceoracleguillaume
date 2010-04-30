@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-  <af:outputLabel value="Candidature juge"/>
+  <af:outputLabel value="Candidature juge" inlineStyle="font-size:medium;"/>
   
   <af:panelGroupLayout layout="horizontal">
     <af:commandButton text="Soumettre ma candidature"/>
