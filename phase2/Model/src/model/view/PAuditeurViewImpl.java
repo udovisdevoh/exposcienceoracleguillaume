@@ -12,7 +12,8 @@ import oracle.jbo.server.ViewObjectImpl;
 // ---    Custom code may be added to this class.
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
-public class PAuditeurViewImpl extends ViewObjectImpl implements PAuditeurView
+public class PAuditeurViewImpl extends ViewObjectImpl
+  implements PAuditeurView
 {
     /**
      * This is the default constructor (do not remove).

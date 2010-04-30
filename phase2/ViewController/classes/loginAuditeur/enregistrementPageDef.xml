@@ -65,11 +65,6 @@
         <Item Value="Courriel"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Statut">
-      <AttrNames>
-        <Item Value="Statut"/>
-      </AttrNames>
-    </attributeValues>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Candidatjuge">
       <AttrNames>
         <Item Value="Candidatjuge"/>
@@ -77,5 +72,7 @@
     </attributeValues>
     <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction"
             DataControl="AppModuleDataControl"/>
+    <list IterBinding="PAuditeurView1Iterator" StaticList="false"
+          Uses="LOV_Statut" id="Statut" DTSupportsMRU="false"/>
   </bindings>
 </pageDefinition>

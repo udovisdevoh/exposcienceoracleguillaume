@@ -23,229 +23,242 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
      */
     public enum AttributesEnum
     {
-        Noauditeur
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getNoauditeur();
-            }
+    Noauditeur
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getNoauditeur();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setNoauditeur((Number)value);
-            }
-        }
-        ,
-        Codeauditeur
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getCodeauditeur();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setNoauditeur((Number)value);
+      }
+    }
+    ,
+    Codeauditeur
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getCodeauditeur();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setCodeauditeur((String)value);
-            }
-        }
-        ,
-        Motdepasse
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getMotdepasse();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setCodeauditeur((String)value);
+      }
+    }
+    ,
+    Motdepasse
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getMotdepasse();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setMotdepasse((String)value);
-            }
-        }
-        ,
-        Nom
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getNom();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setMotdepasse((String)value);
+      }
+    }
+    ,
+    Nom
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getNom();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setNom((String)value);
-            }
-        }
-        ,
-        Prenom
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getPrenom();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setNom((String)value);
+      }
+    }
+    ,
+    Prenom
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPrenom();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setPrenom((String)value);
-            }
-        }
-        ,
-        Juge
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getJuge();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setPrenom((String)value);
+      }
+    }
+    ,
+    Juge
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getJuge();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setJuge((Date)value);
-            }
-        }
-        ,
-        Rue
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getRue();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setJuge((Date)value);
+      }
+    }
+    ,
+    Rue
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getRue();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setRue((String)value);
-            }
-        }
-        ,
-        Ville
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getVille();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setRue((String)value);
+      }
+    }
+    ,
+    Ville
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getVille();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setVille((String)value);
-            }
-        }
-        ,
-        CodePostal
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getCodePostal();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setVille((String)value);
+      }
+    }
+    ,
+    CodePostal
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getCodePostal();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setCodePostal((String)value);
-            }
-        }
-        ,
-        Noregion
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getNoregion();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setCodePostal((String)value);
+      }
+    }
+    ,
+    Noregion
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getNoregion();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setNoregion((Number)value);
-            }
-        }
-        ,
-        Telephone
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getTelephone();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setNoregion((Number)value);
+      }
+    }
+    ,
+    Telephone
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getTelephone();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setTelephone((String)value);
-            }
-        }
-        ,
-        Courriel
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getCourriel();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setTelephone((String)value);
+      }
+    }
+    ,
+    Courriel
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getCourriel();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setCourriel((String)value);
-            }
-        }
-        ,
-        Statut
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getStatut();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setCourriel((String)value);
+      }
+    }
+    ,
+    Statut
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getStatut();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setStatut((String)value);
-            }
-        }
-        ,
-        Candidatjuge
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getCandidatjuge();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setStatut((String)value);
+      }
+    }
+    ,
+    Candidatjuge
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getCandidatjuge();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setCandidatjuge((Date)value);
-            }
-        }
-        ,
-        PEvaluationView
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getPEvaluationView();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setCandidatjuge((Date)value);
+      }
+    }
+    ,
+    PEvaluationView
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPEvaluationView();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setAttributeInternal(index(), value);
-            }
-        }
-        ,
-        PInscriptionView
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getPInscriptionView();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
+    ,
+    PInscriptionView
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPInscriptionView();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setAttributeInternal(index(), value);
-            }
-        }
-        ,
-        PRegionView1
-        {
-            public Object get(PAuditeurViewRowImpl obj)
-            {
-                return obj.getPRegionView1();
-            }
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
+    ,
+    PRegionView1
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPRegionView1();
+      }
 
-            public void put(PAuditeurViewRowImpl obj, Object value)
-            {
-                obj.setAttributeInternal(index(), value);
-            }
-        }
-        ;
-        private static AttributesEnum[] vals = null;
-        private static int firstIndex = 0;
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
+    ,
+    PStatutAuditeurView1
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPStatutAuditeurView1();
+      }
+
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
+    ;
+    private static AttributesEnum[] vals = null;
+    private static int firstIndex = 0;
 
         public abstract Object get(PAuditeurViewRowImpl object);
 
@@ -300,9 +313,11 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
 
     public static final int PREGIONVIEW1 = AttributesEnum.PRegionView1.index();
 
-    /**
-     * This is the default constructor (do not remove).
-     */
+  public static final int PSTATUTAUDITEURVIEW1 = AttributesEnum.PStatutAuditeurView1.index();
+
+  /**
+   * This is the default constructor (do not remove).
+   */
     public PAuditeurViewRowImpl()
     {
     }
@@ -592,23 +607,31 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
         return (RowSet) getAttributeInternal(PREGIONVIEW1);
     }
 
-    /**
-     * getAttrInvokeAccessor: generated method. Do not modify.
-     * @param index the index identifying the attribute
-     * @param attrDef the attribute
+  /**
+   * Gets the view accessor <code>RowSet</code> PStatutAuditeurView1.
+   */
+  public RowSet getPStatutAuditeurView1()
+  {
+    return (RowSet) getAttributeInternal(PSTATUTAUDITEURVIEW1);
+  }
 
-     * @return the attribute value
-     * @throws Exception
-     */
+  /**
+   * getAttrInvokeAccessor: generated method. Do not modify.
+   * @param index the index identifying the attribute
+   * @param attrDef the attribute
+
+   * @return the attribute value
+   * @throws Exception
+   */
     protected Object getAttrInvokeAccessor(int index,
                                            AttributeDefImpl attrDef) throws Exception
     {
-        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
-        {
-            return AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].get(this);
-        }
-        return super.getAttrInvokeAccessor(index, attrDef);
+    if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
+    {
+      return AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].get(this);
     }
+    return super.getAttrInvokeAccessor(index, attrDef);
+  }
 
     /**
      * setAttrInvokeAccessor: generated method. Do not modify.
@@ -621,13 +644,13 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
     protected void setAttrInvokeAccessor(int index, Object value,
                                          AttributeDefImpl attrDef) throws Exception
     {
-        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
-        {
-            AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].put(this, value);
-            return;
-        }
-        super.setAttrInvokeAccessor(index, value, attrDef);
+    if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
+    {
+      AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].put(this, value);
+      return;
     }
+    super.setAttrInvokeAccessor(index, value, attrDef);
+  }
 
     /**
      * Sample exportable method.
