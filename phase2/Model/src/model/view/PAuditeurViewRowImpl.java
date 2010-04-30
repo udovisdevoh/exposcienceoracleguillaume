@@ -642,23 +642,4 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
     public void samplePAuditeurViewRowImplExportable2(String testParam1)
     {
     }
-
-    public boolean modifierMotDePasse(String ancienMotDePasse,
-                                      String nouveauMotDePasse,
-                                      String confirmationMotDePasse)
-    {
-        System.out.println("Methode modifier mot de passe");
-        if (this.getMotdepasse().equals(ancienMotDePasse))
-        {
-            if (nouveauMotDePasse.equals(confirmationMotDePasse))
-            {
-                this.setMotdepasse(nouveauMotDePasse);
-                AppModuleImpl appModuleImpl =
-                    (AppModuleImpl) getApplicationModule();
-                appModuleImpl.getDBTransaction().commit();
-                return true;
-            }
-        }
-        return false;
-    }
 }

@@ -25,4 +25,13 @@ public class PAuditeurViewClient
             getApplicationModuleProxy().riInvokeExportedMethod(this,"connecter",new String [] {"java.lang.String","java.lang.String"},new Object[] {userName, password});
         return ((Boolean)_ret).booleanValue();
     }
+
+    public boolean modifierMotDePasse(String ancienMotDePasse,
+                                      String nouveauMotDePasse,
+                                      String confirmationMotDePasse)
+    {
+        Object _ret =
+            getApplicationModuleProxy().riInvokeExportedMethod(this,"modifierMotDePasse",new String [] {"java.lang.String","java.lang.String","java.lang.String"},new Object[] {ancienMotDePasse, nouveauMotDePasse, confirmationMotDePasse});
+        return ((Boolean)_ret).booleanValue();
+    }
 }

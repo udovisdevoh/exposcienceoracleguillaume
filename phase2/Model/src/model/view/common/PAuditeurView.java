@@ -8,5 +8,9 @@ import oracle.jbo.ViewObject;
 public interface PAuditeurView
   extends ViewObject
 {
-  boolean connecter(String userName, String password);
+    boolean connecter(String userName, String password);
+
+    boolean modifierMotDePasse(String ancienMotDePasse,
+                               String nouveauMotDePasse,
+                               String confirmationMotDePasse);
 }

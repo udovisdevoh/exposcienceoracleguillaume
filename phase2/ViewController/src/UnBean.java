@@ -37,13 +37,13 @@ public class UnBean
     public String commandButton_action()
     {
         System.out.println("Methode appliquer mot de passe");
-        BindingContainer bindings = getBindings();
+        BindingContainer bindings = getBindings();        
         OperationBinding operationBinding =
             bindings.getOperationBinding("modifierMotDePasse");
         Map param = operationBinding.getParamsMap();
-        param.put("ancienMotDePasse", ancienMotDePasse);
-        param.put("nouveauMotDePasse", nouveauMotDePasse);
-        param.put("confirmationMotDePasse", confirmationMotDePasse);
+        param.put("ancienMotDePasse", ancienMotDePasse.toString());
+        param.put("nouveauMotDePasse", nouveauMotDePasse.toString());
+        param.put("confirmationMotDePasse", confirmationMotDePasse.toString());
         Boolean result = (Boolean)operationBinding.execute();
         
         if (result == null)
