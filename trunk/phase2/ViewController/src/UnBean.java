@@ -1,6 +1,9 @@
 import java.util.Map;
 
+import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
+
+import oracle.adf.view.rich.component.rich.input.RichInputText;
 
 import oracle.binding.BindingContainer;
 import oracle.binding.OperationBinding;
@@ -10,6 +13,9 @@ import org.apache.myfaces.trinidad.context.RequestContext;
 public class UnBean
 {
   private BindingContainer bindings;
+  private RichInputText ancienMotDePasse;
+  private RichInputText nouveauMotDePasse;
+  private RichInputText confirmationMotDePasse;
 
   public UnBean()
   {
@@ -28,21 +34,14 @@ public class UnBean
   }
 
   public String commandButton_action()
-  {
-    Map pageFlowScope = RequestContext.getCurrentInstance().getPageFlowScope();
-    
-    
-    System.out.println("Il y a " + pageFlowScope.size() + " item dans le pageFlowScope");
-    
-    Object myObject = pageFlowScope.get("codeUsager");
-    
-    if (myObject == null)
-      System.out.println("Attention, l'objet retourné du pageFlowScope est null");   
-    
-    System.out.println(myObject);   
-    
+  { 
+    System.out.println("Methode appliquer mot de passe");
     BindingContainer bindings = getBindings();
-    OperationBinding operationBinding = bindings.getOperationBinding("Commit");
+    OperationBinding operationBinding = bindings.getOperationBinding("modifierMotDePasse");
+    Map param = operationBinding.getParamsMap();
+    param.put("ancienMotDePasse", ancienMotDePasse);
+    param.put("nouveauMotDePasse", nouveauMotDePasse);
+    param.put("confirmationMotDePasse", confirmationMotDePasse);
     Object result = operationBinding.execute();
     if (!operationBinding.getErrors().isEmpty())
     {
@@ -61,5 +60,41 @@ public class UnBean
       return null;
     }
     return null;
+  }
+
+  public void inputText_validator(FacesContext facesContext,
+                                  UIComponent uIComponent, Object object)
+  {
+    // Add event code here...
+  }
+
+  public void setAncienMotDePasse(RichInputText ancienMotDePasse)
+  {
+    this.ancienMotDePasse = ancienMotDePasse;
+  }
+
+  public RichInputText getAncienMotDePasse()
+  {
+    return ancienMotDePasse;
+  }
+
+  public void setNouveauMotDePasse(RichInputText nouveauMotDePasse)
+  {
+    this.nouveauMotDePasse = nouveauMotDePasse;
+  }
+
+  public RichInputText getNouveauMotDePasse()
+  {
+    return nouveauMotDePasse;
+  }
+
+  public void setConfirmationMotDePasse(RichInputText confirmationMotDePasse)
+  {
+    this.confirmationMotDePasse = confirmationMotDePasse;
+  }
+
+  public RichInputText getConfirmationMotDePasse()
+  {
+    return confirmationMotDePasse;
   }
 }

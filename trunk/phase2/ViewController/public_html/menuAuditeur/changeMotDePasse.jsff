@@ -2,9 +2,13 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
   <strong><af:outputLabel value="Changer de mot de passe"/></strong>
-  <af:inputText label="Mot de passe actuel"/>
-  <af:inputText label="Nouveau mot de passe" secret="true"/>
-  <af:inputText label="Confirmation de mot de passe" secret="true"/>
+  <af:inputText label="Mot de passe actuel"
+                validator="#{UnBean.inputText_validator}"
+                binding="#{UnBean.ancienMotDePasse}"/>
+  <af:inputText label="Nouveau mot de passe" secret="true"
+                binding="#{UnBean.nouveauMotDePasse}"/>
+  <af:inputText label="Confirmation de mot de passe" secret="true"
+                binding="#{UnBean.confirmationMotDePasse}"/>
   <af:panelGroupLayout>
     <af:resetButton text="Effacer"/>
     <af:commandButton text="Appliquer"
