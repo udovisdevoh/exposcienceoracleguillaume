@@ -29,9 +29,7 @@
   ComponentInterface="model.view.common.PAuditeurView"
   ClientProxyName="model.view.client.PAuditeurViewClient"
   Where="PAuditeur.CODEAUDITEUR=:userName AND PAuditeur.MOTDEPASSE=:passWord"
-  RowClass="model.view.PAuditeurViewRowImpl"
-  RowInterface="model.view.common.PAuditeurViewRow"
-  ClientRowProxyName="model.view.client.PAuditeurViewRowClient">
+  RowClass="model.view.PAuditeurViewRowImpl">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
     <Attr Name="_isCodegen" Value="true"/>
@@ -44,6 +42,28 @@
     Name="passWord"
     Kind="where"
     Type="java.lang.String"/>
+  <ViewAccessor
+    Name="PRegionView1"
+    ViewObjectName="model.view.PRegionView"/>
+  <ListBinding
+    Name="LOV_Noregion"
+    ListVOName="PRegionView1"
+    ListRangeSize="-1"
+    NullValueFlag="start"
+    NullValueId="LOV_Noregion_LOVUIHints_NullValueId"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Noregion"/>
+    </AttrArray>
+    <AttrArray Name="DerivedAttrNames"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="Noregion"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Nomregion"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="PAuditeur"
     Entity="model.PAuditeur"/>
@@ -107,7 +127,15 @@
     PrecisionRule="true"
     EntityAttrName="Noregion"
     EntityUsage="PAuditeur"
-    AliasName="NOREGION"/>
+    AliasName="NOREGION"
+    LOVName="LOV_Noregion">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Telephone"
     PrecisionRule="true"
@@ -155,20 +183,8 @@
         Type="java.lang.String"/>
     </Method>
   </ClientInterface>
-  <ClientRowInterface>
-    <Method
-      Name="modifierMotDePasse">
-      <Return
-        Type="void"/>
-      <Parameter
-        Name="ancienMotDePasse"
-        Type="java.lang.String"/>
-      <Parameter
-        Name="nouveauMotDePasse"
-        Type="java.lang.String"/>
-      <Parameter
-        Name="confirmationMotDePasse"
-        Type="java.lang.String"/>
-    </Method>
-  </ClientRowInterface>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
 </ViewObject>

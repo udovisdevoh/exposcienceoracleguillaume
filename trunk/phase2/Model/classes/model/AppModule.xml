@@ -5,9 +5,11 @@
   xmlns="http://xmlns.oracle.com/bc4j"
   Name="AppModule"
   Version="11.1.1.51.88"
-  ClearCacheOnRollback="true">
+  ClearCacheOnRollback="true"
+  ComponentClass="model.AppModuleImpl">
   <DesignTime>
     <Attr Name="_deployType" Value="0"/>
+    <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>
   <ViewUsage
     Name="PAuditeurView1"

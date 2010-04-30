@@ -2,6 +2,15 @@
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
   <task-flow-definition id="TF_menuAuditeur">
     <default-activity>menu</default-activity>
+    <managed-bean>
+      <managed-bean-name>UnBean</managed-bean-name>
+      <managed-bean-class>UnBean</managed-bean-class>
+      <managed-bean-scope>request</managed-bean-scope>
+      <managed-property>
+        <property-name>bindings</property-name>
+        <value>#{bindings}</value>
+      </managed-property>
+    </managed-bean>
     <view id="menu">
       <page>/menuAuditeur/menu.jsff</page>
     </view>
