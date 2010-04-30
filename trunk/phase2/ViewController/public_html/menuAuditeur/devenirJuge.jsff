@@ -9,16 +9,27 @@
                       disabled="#{!bindings.soumettreCandidatureJuge.enabled}"
                       rendered="#{pageFlowScope.dateDevenuCandidatJuge eq ''}"
                       action="refresh"/>
-    <af:commandButton actionListener="#{bindings.annulerCandidatureJuge.execute}"
-                      text="Annuler ma candidature"
-                      disabled="#{!bindings.annulerCandidatureJuge.enabled}"
-                      rendered="#{pageFlowScope.dateDevenuCandidatJuge ne ''}"
-                      action="refresh"/>
     <af:commandButton text="Retour" action="retourMenu"/>
   </af:panelGroupLayout>
   
   <af:panelGroupLayout layout="horizontal">
-    <af:outputText value="Assignation en tant que juge en date du: "/>
-    <af:outputText value="date"/>
+    <af:outputText value="Assignation en tant que juge en date du: "
+                   rendered="#{pageFlowScope.dateDevenuJuge ne ''}"/>
+    <af:outputText value="#{pageFlowScope.dateDevenuJuge}"/>
+    <af:commandButton actionListener="#{bindings.annulerCandidatureJuge.execute}"
+                      text="Annuler ma candidature (ne plus être juge"
+                      disabled="#{!bindings.annulerCandidatureJuge.enabled}"
+                      rendered="#{pageFlowScope.dateDevenuJuge ne ''}"
+                      action="refresh"/>
+  </af:panelGroupLayout>
+  <af:panelGroupLayout>
+    <af:activeOutputText value="Date de demande pour devenir juge:"
+                         rendered="#{pageFlowScope.dateDevenuCandidatJuge ne ''}"/>
+    <af:activeOutputText value="#{pageFlowScope.dateDevenuCandidatJuge}"/>
+    <af:commandButton actionListener="#{bindings.annulerDemandeJuge.execute}"
+                      text="Annuler ma demande"
+                      disabled="#{!bindings.annulerDemandeJuge.enabled}"
+                      action="refresh"
+                      rendered="#{pageFlowScope.dateDevenuCandidatJuge ne ''}"/>
   </af:panelGroupLayout>
 </jsp:root>

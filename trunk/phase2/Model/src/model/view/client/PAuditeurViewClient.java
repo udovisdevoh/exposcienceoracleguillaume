@@ -63,4 +63,11 @@ public class PAuditeurViewClient
             getApplicationModuleProxy().riInvokeExportedMethod(this,"getDateDevenuJuge",null,null);
         return (String) _ret;
     }
+
+    public boolean annulerDemandeJuge()
+    {
+        Object _ret =
+            getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerDemandeJuge",null,null);
+        return ((Boolean)_ret).booleanValue();
+    }
 }
