@@ -8,19 +8,9 @@
               DataControl="AppModuleDataControl" id="PAuditeurView1Iterator"/>
   </executables>
   <bindings>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Noauditeur">
-      <AttrNames>
-        <Item Value="Noauditeur"/>
-      </AttrNames>
-    </attributeValues>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Codeauditeur">
       <AttrNames>
         <Item Value="Codeauditeur"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Motdepasse">
-      <AttrNames>
-        <Item Value="Motdepasse"/>
       </AttrNames>
     </attributeValues>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Nom">
@@ -31,11 +21,6 @@
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Prenom">
       <AttrNames>
         <Item Value="Prenom"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Juge">
-      <AttrNames>
-        <Item Value="Juge"/>
       </AttrNames>
     </attributeValues>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Rue">
@@ -53,11 +38,6 @@
         <Item Value="CodePostal"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Noregion">
-      <AttrNames>
-        <Item Value="Noregion"/>
-      </AttrNames>
-    </attributeValues>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Telephone">
       <AttrNames>
         <Item Value="Telephone"/>
@@ -68,15 +48,7 @@
         <Item Value="Courriel"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Statut">
-      <AttrNames>
-        <Item Value="Statut"/>
-      </AttrNames>
-    </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Candidatjuge">
-      <AttrNames>
-        <Item Value="Candidatjuge"/>
-      </AttrNames>
-    </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction"
+            DataControl="AppModuleDataControl"/>
   </bindings>
 </pageDefinition>

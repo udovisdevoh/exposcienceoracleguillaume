@@ -70,4 +70,13 @@ public class PAuditeurViewClient
             getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerDemandeJuge",null,null);
         return ((Boolean)_ret).booleanValue();
     }
+
+    public boolean editProfile(String nom, String prenom, String rue,
+                               String ville, String codePostal,
+                               String telephone, String courriel)
+    {
+        Object _ret =
+            getApplicationModuleProxy().riInvokeExportedMethod(this,"editProfile",new String [] {"java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String"},new Object[] {nom, prenom, rue, ville, codePostal, telephone, courriel});
+        return ((Boolean)_ret).booleanValue();
+    }
 }
