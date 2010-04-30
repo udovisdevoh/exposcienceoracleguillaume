@@ -120,9 +120,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">357.36133</property>
+      <property
+         name="pageFragment">true</property>
       <property
          name="realized">true</property>
    </View>
@@ -154,6 +154,8 @@
       <property
          name="fromOutcome">versIncription</property>
       <property
+         name="id">ControlFlowCase12</property>
+      <property
          name="sdm:polyPoints">T33,346.0,248.5,201.51855,170.6269,B44</property>
    </ControlFlowCase>
    <ControlFlowCase
@@ -163,6 +165,8 @@
       to="View2">
       <property
          name="fromOutcome">versMenuInscription</property>
+      <property
+         name="id">ControlFlowCase13</property>
       <property
          name="sdm:polyPoints">B56,208.51855,166.5,360.0,244.32945,T56</property>
    </ControlFlowCase>
@@ -213,7 +217,7 @@
       <property
          name="activityId">getDateDevenuJuge</property>
       <property
-         name="statusDescription">EL token ''dateDevenuCandidatJuge'' is unknown</property>
+         name="statusDescription">EL token ''dateDevenuJuge'' is unknown</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">method-call - getDateDevenuJuge&lt;/p>&lt;/html></property>
       <property
@@ -234,7 +238,7 @@
       <property
          name="activityId">getDateDevenuCandidatJuge</property>
       <property
-         name="statusDescription">EL token ''dateDevenuJuge'' is unknown</property>
+         name="statusDescription">EL token ''dateDevenuCandidatJuge'' is unknown</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">method-call - getDateDevenuCandidatJuge&lt;/p>&lt;/html></property>
       <property
@@ -256,6 +260,8 @@
       <property
          name="fromOutcome">versDevenirCandidatJuge</property>
       <property
+         name="id">ControlFlowCase22</property>
+      <property
          name="sdm:polyPoints">L54,315.5,306.0,163.72363,404.5,R50</property>
    </ControlFlowCase>
    <ControlFlowCase
@@ -265,6 +271,8 @@
       to="MethodCall18">
       <property
          name="fromOutcome">getDateDevenuCandidatJuge</property>
+      <property
+         name="id">ControlFlowCase23</property>
       <property
          name="sdm:polyPoints">L50,81.72363,404.5,-61.293945,318.0,R54</property>
    </ControlFlowCase>
