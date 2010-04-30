@@ -21,4 +21,6 @@ public interface PAuditeurView
     String getDateDevenuCandidatJuge();
 
     String getDateDevenuJuge();
+
+    boolean annulerDemandeJuge();
 }

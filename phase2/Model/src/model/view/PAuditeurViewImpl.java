@@ -132,6 +132,16 @@ public class PAuditeurViewImpl extends ViewObjectImpl
     public boolean annulerCandidatureJuge()
     {
         PAuditeurViewRowImpl row = (PAuditeurViewRowImpl) this.getRowAtRangeIndex(0);
+        row.setJuge(null);
+        AppModuleImpl appModuleImpl =
+            (AppModuleImpl) getApplicationModule();
+        appModuleImpl.getDBTransaction().commit();
+        return true;
+    }
+    
+    public boolean annulerDemandeJuge()
+    {
+        PAuditeurViewRowImpl row = (PAuditeurViewRowImpl) this.getRowAtRangeIndex(0);
         row.setCandidatjuge(null);
         AppModuleImpl appModuleImpl =
             (AppModuleImpl) getApplicationModule();

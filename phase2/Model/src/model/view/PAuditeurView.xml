@@ -244,6 +244,11 @@
       <Return
         Type="java.lang.String"/>
     </Method>
+    <Method
+      Name="annulerDemandeJuge">
+      <Return
+        Type="boolean"/>
+    </Method>
   </ClientInterface>
   <ResourceBundle>
     <PropertiesBundle

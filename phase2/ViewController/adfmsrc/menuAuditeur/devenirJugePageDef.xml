@@ -15,5 +15,10 @@
                   IsViewObjectMethod="true" DataControl="AppModuleDataControl"
                   InstanceName="AppModuleDataControl.PAuditeurView1"
                   ReturnName="AppModuleDataControl.methodResults.annulerCandidatureJuge_AppModuleDataControl_PAuditeurView1_annulerCandidatureJuge_result"/>
+    <methodAction id="annulerDemandeJuge" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="annulerDemandeJuge"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.PAuditeurView1"
+                  ReturnName="AppModuleDataControl.methodResults.annulerDemandeJuge_AppModuleDataControl_PAuditeurView1_annulerDemandeJuge_result"/>
   </bindings>
 </pageDefinition>
