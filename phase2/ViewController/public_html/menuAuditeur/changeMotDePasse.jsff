@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-  <strong><af:outputLabel value="Changer de mot de passe"/></strong>
+  <strong><af:outputLabel value="Changer de mot de passe"
+                          inlineStyle="font-family:Geneva, Arial, Helvetica, sans-serif; font-size:medium;"/></strong>
   <af:inputText label="Mot de passe actuel"
                 validator="#{UnBean.inputText_validator}"
                 binding="#{UnBean.ancienMotDePasse}" secret="true"
@@ -14,10 +15,8 @@
                 value="#{pageFlowScope.newPassword2}"/>
   <af:panelGroupLayout>
     <af:resetButton text="Effacer"/>
-    <af:commandButton text="Appliquer"
-                      action="#{UnBean.commandButton_action}"/>
     <af:commandButton actionListener="#{bindings.modifierMotDePasse1.execute}"
-                      text="modifierMotDePasse1"
+                      text="Appliquer"
                       disabled="#{!bindings.modifierMotDePasse1.enabled}"/>
     <af:commandButton text="Retour" action="versMenuChangerMotDePasse"/>
   </af:panelGroupLayout>
