@@ -12,7 +12,8 @@
                     required="#{bindings.Noauditeur.hints.mandatory}"
                     columns="#{bindings.Noauditeur.hints.displayWidth}"
                     maximumLength="#{bindings.Noauditeur.hints.precision}"
-                    shortDesc="#{bindings.Noauditeur.hints.tooltip}">
+                    shortDesc="#{bindings.Noauditeur.hints.tooltip}"
+                    visible="false">
         <f:validator binding="#{bindings.Noauditeur.validator}"/>
         <af:convertNumber groupingUsed="false"
                           pattern="#{bindings.Noauditeur.format}"/>
@@ -124,7 +125,8 @@
         <af:resetButton text="#{viewcontrollerBundle.Reset}"/>
         <af:commandButton actionListener="#{bindings.Commit.execute}"
                           text="Enregistrer"
-                          disabled="#{!bindings.Commit.enabled}"/>
+                          disabled="#{!bindings.Commit.enabled}"
+                          action="annuler"/>
         <af:commandButton text="Annuler" action="annuler"/>
       </af:panelGroupLayout>
     </af:panelFormLayout>

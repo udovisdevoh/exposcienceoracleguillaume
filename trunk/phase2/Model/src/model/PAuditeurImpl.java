@@ -33,9 +33,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setNoauditeur((Number) value);
+                obj.setNoauditeur((Number)value);
             }
-        },
+        }
+        ,
         Codeauditeur
         {
             public Object get(PAuditeurImpl obj)
@@ -45,9 +46,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setCodeauditeur((String) value);
+                obj.setCodeauditeur((String)value);
             }
-        },
+        }
+        ,
         Motdepasse
         {
             public Object get(PAuditeurImpl obj)
@@ -57,9 +59,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setMotdepasse((String) value);
+                obj.setMotdepasse((String)value);
             }
-        },
+        }
+        ,
         Nom
         {
             public Object get(PAuditeurImpl obj)
@@ -69,9 +72,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setNom((String) value);
+                obj.setNom((String)value);
             }
-        },
+        }
+        ,
         Prenom
         {
             public Object get(PAuditeurImpl obj)
@@ -81,9 +85,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setPrenom((String) value);
+                obj.setPrenom((String)value);
             }
-        },
+        }
+        ,
         Juge
         {
             public Object get(PAuditeurImpl obj)
@@ -93,9 +98,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setJuge((Date) value);
+                obj.setJuge((Date)value);
             }
-        },
+        }
+        ,
         Rue
         {
             public Object get(PAuditeurImpl obj)
@@ -105,9 +111,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setRue((String) value);
+                obj.setRue((String)value);
             }
-        },
+        }
+        ,
         Ville
         {
             public Object get(PAuditeurImpl obj)
@@ -117,9 +124,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setVille((String) value);
+                obj.setVille((String)value);
             }
-        },
+        }
+        ,
         CodePostal
         {
             public Object get(PAuditeurImpl obj)
@@ -129,9 +137,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setCodePostal((String) value);
+                obj.setCodePostal((String)value);
             }
-        },
+        }
+        ,
         Noregion
         {
             public Object get(PAuditeurImpl obj)
@@ -141,9 +150,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setNoregion((Number) value);
+                obj.setNoregion((Number)value);
             }
-        },
+        }
+        ,
         Telephone
         {
             public Object get(PAuditeurImpl obj)
@@ -153,9 +163,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setTelephone((String) value);
+                obj.setTelephone((String)value);
             }
-        },
+        }
+        ,
         Courriel
         {
             public Object get(PAuditeurImpl obj)
@@ -165,9 +176,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setCourriel((String) value);
+                obj.setCourriel((String)value);
             }
-        },
+        }
+        ,
         Statut
         {
             public Object get(PAuditeurImpl obj)
@@ -177,9 +189,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setStatut((String) value);
+                obj.setStatut((String)value);
             }
-        },
+        }
+        ,
         Candidatjuge
         {
             public Object get(PAuditeurImpl obj)
@@ -189,9 +202,10 @@ public class PAuditeurImpl extends EntityImpl
 
             public void put(PAuditeurImpl obj, Object value)
             {
-                obj.setCandidatjuge((Date) value);
+                obj.setCandidatjuge((Date)value);
             }
-        },
+        }
+        ,
         PEvaluation
         {
             public Object get(PAuditeurImpl obj)
@@ -203,7 +217,8 @@ public class PAuditeurImpl extends EntityImpl
             {
                 obj.setAttributeInternal(index(), value);
             }
-        },
+        }
+        ,
         PInscription
         {
             public Object get(PAuditeurImpl obj)
@@ -215,7 +230,8 @@ public class PAuditeurImpl extends EntityImpl
             {
                 obj.setAttributeInternal(index(), value);
             }
-        };
+        }
+        ;
         private static AttributesEnum[] vals = null;
         private static int firstIndex = 0;
 
@@ -286,8 +302,7 @@ public class PAuditeurImpl extends EntityImpl
     {
         if (mDefinitionObject == null)
         {
-            mDefinitionObject =
-                    (PAuditeurDefImpl) EntityDefImpl.findDefObject("model.PAuditeur");
+            mDefinitionObject = (PAuditeurDefImpl)EntityDefImpl.findDefObject("model.PAuditeur");
         }
         return mDefinitionObject;
     }
@@ -555,11 +570,9 @@ public class PAuditeurImpl extends EntityImpl
     protected Object getAttrInvokeAccessor(int index,
                                            AttributeDefImpl attrDef) throws Exception
     {
-        if ((index >= AttributesEnum.firstIndex()) &&
-            (index < AttributesEnum.count()))
+        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
         {
-            return AttributesEnum.staticValues()[index -
-                AttributesEnum.firstIndex()].get(this);
+            return AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].get(this);
         }
         return super.getAttrInvokeAccessor(index, attrDef);
     }
@@ -575,11 +588,9 @@ public class PAuditeurImpl extends EntityImpl
     protected void setAttrInvokeAccessor(int index, Object value,
                                          AttributeDefImpl attrDef) throws Exception
     {
-        if ((index >= AttributesEnum.firstIndex()) &&
-            (index < AttributesEnum.count()))
+        if ((index >= AttributesEnum.firstIndex()) && (index < AttributesEnum.count()))
         {
-            AttributesEnum.staticValues()[index -
-                AttributesEnum.firstIndex()].put(this, value);
+            AttributesEnum.staticValues()[index - AttributesEnum.firstIndex()].put(this, value);
             return;
         }
         super.setAttrInvokeAccessor(index, value, attrDef);
@@ -610,8 +621,7 @@ public class PAuditeurImpl extends EntityImpl
      */
     public static Key createPrimaryKey(Number noauditeur)
     {
-        return new Key(new Object[]
-                { noauditeur });
+        return new Key(new Object[]{noauditeur});
     }
 
     /**
