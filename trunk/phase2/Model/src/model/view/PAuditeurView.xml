@@ -45,6 +45,9 @@
   <ViewAccessor
     Name="PRegionView1"
     ViewObjectName="model.view.PRegionView"/>
+  <ViewAccessor
+    Name="PStatutAuditeurView1"
+    ViewObjectName="model.view.PStatutAuditeurView"/>
   <ListBinding
     Name="LOV_Noregion"
     ListVOName="PRegionView1"
@@ -60,6 +63,25 @@
     </AttrArray>
     <AttrArray Name="ListDisplayAttrNames">
       <Item Value="Nomregion"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_Statut"
+    ListVOName="PStatutAuditeurView1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    NullValueId="LOV_Statut_LOVUIHints_NullValueId"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Statut"/>
+    </AttrArray>
+    <AttrArray Name="DerivedAttrNames"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="Code"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Description"/>
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
@@ -152,7 +174,15 @@
     PrecisionRule="true"
     EntityAttrName="Statut"
     EntityUsage="PAuditeur"
-    AliasName="STATUT"/>
+    AliasName="STATUT"
+    LOVName="LOV_Statut">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Candidatjuge"
     PrecisionRule="true"
