@@ -53,11 +53,8 @@
         <Item Value="CodePostal"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="PAuditeurView1Iterator" id="Noregion">
-      <AttrNames>
-        <Item Value="Noregion"/>
-      </AttrNames>
-    </attributeValues>
+    <list IterBinding="PAuditeurView1Iterator" StaticList="false"
+          Uses="LOV_Noregion" id="Noregion" DTSupportsMRU="false"/>
     <attributeValues IterBinding="PAuditeurView1Iterator" id="Telephone">
       <AttrNames>
         <Item Value="Telephone"/>

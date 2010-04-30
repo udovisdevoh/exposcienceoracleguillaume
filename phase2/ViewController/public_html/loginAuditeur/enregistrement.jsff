@@ -6,7 +6,7 @@
   <c:set var="viewcontrollerBundle"
          value="#{adfBundle['view.ViewControllerBundle']}"/>
   <af:panelGroupLayout>
-    <af:panelFormLayout>
+    <af:panelFormLayout inlineStyle="width:551px;">
       <af:inputText value="#{bindings.Noauditeur.inputValue}"
                     label="#{viewcontrollerBundle.NOAUDITEUR}"
                     required="#{bindings.Noauditeur.hints.mandatory}"
@@ -81,16 +81,12 @@
                     shortDesc="#{bindings.CodePostal.hints.tooltip}">
         <f:validator binding="#{bindings.CodePostal.validator}"/>
       </af:inputText>
-      <af:inputText value="#{bindings.Noregion.inputValue}"
-                    label="#{viewcontrollerBundle.NoRegion}"
-                    required="#{bindings.Noregion.hints.mandatory}"
-                    columns="#{bindings.Noregion.hints.displayWidth}"
-                    maximumLength="#{bindings.Noregion.hints.precision}"
-                    shortDesc="#{bindings.Noregion.hints.tooltip}">
-        <f:validator binding="#{bindings.Noregion.validator}"/>
-        <af:convertNumber groupingUsed="false"
-                          pattern="#{bindings.Noregion.format}"/>
-      </af:inputText>
+      <af:selectOneChoice value="#{bindings.Noregion.inputValue}"
+                          label="#{viewcontrollerBundle.Region}"
+                          required="#{bindings.Noregion.hints.mandatory}"
+                          shortDesc="#{bindings.Noregion.hints.tooltip}">
+        <f:selectItems value="#{bindings.Noregion.items}"/>
+      </af:selectOneChoice>
       <af:inputText value="#{bindings.Telephone.inputValue}"
                     label="#{viewcontrollerBundle.Phone}"
                     required="#{bindings.Telephone.hints.mandatory}"
@@ -122,14 +118,16 @@
         <f:validator binding="#{bindings.Candidatjuge.validator}"/>
         <af:convertDateTime pattern="#{bindings.Candidatjuge.format}"/>
       </af:inputDate>
+    </af:panelFormLayout>
+  </af:panelGroupLayout>
+  <af:panelGroupLayout>
+    <af:panelFormLayout>
       <af:panelGroupLayout>
         <af:resetButton text="#{viewcontrollerBundle.Reset}"/>
-        <af:commandButton text="#{viewcontrollerBundle.Cancel}"
-                          action="annuler"/>
-        <af:commandButton
-                          text="#{viewcontrollerBundle.SAVE}"
-                          disabled="#{!bindings.Commit.enabled}"
-                          action="#{UnBean.commandButton_enregistrer}"/>
+        <af:commandButton actionListener="#{bindings.Commit.execute}"
+                          text="Enregistrer"
+                          disabled="#{!bindings.Commit.enabled}"/>
+        <af:commandButton text="Annuler" action="annuler"/>
       </af:panelGroupLayout>
     </af:panelFormLayout>
   </af:panelGroupLayout>

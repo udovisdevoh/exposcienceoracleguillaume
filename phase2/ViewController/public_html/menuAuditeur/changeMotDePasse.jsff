@@ -4,7 +4,7 @@
   <strong><af:outputLabel value="Changer de mot de passe"/></strong>
   <af:inputText label="Mot de passe actuel"
                 validator="#{UnBean.inputText_validator}"
-                binding="#{UnBean.ancienMotDePasse}"/>
+                binding="#{UnBean.ancienMotDePasse}" secret="true"/>
   <af:inputText label="Nouveau mot de passe" secret="true"
                 binding="#{UnBean.nouveauMotDePasse}"/>
   <af:inputText label="Confirmation de mot de passe" secret="true"

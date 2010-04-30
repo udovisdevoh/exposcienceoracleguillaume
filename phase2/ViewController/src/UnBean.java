@@ -12,89 +12,95 @@ import org.apache.myfaces.trinidad.context.RequestContext;
 
 public class UnBean
 {
-  private BindingContainer bindings;
-  private RichInputText ancienMotDePasse;
-  private RichInputText nouveauMotDePasse;
-  private RichInputText confirmationMotDePasse;
+    private BindingContainer bindings;
+    private RichInputText ancienMotDePasse;
+    private RichInputText nouveauMotDePasse;
+    private RichInputText confirmationMotDePasse;
 
-  public UnBean()
-  {
-  }
-
-  public BindingContainer getBindings()
-  {
-    if (this.bindings == null)
+    public UnBean()
     {
-      FacesContext fc = FacesContext.getCurrentInstance();
-      this.bindings =
-          (BindingContainer) fc.getApplication().evaluateExpressionGet(fc, "#{bindings}",
-            BindingContainer.class);
     }
-    return this.bindings;
-  }
 
-  public String commandButton_action()
-  { 
-    System.out.println("Methode appliquer mot de passe");
-    BindingContainer bindings = getBindings();
-    OperationBinding operationBinding = bindings.getOperationBinding("modifierMotDePasse");
-    Map param = operationBinding.getParamsMap();
-    param.put("ancienMotDePasse", ancienMotDePasse);
-    param.put("nouveauMotDePasse", nouveauMotDePasse);
-    param.put("confirmationMotDePasse", confirmationMotDePasse);
-    Object result = operationBinding.execute();
-    if (!operationBinding.getErrors().isEmpty())
+    public BindingContainer getBindings()
     {
-      return null;
+        if (this.bindings == null)
+        {
+            FacesContext fc = FacesContext.getCurrentInstance();
+            this.bindings =
+                    (BindingContainer) fc.getApplication().evaluateExpressionGet(fc,
+                                                                                 "#{bindings}",
+                                                                                 BindingContainer.class);
+        }
+        return this.bindings;
     }
-    return null;
-  }
 
-  public String commandButton_enregistrer()
-  {
-    BindingContainer bindings = getBindings();
-    OperationBinding operationBinding = bindings.getOperationBinding("Commit");
-    Object result = operationBinding.execute();
-    if (!operationBinding.getErrors().isEmpty())
+    public String commandButton_action()
     {
-      return null;
+        System.out.println("Methode appliquer mot de passe");
+        BindingContainer bindings = getBindings();
+        OperationBinding operationBinding =
+            bindings.getOperationBinding("modifierMotDePasse");
+        Map param = operationBinding.getParamsMap();
+        param.put("ancienMotDePasse", ancienMotDePasse);
+        param.put("nouveauMotDePasse", nouveauMotDePasse);
+        param.put("confirmationMotDePasse", confirmationMotDePasse);
+        Boolean result = (Boolean)operationBinding.execute();
+        
+        if (result == null)
+            return "Result est null, on sait pas trop kossé ça fait";
+                
+        if (result.booleanValue())
+            return "Ça marche";
+        else
+            return "Ça ne marche pas";
     }
-    return null;
-  }
 
-  public void inputText_validator(FacesContext facesContext,
-                                  UIComponent uIComponent, Object object)
-  {
-    // Add event code here...
-  }
+    public String commandButton_enregistrer()
+    {
+        BindingContainer bindings = getBindings();
+        OperationBinding operationBinding =
+            bindings.getOperationBinding("Commit");
+        Object result = operationBinding.execute();
+        if (!operationBinding.getErrors().isEmpty())
+        {
+            return null;
+        }
+        return null;
+    }
 
-  public void setAncienMotDePasse(RichInputText ancienMotDePasse)
-  {
-    this.ancienMotDePasse = ancienMotDePasse;
-  }
+    public void inputText_validator(FacesContext facesContext,
+                                    UIComponent uIComponent, Object object)
+    {
+        // Add event code here...
+    }
 
-  public RichInputText getAncienMotDePasse()
-  {
-    return ancienMotDePasse;
-  }
+    public void setAncienMotDePasse(RichInputText ancienMotDePasse)
+    {
+        this.ancienMotDePasse = ancienMotDePasse;
+    }
 
-  public void setNouveauMotDePasse(RichInputText nouveauMotDePasse)
-  {
-    this.nouveauMotDePasse = nouveauMotDePasse;
-  }
+    public RichInputText getAncienMotDePasse()
+    {
+        return ancienMotDePasse;
+    }
 
-  public RichInputText getNouveauMotDePasse()
-  {
-    return nouveauMotDePasse;
-  }
+    public void setNouveauMotDePasse(RichInputText nouveauMotDePasse)
+    {
+        this.nouveauMotDePasse = nouveauMotDePasse;
+    }
 
-  public void setConfirmationMotDePasse(RichInputText confirmationMotDePasse)
-  {
-    this.confirmationMotDePasse = confirmationMotDePasse;
-  }
+    public RichInputText getNouveauMotDePasse()
+    {
+        return nouveauMotDePasse;
+    }
 
-  public RichInputText getConfirmationMotDePasse()
-  {
-    return confirmationMotDePasse;
-  }
+    public void setConfirmationMotDePasse(RichInputText confirmationMotDePasse)
+    {
+        this.confirmationMotDePasse = confirmationMotDePasse;
+    }
+
+    public RichInputText getConfirmationMotDePasse()
+    {
+        return confirmationMotDePasse;
+    }
 }

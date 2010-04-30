@@ -12,7 +12,8 @@
   UseGlueCode="false"
   RowClass="model.PAuditeurImpl"
   DefClass="model.PAuditeurDefImpl"
-  CollClass="model.PAuditeurCollImpl">
+  CollClass="model.PAuditeurCollImpl"
+  xmlns:validation="http://xmlns.oracle.com/adfm/validation">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Def|Coll"/>
     <AttrArray Name="_publishEvents"/>
@@ -202,6 +203,15 @@
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key
+    Name="PAuditeurCodeauditeurCheck">
+    <DesignTime>
+      <Attr Name="_isNotNull" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PAUDITEUR_CODEAUDITEUR_CHECK"/>
+      <Attr Name="_checkCondition" Value='"CODEAUDITEUR" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+  </Key>
+  <Key
     Name="PAuditeurNoPk"
     PrimaryKey="true">
     <DesignTime>
@@ -211,4 +221,8 @@
       <Item Value="model.PAuditeur.Noauditeur"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
 </Entity>
