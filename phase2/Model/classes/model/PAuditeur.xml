@@ -159,6 +159,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="13"/>
     </DesignTime>
+    <validation:RegExpValidationBean
+      Name="Telephone_Rule_0"
+      ResId="model.PAuditeur.Telephone_Rule_0"
+      OnAttribute="Telephone"
+      Pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+      Inverse="false"/>
   </Attribute>
   <Attribute
     Name="Courriel"
