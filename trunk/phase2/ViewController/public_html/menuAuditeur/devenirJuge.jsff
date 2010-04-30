@@ -4,13 +4,21 @@
   <af:outputLabel value="Candidature juge" inlineStyle="font-size:medium;"/>
   
   <af:panelGroupLayout layout="horizontal">
-    <af:commandButton text="Soumettre ma candidature"/>
-    <af:commandButton text="Retour" action="versMenuDevenirJuge"/>
+    <af:commandButton actionListener="#{bindings.soumettreCandidatureJuge.execute}"
+                      text="Soumettre ma candidature"
+                      disabled="#{!bindings.soumettreCandidatureJuge.enabled}"
+                      rendered="#{pageFlowScope.dateDevenuCandidatJuge eq ''}"
+                      action="refresh"/>
+    <af:commandButton actionListener="#{bindings.annulerCandidatureJuge.execute}"
+                      text="Annuler ma candidature"
+                      disabled="#{!bindings.annulerCandidatureJuge.enabled}"
+                      rendered="#{pageFlowScope.dateDevenuCandidatJuge ne ''}"
+                      action="refresh"/>
+    <af:commandButton text="Retour" action="retourMenu"/>
   </af:panelGroupLayout>
   
   <af:panelGroupLayout layout="horizontal">
     <af:outputText value="Assignation en tant que juge en date du: "/>
     <af:outputText value="date"/>
-    <af:commandButton text="Annuler ma canditature"/>
   </af:panelGroupLayout>
 </jsp:root>

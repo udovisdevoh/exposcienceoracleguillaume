@@ -13,4 +13,12 @@ public interface PAuditeurView
     boolean modifierMotDePasse(String ancienMotDePasse,
                                String nouveauMotDePasse,
                                String confirmationMotDePasse);
+
+    boolean soumettreCandidatureJuge();
+
+    boolean annulerCandidatureJuge();
+
+    String getDateDevenuCandidatJuge();
+
+    String getDateDevenuJuge();
 }

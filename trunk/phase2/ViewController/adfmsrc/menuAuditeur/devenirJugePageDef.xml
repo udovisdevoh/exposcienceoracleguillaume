@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="devenirJugePageDef"
+                Package="menuAuditeur">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="soumettreCandidatureJuge" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="soumettreCandidatureJuge"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.PAuditeurView1"
+                  ReturnName="AppModuleDataControl.methodResults.soumettreCandidatureJuge_AppModuleDataControl_PAuditeurView1_soumettreCandidatureJuge_result"/>
+    <methodAction id="annulerCandidatureJuge" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="annulerCandidatureJuge"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.PAuditeurView1"
+                  ReturnName="AppModuleDataControl.methodResults.annulerCandidatureJuge_AppModuleDataControl_PAuditeurView1_annulerCandidatureJuge_result"/>
+  </bindings>
+</pageDefinition>

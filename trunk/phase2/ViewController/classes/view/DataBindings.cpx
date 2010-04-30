@@ -21,6 +21,12 @@
           usageId="view_changeMotDePassePageDef"/>
     <page path="/menuAuditeur/inscriptionAteliers.jsff"
           usageId="view_inscriptionAteliersPageDef"/>
+    <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@getDateDevenuJuge"
+          usageId="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"/>
+    <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@getDateDevenuCandidatJuge"
+          usageId="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"/>
+    <page path="/menuAuditeur/devenirJuge.jsff"
+          usageId="view_devenirJugePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -36,6 +42,11 @@
           path="menuAuditeur.changeMotDePassePageDef"/>
     <page id="view_inscriptionAteliersPageDef"
           path="menuAuditeur.inscriptionAteliersPageDef"/>
+    <page id="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"
+          path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"/>
+    <page id="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"
+          path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"/>
+    <page id="view_devenirJugePageDef" path="menuAuditeur.devenirJugePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
