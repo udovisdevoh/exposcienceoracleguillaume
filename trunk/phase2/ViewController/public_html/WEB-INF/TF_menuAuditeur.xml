@@ -31,14 +31,14 @@
     </view>
     <method-call id="getDateDevenuJuge">
       <method>#{bindings.getDateDevenuJuge.execute}</method>
-      <return-value>#{pageFlowScope.dateDevenuCandidatJuge}</return-value>
+      <return-value>#{pageFlowScope.dateDevenuJuge}</return-value>
       <outcome>
         <fixed-outcome>getDateDevenuJuge</fixed-outcome>
       </outcome>
     </method-call>
     <method-call id="getDateDevenuCandidatJuge">
       <method>#{bindings.getDateDevenuCandidatJuge.execute}</method>
-      <return-value>#{pageFlowScope.dateDevenuJuge}</return-value>
+      <return-value>#{pageFlowScope.dateDevenuCandidatJuge}</return-value>
       <outcome>
         <fixed-outcome>getDateDevenuCandidatJuge</fixed-outcome>
       </outcome>
