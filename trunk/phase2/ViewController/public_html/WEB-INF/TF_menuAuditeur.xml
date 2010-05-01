@@ -43,6 +43,12 @@
         <fixed-outcome>getDateDevenuCandidatJuge</fixed-outcome>
       </outcome>
     </method-call>
+    <method-call id="preEditProfile">
+      <method>#{bindings.preEditProfile.execute}</method>
+      <outcome>
+        <fixed-outcome>versInfoPersonnellesFormulaire</fixed-outcome>
+      </outcome>
+    </method-call>
     <control-flow-rule>
       <from-activity-id>evaluationAtelier</from-activity-id>
       <control-flow-case>
@@ -61,16 +67,16 @@
         <to-activity-id>inscriptionAteliers</to-activity-id>
       </control-flow-case>
       <control-flow-case>
-        <from-outcome>versInfoPersonnelle</from-outcome>
-        <to-activity-id>infoPersonnelle</to-activity-id>
-      </control-flow-case>
-      <control-flow-case>
         <from-outcome>versChangerMotDePasse</from-outcome>
         <to-activity-id>changeMotDePasse</to-activity-id>
       </control-flow-case>
       <control-flow-case>
         <from-outcome>versDevenirCandidatJuge</from-outcome>
         <to-activity-id>getDateDevenuCandidatJuge</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versEditProfile</from-outcome>
+        <to-activity-id>preEditProfile</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <control-flow-rule>
@@ -83,7 +89,7 @@
     <control-flow-rule>
       <from-activity-id>infoPersonnelle</from-activity-id>
       <control-flow-case>
-        <from-outcome>versMenuInforPersonnelle</from-outcome>
+        <from-outcome>versMenuInfoPersonnelle</from-outcome>
         <to-activity-id>menu</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
@@ -117,6 +123,13 @@
       <control-flow-case>
         <from-outcome>refresh</from-outcome>
         <to-activity-id>getDateDevenuCandidatJuge</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>preEditProfile</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versInfoPersonnellesFormulaire</from-outcome>
+        <to-activity-id>infoPersonnelle</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>

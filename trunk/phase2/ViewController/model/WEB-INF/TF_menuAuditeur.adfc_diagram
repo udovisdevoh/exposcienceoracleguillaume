@@ -120,9 +120,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">357.36133</property>
+      <property
+         name="pageFragment">true</property>
       <property
          name="realized">true</property>
    </View>
@@ -172,23 +172,13 @@
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase14"
-      from="View2"
-      to="View4">
-      <property
-         name="fromOutcome">versInfoPersonnelle</property>
-      <property
-         name="sdm:polyPoints">T56,360.0,245.57237,497.5117,110.0,L46</property>
-   </ControlFlowCase>
-   <ControlFlowCase
-      islink="true"
       id="ControlFlowCase15"
       from="View4"
       to="View2">
       <property
-         name="fromOutcome">versMenuInforPersonnelle</property>
+         name="fromOutcome">versMenuInfoPersonnelle</property>
       <property
-         name="sdm:polyPoints">L54,500.36133,117.0,367.0,248.5,T67</property>
+         name="sdm:polyPoints">L50,500.36133,113.5,367.0,248.5,T67</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -305,5 +295,44 @@
          name="fromOutcome">refresh</property>
       <property
          name="sdm:polyPoints">B50,102.68945,274.5,122.72363,350.5,T50</property>
+   </ControlFlowCase>
+   <MethodCall
+      id="MethodCall27">
+      <property
+         name="activityId">preEditProfile</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">method-call - preEditProfile&lt;/p>&lt;/html></property>
+      <property
+         name="binding">method</property>
+      <property
+         name="rawDescription">method-call - preEditProfile</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">-39.5</property>
+      <property
+         name="x">301.01758</property>
+   </MethodCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase28"
+      from="View2"
+      to="MethodCall27">
+      <property
+         name="fromOutcome">versEditProfile</property>
+      <property
+         name="sdm:polyPoints">T56,360.0,241.9517,301.01758,14.5,B50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase30"
+      from="MethodCall27"
+      to="View4">
+      <property
+         name="fromOutcome">versInfoPersonnellesFormulaire</property>
+      <property
+         name="status">ok</property>
+      <property
+         name="sdm:polyPoints">R50,342.01758,-39.5,500.36133,110.0,L46</property>
    </ControlFlowCase>
 </SDM>

@@ -114,9 +114,10 @@
       </af:selectOneRadio>
       <af:panelGroupLayout>
         <af:commandButton text="Retour"
-                          action="versMenuInforPersonnelle"/>
+                          action="versMenuInfoPersonnelle"/>
         <af:commandButton actionListener="#{bindings.Commit.execute}"
-                          text="Enregistrer" disabled="#{!bindings.Commit.enabled}"/>
+                          text="Enregistrer"
+                          action="versMenuInfoPersonnelle"/>
       </af:panelGroupLayout>
       <af:inputDate value="#{bindings.Candidatjuge.inputValue}"
                     label="#{viewcontrollerBundle.CANDIDATURE_JUGE}"

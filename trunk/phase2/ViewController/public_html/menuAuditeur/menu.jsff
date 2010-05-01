@@ -12,7 +12,7 @@
       <af:commandImageLink text="Changer mot de passe"
                            action="versChangerMotDePasse"/>
       <af:commandImageLink text="Changer informations nominales"
-                           action="versInfoPersonnelle"/>
+                           action="versEditProfile"/>
       <af:commandImageLink text="Inscriptions aux ateliers"
                            action="versIncription"/>
       <af:commandImageLink text="#{viewcontrollerBundle.EVALUATION_DES_ATELIERS}"
