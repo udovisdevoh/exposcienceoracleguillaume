@@ -7,6 +7,12 @@
     <af:panelGroupLayout layout="vertical">
       <af:panelHeader text="Recherche-Inscription Ateliers">
         <af:commandButton text="Retour" action="versMenuInscription"/>
+        <af:commandButton actionListener="#{bindings.Create.execute}"
+                          text="Ajout atelier" disabled="#{!bindings.Create.enabled}"
+                          partialTriggers="resId1"/>
+        <af:commandButton actionListener="#{bindings.Delete.execute}"
+                          text="Supprimer" disabled="#{!bindings.Delete.enabled}"
+                          partialTriggers="resId1"/>
         <af:panelGroupLayout layout="vertical">
           <af:panelHeader text="Recherche ateliers">
             <af:query id="qryId1" headerText="Search" disclosed="true"
