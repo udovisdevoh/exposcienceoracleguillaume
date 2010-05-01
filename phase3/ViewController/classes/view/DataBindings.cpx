@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.51.88" id="DataBindings" SeparateXMLFiles="false"
+             Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/home.jspx" usageId="view_homePageDef"/>
+    <page path="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur@createInsert"
+          usageId="view_TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
+    <page path="/WEB-INF/TF_loginAuditeur.xml#TF_loginAuditeur@auditeurConnecte"
+          usageId="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
+    <page path="/loginAuditeur/enregistrement.jsff"
+          usageId="view_enregistrementPageDef"/>
+    <page path="/menuAuditeur/infoPersonnelle.jsff"
+          usageId="view_infoPersonnellePageDef"/>
+    <page path="/menuAuditeur/changeMotDePasse.jsff"
+          usageId="view_changeMotDePassePageDef"/>
+    <page path="/menuAuditeur/inscriptionAteliers.jsff"
+          usageId="view_inscriptionAteliersPageDef"/>
+    <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@getDateDevenuJuge"
+          usageId="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"/>
+    <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@getDateDevenuCandidatJuge"
+          usageId="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"/>
+    <page path="/menuAuditeur/devenirJuge.jsff"
+          usageId="view_devenirJugePageDef"/>
+    <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@preEditProfile"
+          usageId="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
+    <page id="view_TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"
+          path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"/>
+    <page id="view_TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"
+          path="view.pageDefs.TF_loginAuditeur_TF_loginAuditeur_auditeurConnectePageDef"/>
+    <page id="view_enregistrementPageDef"
+          path="loginAuditeur.enregistrementPageDef"/>
+    <page id="view_infoPersonnellePageDef"
+          path="menuAuditeur.infoPersonnellePageDef"/>
+    <page id="view_changeMotDePassePageDef"
+          path="menuAuditeur.changeMotDePassePageDef"/>
+    <page id="view_inscriptionAteliersPageDef"
+          path="menuAuditeur.inscriptionAteliersPageDef"/>
+    <page id="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"
+          path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"/>
+    <page id="view_TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"
+          path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_getDateDevenuCandidatJugePageDef"/>
+    <page id="view_devenirJugePageDef" path="menuAuditeur.devenirJugePageDef"/>
+    <page id="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"
+          path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

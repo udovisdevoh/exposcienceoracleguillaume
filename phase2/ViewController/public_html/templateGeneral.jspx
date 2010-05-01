@@ -19,7 +19,7 @@
     <af:panelBorderLayout>
       <f:facet name="start"/>
       <f:facet name="bottom">
-        <af:outputFormatted value="Copywrong Bill Canadia"/>
+        <af:outputFormatted value="Copyright Bell Canada"/>
       </f:facet>
       <f:facet name="end"/>
       <f:facet name="top">

@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <References xmlns="http://xmlns.oracle.com/adf/jndi">
-   <Reference name="r3lacasgu" className="oracle.jdeveloper.db.adapter.DatabaseProvider" credentialStoreKey="r3lacasgu" xmlns="">
+   <Reference name="r3nnnnnnn" className="oracle.jdeveloper.db.adapter.DatabaseProvider" credentialStoreKey="r3nnnnnnn" xmlns="">
       <Factory className="oracle.jdeveloper.db.adapter.DatabaseProviderFactory"/>
       <RefAddresses>
          <StringRefAddr addrType="sid">
@@ -16,7 +16,7 @@
             <Contents>ellis</Contents>
          </StringRefAddr>
          <StringRefAddr addrType="user">
-            <Contents>r3lacasgu</Contents>
+            <Contents>r3nnnnnnn</Contents>
          </StringRefAddr>
          <SecureRefAddr addrType="password"/>
          <StringRefAddr addrType="DeployPassword">

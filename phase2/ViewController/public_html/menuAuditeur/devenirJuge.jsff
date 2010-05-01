@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-  <af:outputLabel value="Candidature juge" inlineStyle="font-size:medium;"/>
+  <af:outputLabel value="Candidature juge" inlineStyle="font-size:inherit;"/>
   
   <af:panelGroupLayout layout="horizontal">
     <af:commandButton actionListener="#{bindings.soumettreCandidatureJuge.execute}"
@@ -17,7 +17,7 @@
                    rendered="#{pageFlowScope.dateDevenuJuge ne ''}"/>
     <af:outputText value="#{pageFlowScope.dateDevenuJuge}"/>
     <af:commandButton actionListener="#{bindings.annulerCandidatureJuge.execute}"
-                      text="Annuler ma candidature (ne plus être juge"
+                      text="Annuler ma candidature (ne plus Ãªtre juge"
                       disabled="#{!bindings.annulerCandidatureJuge.enabled}"
                       rendered="#{pageFlowScope.dateDevenuJuge ne ''}"
                       action="refresh"/>

@@ -26,8 +26,6 @@ public class PAuditeurViewImpl
 
   public boolean connecter(String userName, String password)
   {
-    System.out.println("Methode connecter avec " + userName + " et " +
-                       password);
     setuserName(userName);
     setpassWord(password);
     executeQuery();
@@ -74,43 +72,22 @@ public class PAuditeurViewImpl
                                     String nouveauMotDePasse,
                                     String confirmationMotDePasse)
   {
-    System.out.println("Methode modifier mot de passe");
-    System.out.println("Ancien: " + ancienMotDePasse);
-    System.out.println("Nouveau1: " + nouveauMotDePasse);
-    System.out.println("Nouveau2: " + confirmationMotDePasse);
-
     PAuditeurViewRowImpl row =
       (PAuditeurViewRowImpl) this.getRowAtRangeIndex(0);
     String password = row.getMotdepasse();
 
-    System.out.println("Ancien mot de passe dans la row trouvée: " +
-                       password);
-
     if (password.equals(ancienMotDePasse))
     {
-      System.out.println("Yé! l'ancien mot de passe est bon");
       if (nouveauMotDePasse.equals(confirmationMotDePasse))
       {
-        System.out.println("Yé! Les deux nouvaux mots de passes sont pareils!");
         row.setMotdepasse(nouveauMotDePasse);
         AppModuleImpl appModuleImpl =
           (AppModuleImpl) getApplicationModule();
         appModuleImpl.getDBTransaction().commit();
-
-        System.out.println("On change le mot de passe pour " +
-                           nouveauMotDePasse);
-
         return true;
       }
-      else
-      {
-        System.out.println("Boo! les 2 nouveaux mots de passes ne matchent pas");
-      }
     }
-    else
-    {
-      System.out.println("Boo! l'ancien mot de passe n'est pas bon");
-    }
+
     return false;
   }
 
@@ -189,7 +166,6 @@ public class PAuditeurViewImpl
 
   public boolean preEditProfile()
   {
-    System.out.println("Information personnelles seront modifiées");
     PAuditeurViewRowImpl row =
       (PAuditeurViewRowImpl) this.getRowAtRangeIndex(0);
     AppModuleImpl appModuleImpl = (AppModuleImpl) getApplicationModule();

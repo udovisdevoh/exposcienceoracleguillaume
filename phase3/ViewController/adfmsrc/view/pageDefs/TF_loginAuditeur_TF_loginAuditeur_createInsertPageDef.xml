@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88"
+                id="TF_loginAuditeur_TF_loginAuditeur_createInsertPageDef"
+                Package="view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables>
+    <iterator Binds="PAuditeurView1" RangeSize="25"
+              DataControl="AppModuleDataControl" id="PAuditeurView1Iterator"/>
+  </executables>
+  <bindings>
+    <action IterBinding="PAuditeurView1Iterator" id="CreateInsert"
+            RequiresUpdateModel="true" Action="createInsertRow"/>
+  </bindings>
+</pageDefinition>

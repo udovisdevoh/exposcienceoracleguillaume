@@ -2,7 +2,7 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
   <strong><af:outputLabel value="Changer de mot de passe"
-                          inlineStyle="font-family:Geneva, Arial, Helvetica, sans-serif; font-size:medium;"/></strong>
+                          inlineStyle="font-family:Geneva, Arial, Helvetica, sans-serif; font-size:inherit;"/></strong>
   <af:inputText label="Mot de passe actuel"
                 validator="#{UnBean.inputText_validator}"
                 binding="#{UnBean.ancienMotDePasse}" secret="true"

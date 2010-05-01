@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="TF_menuAuditeur">
+    <default-activity>menu</default-activity>
+    <managed-bean>
+      <managed-bean-name>UnBean</managed-bean-name>
+      <managed-bean-class>UnBean</managed-bean-class>
+      <managed-bean-scope>request</managed-bean-scope>
+      <managed-property>
+        <property-name>bindings</property-name>
+        <value>#{bindings}</value>
+      </managed-property>
+    </managed-bean>
+    <view id="menu">
+      <page>/menuAuditeur/menu.jsff</page>
+    </view>
+    <view id="inscriptionAteliers">
+      <page>/menuAuditeur/inscriptionAteliers.jsff</page>
+    </view>
+    <view id="infoPersonnelle">
+      <page>/menuAuditeur/infoPersonnelle.jsff</page>
+    </view>
+    <view id="devenirJuge">
+      <page>/menuAuditeur/devenirJuge.jsff</page>
+    </view>
+    <view id="changeMotDePasse">
+      <page>/menuAuditeur/changeMotDePasse.jsff</page>
+    </view>
+    <view id="evaluationAtelier">
+      <page>/menuAuditeur/evaluationAtelier.jsff</page>
+    </view>
+    <method-call id="getDateDevenuJuge">
+      <method>#{bindings.getDateDevenuJuge.execute}</method>
+      <return-value>#{pageFlowScope.dateDevenuJuge}</return-value>
+      <outcome>
+        <fixed-outcome>getDateDevenuJuge</fixed-outcome>
+      </outcome>
+    </method-call>
+    <method-call id="getDateDevenuCandidatJuge">
+      <method>#{bindings.getDateDevenuCandidatJuge.execute}</method>
+      <return-value>#{pageFlowScope.dateDevenuCandidatJuge}</return-value>
+      <outcome>
+        <fixed-outcome>getDateDevenuCandidatJuge</fixed-outcome>
+      </outcome>
+    </method-call>
+    <method-call id="preEditProfile">
+      <method>#{bindings.preEditProfile.execute}</method>
+      <outcome>
+        <fixed-outcome>versInfoPersonnellesFormulaire</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule>
+      <from-activity-id>evaluationAtelier</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versMenuDeEvaluationAtelier</from-outcome>
+        <to-activity-id>menu</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>menu</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versEvaluationAtelier</from-outcome>
+        <to-activity-id>evaluationAtelier</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versIncription</from-outcome>
+        <to-activity-id>inscriptionAteliers</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versChangerMotDePasse</from-outcome>
+        <to-activity-id>changeMotDePasse</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versDevenirCandidatJuge</from-outcome>
+        <to-activity-id>getDateDevenuCandidatJuge</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versEditProfile</from-outcome>
+        <to-activity-id>preEditProfile</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>inscriptionAteliers</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versMenuInscription</from-outcome>
+        <to-activity-id>menu</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>infoPersonnelle</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versMenuInfoPersonnelle</from-outcome>
+        <to-activity-id>menu</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>changeMotDePasse</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versMenuChangerMotDePasse</from-outcome>
+        <to-activity-id>menu</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>getDateDevenuCandidatJuge</from-activity-id>
+      <control-flow-case>
+        <from-outcome>getDateDevenuCandidatJuge</from-outcome>
+        <to-activity-id>getDateDevenuJuge</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>getDateDevenuJuge</from-activity-id>
+      <control-flow-case>
+        <from-outcome>getDateDevenuJuge</from-outcome>
+        <to-activity-id>devenirJuge</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>devenirJuge</from-activity-id>
+      <control-flow-case>
+        <from-outcome>retourMenu</from-outcome>
+        <to-activity-id>menu</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>refresh</from-outcome>
+        <to-activity-id>getDateDevenuCandidatJuge</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>preEditProfile</from-activity-id>
+      <control-flow-case>
+        <from-outcome>versInfoPersonnellesFormulaire</from-outcome>
+        <to-activity-id>infoPersonnelle</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

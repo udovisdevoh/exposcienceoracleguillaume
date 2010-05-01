@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="changeMotDePassePageDef"
+                Package="menuAuditeur">
+  <parameters/>
+  <executables>
+    <iterator id="PAuditeurView1Iterator" RangeSize="10" Binds="PAuditeurView1"
+              DataControl="AppModuleDataControl"/>
+  </executables>
+  <bindings>
+    <methodAction IterBinding="PAuditeurView1Iterator" id="modifierMotDePasse"
+                  InstanceName="bindings.PAuditeurView1Iterator.currentRow"
+                  DataControl="AppModuleDataControl" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="modifierMotDePasse"
+                  IsViewObjectMethod="false" IsLocalObjectReference="true">
+      <NamedData NDName="ancienMotDePasse"
+                 NDValue="#{pageFlowScope.oldPassword}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="nouveauMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword1}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="confirmationMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword2}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+    <methodAction id="modifierMotDePasse1" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="modifierMotDePasse"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.PAuditeurView1"
+                  ReturnName="AppModuleDataControl.methodResults.modifierMotDePasse_AppModuleDataControl_PAuditeurView1_modifierMotDePasse_result"
+                  IterBinding="PAuditeurView1Iterator">
+      <NamedData NDName="ancienMotDePasse"
+                 NDValue="#{pageFlowScope.oldPassword}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="nouveauMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword1}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="confirmationMotDePasse"
+                 NDValue="#{pageFlowScope.newPassword2}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

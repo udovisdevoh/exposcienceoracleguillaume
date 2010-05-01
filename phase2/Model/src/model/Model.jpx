@@ -10,7 +10,7 @@
    PackageName="model" >
    <DesignTime>
       <Attr Name="_jprName" Value="../../Model.jpr" />
-      <Attr Name="_NamedConnection" Value="r3lacasgu"/>
+      <Attr Name="_NamedConnection" Value="r3nnnnnnn"/>
       <Attr Name="_appModuleNames0" Value="model.AppModule"/>
    </DesignTime>
    <Containee

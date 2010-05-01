@@ -36,7 +36,6 @@ public class UnBean
 
     public String commandButton_action()
     {
-        System.out.println("Methode appliquer mot de passe");
         BindingContainer bindings = getBindings();        
         OperationBinding operationBinding =
             bindings.getOperationBinding("modifierMotDePasse");

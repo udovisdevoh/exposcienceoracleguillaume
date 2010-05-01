@@ -6,6 +6,8 @@
   <c:set var="viewcontrollerBundle"
          value="#{adfBundle['view.ViewControllerBundle']}"/>
   <af:panelGroupLayout>
+    <af:activeOutputText value="Modifier informations nominales"
+                         inlineStyle="font-size:inherit;"/>
     <af:panelFormLayout>
       <af:inputText value="#{bindings.Noauditeur.inputValue}"
                     label="#{viewcontrollerBundle.NOAUDITEUR}"
@@ -18,8 +20,6 @@
         <af:convertNumber groupingUsed="false"
                           pattern="#{bindings.Noauditeur.format}"/>
       </af:inputText>
-      <af:activeOutputText value="Modifier informations nominales"
-                           inlineStyle="font-size:medium;"/>
       <af:inputText value="#{bindings.Codeauditeur.inputValue}"
                     label="#{viewcontrollerBundle.CODEAUDITEUR}"
                     required="#{bindings.Codeauditeur.hints.mandatory}"
