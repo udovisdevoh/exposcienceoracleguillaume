@@ -8,7 +8,7 @@
       <af:panelHeader text="Recherche-Inscription Ateliers">
         <af:commandButton text="Retour" action="versMenuInscription"/>
         <af:panelGroupLayout layout="vertical">
-          <af:panelHeader text="PAtelier">
+          <af:panelHeader text="Recherche ateliers">
             <af:query id="qryId1" headerText="Search" disclosed="true"
                       value="#{bindings.PAtelierViewCriteriaQuery.queryDescriptor}"
                       model="#{bindings.PAtelierViewCriteriaQuery.queryModel}"
