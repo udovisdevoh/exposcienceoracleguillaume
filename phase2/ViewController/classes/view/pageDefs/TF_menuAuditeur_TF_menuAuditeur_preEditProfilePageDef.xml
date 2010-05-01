@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88"
+                id="TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"
+                Package="view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <action id="preEditProfile" RequiresUpdateModel="true" Action="invokeMethod"
+            MethodName="preEditProfile" IsViewObjectMethod="true"
+            DataControl="AppModuleDataControl"
+            InstanceName="AppModuleDataControl.PAuditeurView1"
+            ReturnName="AppModuleDataControl.methodResults.preEditProfile_AppModuleDataControl_PAuditeurView1_preEditProfile_result"/>
+  </bindings>
+</pageDefinition>

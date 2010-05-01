@@ -10,7 +10,8 @@ import oracle.jbo.client.remote.ViewUsageImpl;
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
 public class PAuditeurViewClient
-  extends ViewUsageImpl implements PAuditeurView
+  extends ViewUsageImpl
+  implements PAuditeurView
 {
   /**
    * This is the default constructor (do not remove).
@@ -20,63 +21,70 @@ public class PAuditeurViewClient
   }
 
 
-    public boolean connecter(String userName, String password)
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"connecter",new String [] {"java.lang.String","java.lang.String"},new Object[] {userName, password});
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean connecter(String userName, String password)
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"connecter",new String [] {"java.lang.String","java.lang.String"},new Object[] {userName, password});
+    return ((Boolean)_ret).booleanValue();
+  }
 
-    public boolean modifierMotDePasse(String ancienMotDePasse,
-                                      String nouveauMotDePasse,
-                                      String confirmationMotDePasse)
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"modifierMotDePasse",new String [] {"java.lang.String","java.lang.String","java.lang.String"},new Object[] {ancienMotDePasse, nouveauMotDePasse, confirmationMotDePasse});
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean modifierMotDePasse(String ancienMotDePasse,
+                                    String nouveauMotDePasse,
+                                    String confirmationMotDePasse)
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"modifierMotDePasse",new String [] {"java.lang.String","java.lang.String","java.lang.String"},new Object[] {ancienMotDePasse, nouveauMotDePasse, confirmationMotDePasse});
+    return ((Boolean)_ret).booleanValue();
+  }
 
-    public boolean soumettreCandidatureJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"soumettreCandidatureJuge",null,null);
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean soumettreCandidatureJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"soumettreCandidatureJuge",null,null);
+    return ((Boolean)_ret).booleanValue();
+  }
 
-    public boolean annulerCandidatureJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerCandidatureJuge",null,null);
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean annulerCandidatureJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerCandidatureJuge",null,null);
+    return ((Boolean)_ret).booleanValue();
+  }
 
-    public String getDateDevenuCandidatJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"getDateDevenuCandidatJuge",null,null);
-        return (String) _ret;
-    }
+  public String getDateDevenuCandidatJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"getDateDevenuCandidatJuge",null,null);
+    return (String) _ret;
+  }
 
-    public String getDateDevenuJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"getDateDevenuJuge",null,null);
-        return (String) _ret;
-    }
+  public String getDateDevenuJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"getDateDevenuJuge",null,null);
+    return (String) _ret;
+  }
 
-    public boolean annulerDemandeJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerDemandeJuge",null,null);
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean annulerDemandeJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"annulerDemandeJuge",null,null);
+    return ((Boolean)_ret).booleanValue();
+  }
 
-    public boolean editProfile(String nom, String prenom, String rue,
-                               String ville, String codePostal,
-                               String telephone, String courriel)
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"editProfile",new String [] {"java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String"},new Object[] {nom, prenom, rue, ville, codePostal, telephone, courriel});
-        return ((Boolean)_ret).booleanValue();
-    }
+  public boolean editProfile(String nom, String prenom, String rue,
+                             String ville, String codePostal,
+                             String telephone, String courriel)
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"editProfile",new String [] {"java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String"},new Object[] {nom, prenom, rue, ville, codePostal, telephone, courriel});
+    return ((Boolean)_ret).booleanValue();
+  }
+
+  public boolean preEditProfile()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"preEditProfile",null,null);
+    return ((Boolean)_ret).booleanValue();
+  }
 }
