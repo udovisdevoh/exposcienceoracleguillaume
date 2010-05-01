@@ -10,5 +10,30 @@
                   Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
                   Binds="PAtelierView1Iterator" id="PAtelierViewCriteriaQuery"/>
   </executables>
-  <bindings/>
+  <bindings>
+    <tree IterBinding="PAtelierView1Iterator" id="PAtelierView1">
+      <nodeDefinition DefName="model.view.PAtelierView">
+        <AttrNames>
+          <Item Value="Noatel"/>
+          <Item Value="Noexpo"/>
+          <Item Value="Titre"/>
+          <Item Value="Langue"/>
+          <Item Value="AcetateElec"/>
+          <Item Value="Portable"/>
+          <Item Value="Duree"/>
+          <Item Value="Nbmaximum"/>
+          <Item Value="Noexposant"/>
+          <Item Value="Noecole"/>
+          <Item Value="Nocategorie"/>
+          <Item Value="Notype"/>
+          <Item Value="Nolocal"/>
+          <Item Value="Dateatel"/>
+          <Item Value="Creepar"/>
+          <Item Value="Datecreation"/>
+          <Item Value="Coutetudiant"/>
+          <Item Value="Coutregulier"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
 </pageDefinition>

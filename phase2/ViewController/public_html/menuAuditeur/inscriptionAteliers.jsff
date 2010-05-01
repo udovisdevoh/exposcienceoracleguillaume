@@ -7,11 +7,133 @@
     <af:panelGroupLayout layout="vertical">
       <af:panelHeader text="Recherche-Inscription Ateliers">
         <af:commandButton text="Retour" action="versMenuInscription"/>
-        <af:query id="qryId1" headerText="Search" disclosed="true"
-                  value="#{bindings.PAtelierViewCriteriaQuery.queryDescriptor}"
-                  model="#{bindings.PAtelierViewCriteriaQuery.queryModel}"
-                  queryListener="#{bindings.PAtelierViewCriteriaQuery.processQuery}"
-                  queryOperationListener="#{bindings.PAtelierViewCriteriaQuery.processQueryOperation}"/>
+        <af:panelGroupLayout layout="vertical">
+          <af:panelHeader text="PAtelier">
+            <af:query id="qryId1" headerText="Search" disclosed="true"
+                      value="#{bindings.PAtelierViewCriteriaQuery.queryDescriptor}"
+                      model="#{bindings.PAtelierViewCriteriaQuery.queryModel}"
+                      queryListener="#{bindings.PAtelierViewCriteriaQuery.processQuery}"
+                      queryOperationListener="#{bindings.PAtelierViewCriteriaQuery.processQueryOperation}"
+                      resultComponentId="::resId1"/>
+          </af:panelHeader>
+          <af:table value="#{bindings.PAtelierView1.collectionModel}" var="row"
+                    rows="#{bindings.PAtelierView1.rangeSize}"
+                    emptyText="#{bindings.PAtelierView1.viewable ? 'No rows yet.' : 'Access Denied.'}"
+                    fetchSize="#{bindings.PAtelierView1.rangeSize}" id="resId1">
+            <af:column sortProperty="Noatel" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Noatel.label}">
+              <af:outputText value="#{row.Noatel}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Noatel.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Noexpo" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Noexpo.label}">
+              <af:outputText value="#{row.Noexpo}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Noexpo.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Titre" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Titre.label}">
+              <af:outputText value="#{row.Titre}"/>
+            </af:column>
+            <af:column sortProperty="Langue" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Langue.label}">
+              <af:outputText value="#{row.Langue}"/>
+            </af:column>
+            <af:column sortProperty="AcetateElec" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.AcetateElec.label}">
+              <af:outputText value="#{row.AcetateElec}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.AcetateElec.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Portable" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Portable.label}">
+              <af:outputText value="#{row.Portable}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Portable.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Duree" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Duree.label}">
+              <af:outputText value="#{row.Duree}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Duree.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Nbmaximum" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Nbmaximum.label}">
+              <af:outputText value="#{row.Nbmaximum}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Nbmaximum.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Noexposant" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Noexposant.label}">
+              <af:outputText value="#{row.Noexposant}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Noexposant.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Noecole" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Noecole.label}">
+              <af:outputText value="#{row.Noecole}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Noecole.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Nocategorie" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Nocategorie.label}">
+              <af:outputText value="#{row.Nocategorie}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Nocategorie.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Notype" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Notype.label}">
+              <af:outputText value="#{row.Notype}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Notype.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Nolocal" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Nolocal.label}">
+              <af:outputText value="#{row.Nolocal}"/>
+            </af:column>
+            <af:column sortProperty="Dateatel" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Dateatel.label}">
+              <af:outputText value="#{row.Dateatel}">
+                <af:convertDateTime pattern="#{bindings.PAtelierView1.hints.Dateatel.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Creepar" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Creepar.label}">
+              <af:outputText value="#{row.Creepar}"/>
+            </af:column>
+            <af:column sortProperty="Datecreation" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Datecreation.label}">
+              <af:outputText value="#{row.Datecreation}">
+                <af:convertDateTime pattern="#{bindings.PAtelierView1.hints.Datecreation.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Coutetudiant" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Coutetudiant.label}">
+              <af:outputText value="#{row.Coutetudiant}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Coutetudiant.format}"/>
+              </af:outputText>
+            </af:column>
+            <af:column sortProperty="Coutregulier" sortable="false"
+                       headerText="#{bindings.PAtelierView1.hints.Coutregulier.label}">
+              <af:outputText value="#{row.Coutregulier}">
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.PAtelierView1.hints.Coutregulier.format}"/>
+              </af:outputText>
+            </af:column>
+          </af:table>
+        </af:panelGroupLayout>
       </af:panelHeader>
     </af:panelGroupLayout>
   </af:panelFormLayout>
