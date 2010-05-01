@@ -120,9 +120,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="x">357.36133</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">357.36133</property>
       <property
          name="realized">true</property>
    </View>
@@ -168,7 +168,7 @@
       <property
          name="id">ControlFlowCase13</property>
       <property
-         name="sdm:polyPoints">B56,208.51855,166.5,360.0,244.32945,T56</property>
+         name="sdm:polyPoints">B56,208.51855,166.5,353.0,244.42401,T44</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
