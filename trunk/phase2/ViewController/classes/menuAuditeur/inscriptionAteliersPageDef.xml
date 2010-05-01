@@ -35,5 +35,9 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <action IterBinding="PAtelierView1Iterator" id="Create"
+            RequiresUpdateModel="true" Action="createRow"/>
+    <action IterBinding="PAtelierView1Iterator" id="Delete"
+            RequiresUpdateModel="false" Action="removeCurrentRow"/>
   </bindings>
 </pageDefinition>
