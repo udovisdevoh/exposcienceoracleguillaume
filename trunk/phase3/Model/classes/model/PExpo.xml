@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PExpo"
+  Version="11.1.1.51.88"
+  DBObjectType="table"
+  DBObjectName="P_EXPO"
+  AliasName="PExpo"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="Noexpo"
+    IsNotNull="true"
+    Precision="4"
+    Scale="0"
+    ColumnName="NOEXPO"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EXPO"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DateDebut"
+    ColumnName="DATE_DEBUT"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    SQLType="TIMESTAMP"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DateFin"
+    ColumnName="DATE_FIN"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    SQLType="TIMESTAMP"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Nomhotel"
+    Precision="30"
+    ColumnName="NOMHOTEL"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Rue"
+    Precision="25"
+    ColumnName="RUE"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="25"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Ville"
+    Precision="20"
+    ColumnName="VILLE"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CodePostal"
+    Precision="6"
+    ColumnName="CODE_POSTAL"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="6"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Telephone"
+    Precision="10"
+    Scale="0"
+    ColumnName="TELEPHONE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Courriel"
+    Precision="30"
+    ColumnName="COURRIEL"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Creepar"
+    Precision="30"
+    ColumnName="CREEPAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_EXPO">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="PAtelier"
+    Association="model.assoc.PAtelierExpoFkAssoc"
+    AssociationEnd="model.assoc.PAtelierExpoFkAssoc.PAtelier"
+    AssociationOtherEnd="model.assoc.PAtelierExpoFkAssoc.PExpo"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PExpoNoexpoPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="P_EXPO_NOEXPO_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PExpo.Noexpo"/>
+    </AttrArray>
+  </Key>
+</Entity>

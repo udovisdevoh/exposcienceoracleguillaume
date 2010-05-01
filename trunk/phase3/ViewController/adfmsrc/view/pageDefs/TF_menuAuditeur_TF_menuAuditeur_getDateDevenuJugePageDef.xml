@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88"
+                id="TF_menuAuditeur_TF_menuAuditeur_getDateDevenuJugePageDef"
+                Package="view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <action id="getDateDevenuJuge" RequiresUpdateModel="true"
+            Action="invokeMethod" MethodName="getDateDevenuJuge"
+            IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+            InstanceName="AppModuleDataControl.PAuditeurView1"
+            ReturnName="AppModuleDataControl.methodResults.getDateDevenuJuge_AppModuleDataControl_PAuditeurView1_getDateDevenuJuge_result"/>
+  </bindings>
+</pageDefinition>

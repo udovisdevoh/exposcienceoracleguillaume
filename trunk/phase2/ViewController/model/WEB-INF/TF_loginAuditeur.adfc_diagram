@@ -23,7 +23,7 @@
       <property
          name="realized">true</property>
       <property
-         name="x">125.5</property>
+         name="x">234.5</property>
    </View>
    <View
       id="View4">
@@ -54,7 +54,7 @@
       <property
          name="fromOutcome">annuler</property>
       <property
-         name="sdm:polyPoints">L46,330.01953,433.0,129.0,298.5,B56</property>
+         name="sdm:polyPoints">T44,367.51953,382.5,238.0,298.5,B56</property>
    </ControlFlowCase>
    <Router
       id="Router6">
@@ -71,9 +71,9 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">109.0</property>
+         name="y">22.0</property>
       <property
-         name="x">381.0</property>
+         name="x">233.0</property>
    </Router>
    <ControlFlowCase
       islink="true"
@@ -85,7 +85,7 @@
       <property
          name="status">ok</property>
       <property
-         name="sdm:polyPoints">L54,340.0,112.5,166.5,244.5,R50</property>
+         name="sdm:polyPoints">B50,233.0,77.46996,234.5,190.5,T50</property>
    </ControlFlowCase>
    <MethodCall
       id="MethodCall8">
@@ -104,9 +104,9 @@
       <property
          name="rawDescription">method-call - auditeurConnecte</property>
       <property
-         name="y">32.0</property>
+         name="y">251.0</property>
       <property
-         name="x">125.0</property>
+         name="x">33.0</property>
    </MethodCall>
    <MethodCall
       id="MethodCall9">
@@ -140,11 +140,11 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">294.5</property>
+         name="y">256.5</property>
       <property
          name="realized">true</property>
       <property
-         name="x">623.02344</property>
+         name="x">461.02344</property>
    </TaskFlowCall>
    <ControlFlowCase
       islink="true"
@@ -154,7 +154,7 @@
       <property
          name="fromOutcome">executeAuditeurConnecte</property>
       <property
-         name="sdm:polyPoints">T50,125.5,190.5,125.0,86.0,B50</property>
+         name="sdm:polyPoints">L50,193.5,244.5,74.0,251.0,R50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -164,7 +164,7 @@
       <property
          name="fromOutcome">nouveau</property>
       <property
-         name="sdm:polyPoints">B44,122.0,298.5,122.0,387.0,T50</property>
+         name="sdm:polyPoints">B44,231.0,298.5,122.0,387.0,T50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -176,7 +176,7 @@
       <property
          name="status">ok</property>
       <property
-         name="sdm:polyPoints">B50,381.0,163.0,582.02344,291.0,L46</property>
+         name="sdm:polyPoints">B61,240.0,76.0,420.02344,256.5,L50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -186,7 +186,7 @@
       <property
          name="fromOutcome">terminerNouveau</property>
       <property
-         name="sdm:polyPoints">R50,412.01953,436.5,582.02344,298.0,L54</property>
+         name="sdm:polyPoints">T56,374.51953,382.5,461.02344,310.5,B50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -196,7 +196,7 @@
       <property
          name="fromOutcome">decision</property>
       <property
-         name="sdm:polyPoints">R50,166.0,32.0,340.0,105.5,L46</property>
+         name="sdm:polyPoints">T50,33.0,197.0,226.0,76.0,B39</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -206,6 +206,6 @@
       <property
          name="fromOutcome">enregistrer</property>
       <property
-         name="sdm:polyPoints">R50,163.0,441.0,330.01953,440.0,L54</property>
+         name="sdm:polyPoints">R50,163.0,441.0,330.01953,436.5,L50</property>
    </ControlFlowCase>
 </SDM>

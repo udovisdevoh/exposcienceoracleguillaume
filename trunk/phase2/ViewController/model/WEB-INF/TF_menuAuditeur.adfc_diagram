@@ -36,13 +36,13 @@
       <property
          name="rawDescription">view - inscriptionAteliers</property>
       <property
-         name="y">112.5</property>
+         name="y">65.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">205.01855</property>
+         name="x">253.01855</property>
    </View>
    <View
       id="View4">
@@ -57,13 +57,13 @@
       <property
          name="rawDescription">view - infoPersonnelle</property>
       <property
-         name="y">113.5</property>
+         name="y">189.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">541.3613</property>
+         name="x">566.3613</property>
    </View>
    <View
       id="View5">
@@ -78,13 +78,13 @@
       <property
          name="rawDescription">view - devenirJuge</property>
       <property
-         name="y">220.5</property>
+         name="y">267.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">102.68945</property>
+         name="x">158.68945</property>
    </View>
    <View
       id="View6">
@@ -99,13 +99,13 @@
       <property
          name="rawDescription">view - changeMotDePasse</property>
       <property
-         name="y">302.5</property>
+         name="y">455.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">678.0322</property>
+         name="x">601.0322</property>
    </View>
    <View
       id="View7">
@@ -118,11 +118,11 @@
       <property
          name="rawDescription">view - evaluationAtelier</property>
       <property
-         name="y">483.5</property>
-      <property
-         name="x">357.36133</property>
+         name="y">524.5</property>
       <property
          name="pageFragment">true</property>
+      <property
+         name="x">357.36133</property>
       <property
          name="realized">true</property>
    </View>
@@ -134,7 +134,7 @@
       <property
          name="fromOutcome">versMenuDeEvaluationAtelier</property>
       <property
-         name="sdm:polyPoints">T44,353.86133,429.5,353.0,356.5413,B44</property>
+         name="sdm:polyPoints">T44,353.86133,470.5,353.0,356.52646,B44</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -144,7 +144,7 @@
       <property
          name="fromOutcome">versEvaluationAtelier</property>
       <property
-         name="sdm:polyPoints">B56,360.0,356.5,360.86133,429.45868,T56</property>
+         name="sdm:polyPoints">B56,360.0,356.5,360.86133,470.47354,T56</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -156,7 +156,7 @@
       <property
          name="id">ControlFlowCase12</property>
       <property
-         name="sdm:polyPoints">T33,346.0,248.5,201.51855,170.6269,B44</property>
+         name="sdm:polyPoints">T39,349.5,248.5,249.51855,121.9129,B44</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -168,7 +168,7 @@
       <property
          name="id">ControlFlowCase13</property>
       <property
-         name="sdm:polyPoints">B56,208.51855,166.5,353.0,244.42401,T44</property>
+         name="sdm:polyPoints">B56,256.51855,119.5,356.5,246.1049,T50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -178,7 +178,9 @@
       <property
          name="fromOutcome">versMenuInfoPersonnelle</property>
       <property
-         name="sdm:polyPoints">L50,500.36133,113.5,367.0,248.5,T67</property>
+         name="id">ControlFlowCase15</property>
+      <property
+         name="sdm:polyPoints">L50,525.3613,189.5,397.5,295.5,R42</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -188,7 +190,7 @@
       <property
          name="fromOutcome">versChangerMotDePasse</property>
       <property
-         name="sdm:polyPoints">R46,397.5,299.0,637.0322,299.0,L46</property>
+         name="sdm:polyPoints">R50,400.22977,302.5,560.0322,452.0,L46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -198,7 +200,7 @@
       <property
          name="fromOutcome">versMenuChangerMotDePasse</property>
       <property
-         name="sdm:polyPoints">L54,637.0322,306.0,397.5,306.0,R54</property>
+         name="sdm:polyPoints">L54,557.2854,459.0,397.5,309.5,R58</property>
    </ControlFlowCase>
    <MethodCall
       id="MethodCall18">
@@ -217,9 +219,9 @@
       <property
          name="rawDescription">method-call - getDateDevenuJuge</property>
       <property
-         name="y">314.5</property>
+         name="y">199.5</property>
       <property
-         name="x">-102.293945</property>
+         name="x">-18.293945</property>
    </MethodCall>
    <MethodCall
       id="MethodCall19">
@@ -238,9 +240,9 @@
       <property
          name="rawDescription">method-call - getDateDevenuCandidatJuge</property>
       <property
-         name="y">404.5</property>
+         name="y">469.5</property>
       <property
-         name="x">122.72363</property>
+         name="x">-0.2763672</property>
    </MethodCall>
    <ControlFlowCase
       islink="true"
@@ -252,7 +254,7 @@
       <property
          name="id">ControlFlowCase22</property>
       <property
-         name="sdm:polyPoints">L54,315.5,306.0,163.72363,404.5,R50</property>
+         name="sdm:polyPoints">L54,315.5,306.0,40.723633,469.5,R50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -264,7 +266,7 @@
       <property
          name="id">ControlFlowCase23</property>
       <property
-         name="sdm:polyPoints">L50,81.72363,404.5,-61.293945,318.0,R54</property>
+         name="sdm:polyPoints">T44,-3.7763672,415.5,-18.293945,253.5,B50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -274,7 +276,7 @@
       <property
          name="fromOutcome">getDateDevenuJuge</property>
       <property
-         name="sdm:polyPoints">R46,-61.293945,311.0,61.689453,220.5,L50</property>
+         name="sdm:polyPoints">R50,22.706055,199.5,117.68945,267.5,L50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -284,7 +286,7 @@
       <property
          name="fromOutcome">retourMenu</property>
       <property
-         name="sdm:polyPoints">R50,143.68945,220.5,315.5,299.0,L46</property>
+         name="sdm:polyPoints">R50,199.68945,267.5,315.5,299.0,L46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -294,7 +296,7 @@
       <property
          name="fromOutcome">refresh</property>
       <property
-         name="sdm:polyPoints">B50,102.68945,274.5,122.72363,350.5,T50</property>
+         name="sdm:polyPoints">B50,158.68945,321.5,3.2236328,415.5,T56</property>
    </ControlFlowCase>
    <MethodCall
       id="MethodCall27">
@@ -309,9 +311,9 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">-39.5</property>
+         name="y">13.5</property>
       <property
-         name="x">301.01758</property>
+         name="x">473.01758</property>
    </MethodCall>
    <ControlFlowCase
       islink="true"
@@ -321,7 +323,7 @@
       <property
          name="fromOutcome">versEditProfile</property>
       <property
-         name="sdm:polyPoints">T56,360.0,241.9517,301.01758,14.5,B50</property>
+         name="sdm:polyPoints">T61,363.5,248.5,469.51758,67.5,B44</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -329,10 +331,12 @@
       from="MethodCall27"
       to="View4">
       <property
+         name="id">ControlFlowCase30</property>
+      <property
          name="fromOutcome">versInfoPersonnellesFormulaire</property>
       <property
          name="status">ok</property>
       <property
-         name="sdm:polyPoints">R50,342.01758,-39.5,500.36133,110.0,L46</property>
+         name="sdm:polyPoints">B56,476.51758,67.5,566.3613,135.5,T50</property>
    </ControlFlowCase>
 </SDM>

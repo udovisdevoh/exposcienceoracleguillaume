@@ -7,7 +7,7 @@
          value="#{adfBundle['view.ViewControllerBundle']}"/>
   <af:panelFormLayout>
     <f:facet name="footer"/>
-    <af:outputText value="Menu" inlineStyle="font-size:medium;"/>
+    <af:outputText value="Menu" inlineStyle="font-size:inherit;"/>
     <af:panelGroupLayout layout="vertical">
       <af:commandImageLink text="Changer mot de passe"
                            action="versChangerMotDePasse"/>

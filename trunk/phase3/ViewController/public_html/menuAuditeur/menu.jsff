@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
+  <c:set var="viewcontrollerBundle"
+         value="#{adfBundle['view.ViewControllerBundle']}"/>
+  <af:panelFormLayout>
+    <f:facet name="footer"/>
+    <af:outputText value="Menu" inlineStyle="font-size:medium;"/>
+    <af:panelGroupLayout layout="vertical">
+      <af:commandImageLink text="Changer mot de passe"
+                           action="versChangerMotDePasse"/>
+      <af:commandImageLink text="Changer informations nominales"
+                           action="versEditProfile"/>
+      <af:commandImageLink text="Inscriptions aux ateliers"
+                           action="versIncription"/>
+      <af:commandImageLink text="#{viewcontrollerBundle.EVALUATION_DES_ATELIERS}"
+                           action="versEvaluationAtelier"/>
+      <af:commandImageLink text="Devenir juge"
+                           action="versDevenirCandidatJuge"/>
+    </af:panelGroupLayout>
+  </af:panelFormLayout>
+</jsp:root>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PAtelierExpoFkAssoc"
+  Version="11.1.1.51.88">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="PExpo"
+    Cardinality="1"
+    Source="true"
+    Owner="model.PExpo">
+    <AttrArray Name="Attributes">
+      <Item Value="model.PExpo.Noexpo"/>
+    </AttrArray>
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="PExpo"/>
+      <Attr Name="_foreignKey" Value="model.PExpo.PExpoNoexpoPk"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="PAtelier"
+    Cardinality="-1"
+    Owner="model.PAtelier">
+    <AttrArray Name="Attributes">
+      <Item Value="model.PAtelier.Noexpo"/>
+    </AttrArray>
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="PAtelier"/>
+      <Attr Name="_foreignKey" Value="model.PAtelier.PAtelierExpoFk"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+  </AssociationEnd>
+</Association>

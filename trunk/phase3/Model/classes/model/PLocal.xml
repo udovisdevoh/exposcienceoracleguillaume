@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PLocal"
+  Version="11.1.1.51.88"
+  DBObjectType="table"
+  DBObjectName="P_LOCAL"
+  AliasName="PLocal"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="Nolocal"
+    IsNotNull="true"
+    Precision="10"
+    ColumnName="NOLOCAL"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    SQLType="VARCHAR"
+    TableName="P_LOCAL"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Capacite"
+    Precision="3"
+    Scale="0"
+    ColumnName="CAPACITE"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    SQLType="NUMERIC"
+    TableName="P_LOCAL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="22"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="PAtelier"
+    Association="model.assoc.PAtelierLocalFkAssoc"
+    AssociationEnd="model.assoc.PAtelierLocalFkAssoc.PAtelier"
+    AssociationOtherEnd="model.assoc.PAtelierLocalFkAssoc.PLocal"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PLocalNumeroPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="P_LOCAL_NUMERO_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.PLocal.Nolocal"/>
+    </AttrArray>
+  </Key>
+</Entity>

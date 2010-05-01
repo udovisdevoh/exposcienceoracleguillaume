@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelFormLayout>
+    <f:facet name="footer"/>
+    <af:inputText label="Code usager:" value="#{pageFlowScope.codeUsager}"/>
+    <af:inputText label="Mot de passe:" secret="true"
+                  value="#{pageFlowScope.motDePasse}"/>
+    <af:panelGroupLayout layout="horizontal">
+      <af:commandButton text="login" action="executeAuditeurConnecte"/>
+      <af:commandImageLink text="S'enregistrer" action="nouveau"/>
+    </af:panelGroupLayout>
+    <af:outputText value="Usager ou mot de passe incorrect"
+                   rendered="#{pageFlowScope.loginSuccess eq 'false'}"/>
+  </af:panelFormLayout>
+</jsp:root>

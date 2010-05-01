@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="inscriptionAteliersPageDef"
+                Package="menuAuditeur">
+  <parameters/>
+  <executables>
+    <iterator Binds="PAtelierView1" RangeSize="25"
+              DataControl="AppModuleDataControl" id="PAtelierView1Iterator"/>
+    <searchRegion Criteria="PAtelierViewCriteria"
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="PAtelierView1Iterator" id="PAtelierViewCriteriaQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="PAtelierView1Iterator" id="PAtelierView1">
+      <nodeDefinition DefName="model.view.PAtelierView">
+        <AttrNames>
+          <Item Value="Noatel"/>
+          <Item Value="Noexpo"/>
+          <Item Value="Titre"/>
+          <Item Value="Langue"/>
+          <Item Value="AcetateElec"/>
+          <Item Value="Portable"/>
+          <Item Value="Duree"/>
+          <Item Value="Nbmaximum"/>
+          <Item Value="Noexposant"/>
+          <Item Value="Noecole"/>
+          <Item Value="Nocategorie"/>
+          <Item Value="Notype"/>
+          <Item Value="Nolocal"/>
+          <Item Value="Dateatel"/>
+          <Item Value="Creepar"/>
+          <Item Value="Datecreation"/>
+          <Item Value="Coutetudiant"/>
+          <Item Value="Coutregulier"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="PAtelierView1Iterator" id="Create"
+            RequiresUpdateModel="true" Action="createRow"/>
+    <action IterBinding="PAtelierView1Iterator" id="Delete"
+            RequiresUpdateModel="false" Action="removeCurrentRow"/>
+  </bindings>
+</pageDefinition>
