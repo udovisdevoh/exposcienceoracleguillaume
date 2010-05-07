@@ -9,8 +9,8 @@
       <af:form>
         <af:pageTemplate viewId="/templateGeneral.jspx">
           <f:facet name="main">
-            <af:region value="#{bindings.TF_loginAuditeur1.regionModel}"
-                       id="TF_lo1"/>
+            <af:region value="#{bindings.TF_menuAdministrateur1.regionModel}"
+                       id="TF_me1"/>
           </f:facet>
         </af:pageTemplate>
       </af:form>

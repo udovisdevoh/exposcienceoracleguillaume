@@ -1,6 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <task-flow-registry xmlns="http://xmlns.oracle.com/adf/controller/rc">
-   <task-flow-descriptor path="META-INF/adfc-config.xml" id="" type="" uses-page-fragments="false" train="false"/>
    <task-flow-descriptor path="WEB-INF/TF_menuAuditeur.xml" id="TF_menuAuditeur" type="task-flow-definition" uses-page-fragments="true" train="false"/>
    <task-flow-descriptor path="WEB-INF/TF_loginAuditeur.xml" id="TF_loginAuditeur" type="task-flow-definition" uses-page-fragments="true" train="false"/>
+   <task-flow-descriptor path="WEB-INF/TF_menuAdministrateur.xml" id="TF_menuAdministrateur" type="task-flow-definition" uses-page-fragments="true" train="false"/>
+   <task-flow-descriptor path="META-INF/adfc-config.xml" id="" type="" uses-page-fragments="false" train="false"/>
 </task-flow-registry>
