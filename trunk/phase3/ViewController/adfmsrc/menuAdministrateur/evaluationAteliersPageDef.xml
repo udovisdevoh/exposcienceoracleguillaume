@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.51.88" id="evaluationAteliersPageDef"
+                Package="menuAdministrateur">
+  <parameters/>
+  <executables>
+    <iterator Binds="PInscriptionView1" RangeSize="25"
+              DataControl="AppModuleDataControl"
+              id="PInscriptionView1Iterator"/>
+    <iterator Binds="PCritereView1" RangeSize="25"
+              DataControl="AppModuleDataControl" id="PCritereView1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="PInscriptionView1Iterator" id="PInscriptionView1">
+      <nodeDefinition DefName="model.view.PInscriptionView">
+        <AttrNames>
+          <Item Value="Noauditeur"/>
+          <Item Value="Dateinscription"/>
+          <Item Value="Confirmationenvoyee"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="PCritereView1Iterator" id="PCritereView1">
+      <nodeDefinition DefName="model.view.PCritereView">
+        <AttrNames>
+          <Item Value="Nocritere"/>
+          <Item Value="Nomcritere"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

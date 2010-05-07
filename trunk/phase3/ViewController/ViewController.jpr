@@ -74,6 +74,11 @@
             <url n="sourceOwnerURL" path="../phase2.jws"/>
             <url n="sourceURL" path="../Model/Model.jpr"/>
          </hash>
+         <hash>
+            <value n="class" v="oracle.jdeveloper.library.ProjectLibrary"/>
+            <url n="sourceOwnerURL" path="../phase3.jws"/>
+            <url n="sourceURL" path="../Model/Model.jpr"/>
+         </hash>
       </list>
    </hash>
    <hash n="oracle.ide.model.ResourcePaths">

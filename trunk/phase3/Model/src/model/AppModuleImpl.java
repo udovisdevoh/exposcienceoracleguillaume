@@ -1,5 +1,6 @@
 package model;
 
+import model.view.PAtelierViewImpl;
 import model.view.PAuditeurViewImpl;
 
 import oracle.jbo.server.ApplicationModuleImpl;
@@ -153,4 +154,5 @@ public class AppModuleImpl extends ApplicationModuleImpl
     {
         return (ViewObjectImpl) findViewObject("PTypeView1");
     }
+
 }
