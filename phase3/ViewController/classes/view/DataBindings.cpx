@@ -29,6 +29,7 @@
           usageId="view_devenirJugePageDef"/>
     <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@preEditProfile"
           usageId="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
+    <page path="/homeAdmin.jspx" usageId="view_homeAdminPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -51,6 +52,7 @@
     <page id="view_devenirJugePageDef" path="menuAuditeur.devenirJugePageDef"/>
     <page id="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"
           path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
+    <page id="view_homeAdminPageDef" path="view.pageDefs.homeAdminPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
