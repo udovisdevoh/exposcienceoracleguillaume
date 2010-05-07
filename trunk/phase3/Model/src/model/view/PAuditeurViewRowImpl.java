@@ -256,6 +256,32 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
         obj.setAttributeInternal(index(), value);
       }
     }
+    ,
+    PInscriptionView1
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPInscriptionView1();
+      }
+
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
+    ,
+    PEvaluationView1
+    {
+      public Object get(PAuditeurViewRowImpl obj)
+      {
+        return obj.getPEvaluationView1();
+      }
+
+      public void put(PAuditeurViewRowImpl obj, Object value)
+      {
+        obj.setAttributeInternal(index(), value);
+      }
+    }
     ;
     private static AttributesEnum[] vals = null;
     private static int firstIndex = 0;
@@ -314,6 +340,10 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
     public static final int PREGIONVIEW1 = AttributesEnum.PRegionView1.index();
 
   public static final int PSTATUTAUDITEURVIEW1 = AttributesEnum.PStatutAuditeurView1.index();
+
+  public static final int PINSCRIPTIONVIEW1 = AttributesEnum.PInscriptionView1.index();
+
+  public static final int PEVALUATIONVIEW1 = AttributesEnum.PEvaluationView1.index();
 
   /**
    * This is the default constructor (do not remove).
@@ -613,6 +643,22 @@ public class PAuditeurViewRowImpl extends ViewRowImpl
   public RowSet getPStatutAuditeurView1()
   {
     return (RowSet) getAttributeInternal(PSTATUTAUDITEURVIEW1);
+  }
+
+  /**
+   * Gets the view accessor <code>RowSet</code> PInscriptionView1.
+   */
+  public RowSet getPInscriptionView1()
+  {
+    return (RowSet) getAttributeInternal(PINSCRIPTIONVIEW1);
+  }
+
+  /**
+   * Gets the view accessor <code>RowSet</code> PEvaluationView1.
+   */
+  public RowSet getPEvaluationView1()
+  {
+    return (RowSet) getAttributeInternal(PEVALUATIONVIEW1);
   }
 
   /**
