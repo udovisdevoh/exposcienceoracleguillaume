@@ -27,6 +27,28 @@
   <ViewAccessor
     Name="PEvaluationView1"
     ViewObjectName="model.view.PEvaluationView"/>
+  <ViewAccessor
+    Name="PAtelierView1"
+    ViewObjectName="model.view.PAtelierView"/>
+  <ListBinding
+    Name="LOV_Noauditeur"
+    ListVOName="PAtelierView1"
+    ListRangeSize="-1"
+    NullValueFlag="start"
+    NullValueId="LOV_Noauditeur_LOVUIHints_NullValueId"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Noauditeur"/>
+    </AttrArray>
+    <AttrArray Name="DerivedAttrNames"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="Noatel"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Titre"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="PInscription"
     Entity="model.PInscription"/>
@@ -36,7 +58,15 @@
     PrecisionRule="true"
     EntityAttrName="Noauditeur"
     EntityUsage="PInscription"
-    AliasName="NOAUDITEUR"/>
+    AliasName="NOAUDITEUR"
+    LOVName="LOV_Noauditeur">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Noatel"
     IsNotNull="true"
@@ -92,4 +122,8 @@
     EntityAttrName="Creepar"
     EntityUsage="PInscription"
     AliasName="CREEPAR"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
 </ViewObject>

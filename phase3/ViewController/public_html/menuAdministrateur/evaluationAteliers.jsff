@@ -1,10 +1,79 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
-          xmlns:c="http://java.sun.com/jsp/jstl/core">
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:f="http://java.sun.com/jsf/core">
   <c:set var="viewcontrollerBundle"
          value="#{adfBundle['view.ViewControllerBundle']}"/>
   <af:commandButton text="Retour" action="retourDeEvaluationAteliers"/>
   <af:activeOutputText value="#{viewcontrollerBundle.EVALUATION_DES_ATELIERS}"
                        inlineStyle="font-size:medium;"/>
+  <af:panelGroupLayout>
+    <af:table value="#{bindings.PInscriptionView1.collectionModel}" var="row"
+              rows="#{bindings.PInscriptionView1.rangeSize}"
+              emptyText="#{bindings.PInscriptionView1.viewable ? 'No rows yet.' : 'Access Denied.'}"
+              fetchSize="#{bindings.PInscriptionView1.rangeSize}">
+      <af:column sortProperty="Noauditeur" sortable="false"
+                 headerText="#{bindings.PInscriptionView1.hints.Noauditeur.label}">
+        <af:selectOneChoice value="#{row.bindings.Noauditeur.inputValue}"
+                            label="#{row.bindings.Noauditeur.label}"
+                            required="#{bindings.PInscriptionView1.hints.Noauditeur.mandatory}"
+                            shortDesc="#{bindings.PInscriptionView1.hints.Noauditeur.tooltip}">
+          <f:selectItems value="#{row.bindings.Noauditeur.items}"/>
+        </af:selectOneChoice>
+      </af:column>
+      <af:column sortProperty="Dateinscription" sortable="false"
+                 headerText="#{bindings.PInscriptionView1.hints.Dateinscription.label}">
+        <af:inputDate value="#{row.bindings.Dateinscription.inputValue}"
+                      label="#{bindings.PInscriptionView1.hints.Dateinscription.label}"
+                      required="#{bindings.PInscriptionView1.hints.Dateinscription.mandatory}"
+                      shortDesc="#{bindings.PInscriptionView1.hints.Dateinscription.tooltip}">
+          <f:validator binding="#{row.bindings.Dateinscription.validator}"/>
+          <af:convertDateTime pattern="#{bindings.PInscriptionView1.hints.Dateinscription.format}"/>
+        </af:inputDate>
+      </af:column>
+      <af:column sortProperty="Confirmationenvoyee" sortable="false"
+                 headerText="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.label}">
+        <af:inputText value="#{row.bindings.Confirmationenvoyee.inputValue}"
+                      label="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.label}"
+                      required="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.mandatory}"
+                      columns="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.displayWidth}"
+                      maximumLength="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.precision}"
+                      shortDesc="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.tooltip}">
+          <f:validator binding="#{row.bindings.Confirmationenvoyee.validator}"/>
+          <af:convertNumber groupingUsed="false"
+                            pattern="#{bindings.PInscriptionView1.hints.Confirmationenvoyee.format}"/>
+        </af:inputText>
+      </af:column>
+    </af:table>
+  </af:panelGroupLayout>
+  <af:table value="#{bindings.PCritereView1.collectionModel}" var="row"
+            rows="#{bindings.PCritereView1.rangeSize}"
+            emptyText="#{bindings.PCritereView1.viewable ? 'No rows yet.' : 'Access Denied.'}"
+            fetchSize="#{bindings.PCritereView1.rangeSize}">
+    <af:column sortProperty="Nocritere" sortable="false"
+               headerText="#{bindings.PCritereView1.hints.Nocritere.label}">
+      <af:inputText value="#{row.bindings.Nocritere.inputValue}"
+                    label="#{bindings.PCritereView1.hints.Nocritere.label}"
+                    required="#{bindings.PCritereView1.hints.Nocritere.mandatory}"
+                    columns="#{bindings.PCritereView1.hints.Nocritere.displayWidth}"
+                    maximumLength="#{bindings.PCritereView1.hints.Nocritere.precision}"
+                    shortDesc="#{bindings.PCritereView1.hints.Nocritere.tooltip}">
+        <f:validator binding="#{row.bindings.Nocritere.validator}"/>
+        <af:convertNumber groupingUsed="false"
+                          pattern="#{bindings.PCritereView1.hints.Nocritere.format}"/>
+      </af:inputText>
+    </af:column>
+    <af:column sortProperty="Nomcritere" sortable="false"
+               headerText="#{bindings.PCritereView1.hints.Nomcritere.label}">
+      <af:inputText value="#{row.bindings.Nomcritere.inputValue}"
+                    label="#{bindings.PCritereView1.hints.Nomcritere.label}"
+                    required="#{bindings.PCritereView1.hints.Nomcritere.mandatory}"
+                    columns="#{bindings.PCritereView1.hints.Nomcritere.displayWidth}"
+                    maximumLength="#{bindings.PCritereView1.hints.Nomcritere.precision}"
+                    shortDesc="#{bindings.PCritereView1.hints.Nomcritere.tooltip}">
+        <f:validator binding="#{row.bindings.Nomcritere.validator}"/>
+      </af:inputText>
+    </af:column>
+  </af:table>
 </jsp:root>

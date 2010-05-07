@@ -30,6 +30,10 @@
     <page path="/WEB-INF/TF_menuAuditeur.xml#TF_menuAuditeur@preEditProfile"
           usageId="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
     <page path="/homeAdmin.jspx" usageId="view_homeAdminPageDef"/>
+    <page path="/menuAdministrateur/assignationJuges.jsff"
+          usageId="view_assignationJugesPageDef"/>
+    <page path="/menuAdministrateur/evaluationAteliers.jsff"
+          usageId="view_evaluationAteliersPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_homePageDef" path="view.pageDefs.homePageDef"/>
@@ -53,6 +57,10 @@
     <page id="view_TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"
           path="view.pageDefs.TF_menuAuditeur_TF_menuAuditeur_preEditProfilePageDef"/>
     <page id="view_homeAdminPageDef" path="view.pageDefs.homeAdminPageDef"/>
+    <page id="view_assignationJugesPageDef"
+          path="menuAdministrateur.assignationJugesPageDef"/>
+    <page id="view_evaluationAteliersPageDef"
+          path="menuAdministrateur.evaluationAteliersPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
