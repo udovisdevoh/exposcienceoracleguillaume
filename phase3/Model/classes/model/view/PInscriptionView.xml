@@ -22,8 +22,11 @@
   PageIterMode="Full"
   UseGlueCode="false">
   <DesignTime>
-    <Attr Name="_codeGenFlag2" Value="VarAccess"/>
+    <Attr Name="_codeGenFlag2" Value="Access|VarAccess"/>
   </DesignTime>
+  <ViewAccessor
+    Name="PEvaluationView1"
+    ViewObjectName="model.view.PEvaluationView"/>
   <EntityUsage
     Name="PInscription"
     Entity="model.PInscription"/>

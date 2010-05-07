@@ -48,6 +48,12 @@
   <ViewAccessor
     Name="PStatutAuditeurView1"
     ViewObjectName="model.view.PStatutAuditeurView"/>
+  <ViewAccessor
+    Name="PInscriptionView1"
+    ViewObjectName="model.view.PInscriptionView"/>
+  <ViewAccessor
+    Name="PEvaluationView1"
+    ViewObjectName="model.view.PEvaluationView"/>
   <ListBinding
     Name="LOV_Noregion"
     ListVOName="PRegionView1"
