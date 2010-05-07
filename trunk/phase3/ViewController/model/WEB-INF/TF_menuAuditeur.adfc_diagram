@@ -120,9 +120,9 @@
       <property
          name="y">483.5</property>
       <property
-         name="x">357.36133</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">357.36133</property>
       <property
          name="realized">true</property>
    </View>
@@ -178,7 +178,9 @@
       <property
          name="fromOutcome">versMenuInfoPersonnelle</property>
       <property
-         name="sdm:polyPoints">L50,500.36133,113.5,367.0,248.5,T67</property>
+         name="id">ControlFlowCase15</property>
+      <property
+         name="sdm:polyPoints">L54,500.36133,117.0,367.0,248.5,T67</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -328,6 +330,8 @@
       id="ControlFlowCase30"
       from="MethodCall27"
       to="View4">
+      <property
+         name="id">ControlFlowCase30</property>
       <property
          name="fromOutcome">versInfoPersonnellesFormulaire</property>
       <property

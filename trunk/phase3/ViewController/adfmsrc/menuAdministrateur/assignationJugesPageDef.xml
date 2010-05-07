@@ -4,27 +4,29 @@
                 Package="menuAdministrateur">
   <parameters/>
   <executables>
-    <iterator Binds="PAuditeurView1" RangeSize="25"
-              DataControl="AppModuleDataControl" id="PAuditeurView1Iterator"/>
+    <iterator Binds="AuditeurViewDevenirJuge1" RangeSize="25"
+              DataControl="AppModuleDataControl"
+              id="AuditeurViewDevenirJuge1Iterator"/>
   </executables>
   <bindings>
-    <tree IterBinding="PAuditeurView1Iterator" id="PAuditeurView1">
-      <nodeDefinition DefName="model.view.PAuditeurView">
+    <tree IterBinding="AuditeurViewDevenirJuge1Iterator"
+          id="AuditeurViewDevenirJuge1">
+      <nodeDefinition DefName="model.view.AuditeurViewDevenirJuge">
         <AttrNames>
-          <Item Value="Noauditeur"/>
-          <Item Value="Codeauditeur"/>
-          <Item Value="Motdepasse"/>
-          <Item Value="Nom"/>
-          <Item Value="Prenom"/>
-          <Item Value="Juge"/>
-          <Item Value="Rue"/>
-          <Item Value="Ville"/>
-          <Item Value="CodePostal"/>
-          <Item Value="Noregion"/>
-          <Item Value="Telephone"/>
-          <Item Value="Courriel"/>
-          <Item Value="Statut"/>
           <Item Value="Candidatjuge"/>
+          <Item Value="CodePostal"/>
+          <Item Value="Codeauditeur"/>
+          <Item Value="Courriel"/>
+          <Item Value="Juge"/>
+          <Item Value="Motdepasse"/>
+          <Item Value="Noauditeur"/>
+          <Item Value="Nom"/>
+          <Item Value="Noregion"/>
+          <Item Value="Prenom"/>
+          <Item Value="Rue"/>
+          <Item Value="Statut"/>
+          <Item Value="Telephone"/>
+          <Item Value="Ville"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

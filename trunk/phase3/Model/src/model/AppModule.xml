@@ -56,4 +56,7 @@
   <ViewUsage
     Name="PTypeView1"
     ViewObjectName="model.view.PTypeView"/>
+  <ViewUsage
+    Name="AuditeurViewDevenirJuge1"
+    ViewObjectName="model.view.AuditeurViewDevenirJuge"/>
 </AppModule>
