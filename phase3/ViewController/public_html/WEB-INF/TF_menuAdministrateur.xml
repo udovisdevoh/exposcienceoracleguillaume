@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1252" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
   <task-flow-definition id="TF_menuAdministrateur">
-    <default-activity>auditeurConnecte</default-activity>
+    <default-activity>menu</default-activity>
     <view id="assignationJuges">
       <page>/menuAdministrateur/assignationJuges.jsff</page>
     </view>
@@ -10,9 +10,6 @@
     </view>
     <view id="menu">
       <page>/menuAdministrateur/menu.jsff</page>
-    </view>
-    <view id="auditeurConnecte">
-      <page>/menuAdministrateur/auditeurConnecte.jsff</page>
     </view>
     <control-flow-rule>
       <from-activity-id>assignationJuges</from-activity-id>
@@ -36,13 +33,6 @@
       <from-activity-id>evaluationAteliers</from-activity-id>
       <control-flow-case>
         <from-outcome>retourDeEvaluationAteliers</from-outcome>
-        <to-activity-id>menu</to-activity-id>
-      </control-flow-case>
-    </control-flow-rule>
-    <control-flow-rule>
-      <from-activity-id>auditeurConnecte</from-activity-id>
-      <control-flow-case>
-        <from-outcome>versMenu</from-outcome>
         <to-activity-id>menu</to-activity-id>
       </control-flow-case>
     </control-flow-rule>

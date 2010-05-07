@@ -15,18 +15,20 @@
       <property
          name="rawDescription">view - assignationJuges</property>
       <property
-         name="y">570.5</property>
+         name="y">295.5</property>
       <property
          name="pageFragment">true</property>
       <property
          name="realized">true</property>
       <property
-         name="x">124.365234</property>
+         name="x">126.365234</property>
    </View>
    <View
       id="View4">
       <property
          name="activityId">evaluationAteliers</property>
+      <property
+         name="id">View4</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">view - evaluationAteliers&lt;/p>&lt;/html></property>
       <property
@@ -38,14 +40,16 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">618.3613</property>
-      <property
          name="realized">true</property>
+      <property
+         name="x">618.3613</property>
    </View>
    <View
       id="View5">
       <property
          name="activityId">menu</property>
+      <property
+         name="start">true</property>
       <property
          name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">view - menu&lt;/p>&lt;/html></property>
       <property
@@ -57,9 +61,9 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">333.5</property>
-      <property
          name="realized">true</property>
+      <property
+         name="x">333.5</property>
    </View>
    <ControlFlowCase
       islink="true"
@@ -69,7 +73,7 @@
       <property
          name="fromOutcome">retourDeAssignationJugesVersMenu</property>
       <property
-         name="sdm:polyPoints">R46,165.36523,567.0,289.97296,462.5,L50</property>
+         name="sdm:polyPoints">B44,122.865234,353.20508,290.37415,466.0,L54</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -79,7 +83,7 @@
       <property
          name="fromOutcome">versEvaluationAteliers</property>
       <property
-         name="sdm:polyPoints">R50,374.5,462.5,577.3613,462.5,L50</property>
+         name="sdm:polyPoints">R54,374.5,466.0,577.3613,466.0,L54</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -89,38 +93,7 @@
       <property
          name="fromOutcome">retourDeEvaluationAteliers</property>
       <property
-         name="sdm:polyPoints">L54,577.3613,466.0,374.5,466.0,R54</property>
-   </ControlFlowCase>
-   <View
-      id="View9">
-      <property
-         name="activityId">auditeurConnecte</property>
-      <property
-         name="start">true</property>
-      <property
-         name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">view - auditeurConnecte&lt;/p>&lt;/html></property>
-      <property
-         name="exceptionHandler">false</property>
-      <property
-         name="rawDescription">view - auditeurConnecte</property>
-      <property
-         name="y">313.5</property>
-      <property
-         name="pageFragment">true</property>
-      <property
-         name="realized">true</property>
-      <property
-         name="x">140.36719</property>
-   </View>
-   <ControlFlowCase
-      islink="true"
-      id="ControlFlowCase10"
-      from="View9"
-      to="View5">
-      <property
-         name="fromOutcome">versMenu</property>
-      <property
-         name="sdm:polyPoints">B50,140.36719,367.5,292.5,459.0,L46</property>
+         name="sdm:polyPoints">L46,577.3613,459.0,374.5,459.0,R46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -130,6 +103,6 @@
       <property
          name="fromOutcome">versAssignationJuges</property>
       <property
-         name="sdm:polyPoints">L58,292.5,469.5,167.8729,574.0,R54</property>
+         name="sdm:polyPoints">L46,292.5,459.0,129.86523,349.5,B56</property>
    </ControlFlowCase>
 </SDM>
