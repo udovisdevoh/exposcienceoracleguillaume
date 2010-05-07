@@ -155,4 +155,12 @@ public class AppModuleImpl extends ApplicationModuleImpl
         return (ViewObjectImpl) findViewObject("PTypeView1");
     }
 
+  /**
+   * Container's getter for AuditeurViewDevenirJuge1.
+   * @return AuditeurViewDevenirJuge1
+   */
+  public ViewObjectImpl getAuditeurViewDevenirJuge1()
+  {
+    return (ViewObjectImpl) findViewObject("AuditeurViewDevenirJuge1");
+  }
 }

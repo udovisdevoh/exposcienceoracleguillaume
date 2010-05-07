@@ -5,164 +5,118 @@
           xmlns:f="http://java.sun.com/jsf/core">
   <c:set var="viewcontrollerBundle"
          value="#{adfBundle['view.ViewControllerBundle']}"/>
-  <af:commandButton text="Retour" action="retourDeAssignationJugesVersMenu"/>
-  <af:activeOutputText value="#{viewcontrollerBundle.ASSIGNATION_DES_JUGES}"
-                       inlineStyle="font-size:medium;"/>
   <af:panelGroupLayout>
-    <af:table value="#{bindings.PAuditeurView1.collectionModel}" var="row"
-              rows="#{bindings.PAuditeurView1.rangeSize}"
-              emptyText="#{bindings.PAuditeurView1.viewable ? 'No rows yet.' : 'Access Denied.'}"
-              fetchSize="#{bindings.PAuditeurView1.rangeSize}">
-      <af:column sortProperty="Noauditeur" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Noauditeur.label}">
-        <af:inputText value="#{row.bindings.Noauditeur.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Noauditeur.label}"
-                      required="#{bindings.PAuditeurView1.hints.Noauditeur.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Noauditeur.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Noauditeur.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Noauditeur.tooltip}">
-          <f:validator binding="#{row.bindings.Noauditeur.validator}"/>
-          <af:convertNumber groupingUsed="false"
-                            pattern="#{bindings.PAuditeurView1.hints.Noauditeur.format}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Codeauditeur" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Codeauditeur.label}">
-        <af:inputText value="#{row.bindings.Codeauditeur.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Codeauditeur.label}"
-                      required="#{bindings.PAuditeurView1.hints.Codeauditeur.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Codeauditeur.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Codeauditeur.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Codeauditeur.tooltip}">
-          <f:validator binding="#{row.bindings.Codeauditeur.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Motdepasse" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Motdepasse.label}">
-        <af:inputText value="#{row.bindings.Motdepasse.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Motdepasse.label}"
-                      required="#{bindings.PAuditeurView1.hints.Motdepasse.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Motdepasse.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Motdepasse.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Motdepasse.tooltip}">
-          <f:validator binding="#{row.bindings.Motdepasse.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Nom" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Nom.label}">
-        <af:inputText value="#{row.bindings.Nom.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Nom.label}"
-                      required="#{bindings.PAuditeurView1.hints.Nom.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Nom.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Nom.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Nom.tooltip}">
-          <f:validator binding="#{row.bindings.Nom.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Prenom" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Prenom.label}">
-        <af:inputText value="#{row.bindings.Prenom.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Prenom.label}"
-                      required="#{bindings.PAuditeurView1.hints.Prenom.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Prenom.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Prenom.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Prenom.tooltip}">
-          <f:validator binding="#{row.bindings.Prenom.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Juge" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Juge.label}">
-        <af:inputDate value="#{row.bindings.Juge.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Juge.label}"
-                      required="#{bindings.PAuditeurView1.hints.Juge.mandatory}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Juge.tooltip}">
-          <f:validator binding="#{row.bindings.Juge.validator}"/>
-          <af:convertDateTime pattern="#{bindings.PAuditeurView1.hints.Juge.format}"/>
-        </af:inputDate>
-      </af:column>
-      <af:column sortProperty="Rue" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Rue.label}">
-        <af:inputText value="#{row.bindings.Rue.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Rue.label}"
-                      required="#{bindings.PAuditeurView1.hints.Rue.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Rue.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Rue.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Rue.tooltip}">
-          <f:validator binding="#{row.bindings.Rue.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Ville" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Ville.label}">
-        <af:inputText value="#{row.bindings.Ville.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Ville.label}"
-                      required="#{bindings.PAuditeurView1.hints.Ville.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Ville.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Ville.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Ville.tooltip}">
-          <f:validator binding="#{row.bindings.Ville.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="CodePostal" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.CodePostal.label}">
-        <af:inputText value="#{row.bindings.CodePostal.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.CodePostal.label}"
-                      required="#{bindings.PAuditeurView1.hints.CodePostal.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.CodePostal.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.CodePostal.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.CodePostal.tooltip}">
-          <f:validator binding="#{row.bindings.CodePostal.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Noregion" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Noregion.label}">
-        <af:selectOneChoice value="#{row.bindings.Noregion.inputValue}"
-                            label="#{row.bindings.Noregion.label}"
-                            required="#{bindings.PAuditeurView1.hints.Noregion.mandatory}"
-                            shortDesc="#{bindings.PAuditeurView1.hints.Noregion.tooltip}">
-          <f:selectItems value="#{row.bindings.Noregion.items}"/>
-        </af:selectOneChoice>
-      </af:column>
-      <af:column sortProperty="Telephone" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Telephone.label}">
-        <af:inputText value="#{row.bindings.Telephone.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Telephone.label}"
-                      required="#{bindings.PAuditeurView1.hints.Telephone.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Telephone.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Telephone.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Telephone.tooltip}">
-          <f:validator binding="#{row.bindings.Telephone.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Courriel" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Courriel.label}">
-        <af:inputText value="#{row.bindings.Courriel.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Courriel.label}"
-                      required="#{bindings.PAuditeurView1.hints.Courriel.mandatory}"
-                      columns="#{bindings.PAuditeurView1.hints.Courriel.displayWidth}"
-                      maximumLength="#{bindings.PAuditeurView1.hints.Courriel.precision}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Courriel.tooltip}">
-          <f:validator binding="#{row.bindings.Courriel.validator}"/>
-        </af:inputText>
-      </af:column>
-      <af:column sortProperty="Statut" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Statut.label}">
-        <af:selectOneChoice value="#{row.bindings.Statut.inputValue}"
-                            label="#{row.bindings.Statut.label}"
-                            required="#{bindings.PAuditeurView1.hints.Statut.mandatory}"
-                            shortDesc="#{bindings.PAuditeurView1.hints.Statut.tooltip}">
-          <f:selectItems value="#{row.bindings.Statut.items}"/>
-        </af:selectOneChoice>
-      </af:column>
-      <af:column sortProperty="Candidatjuge" sortable="false"
-                 headerText="#{bindings.PAuditeurView1.hints.Candidatjuge.label}">
-        <af:inputDate value="#{row.bindings.Candidatjuge.inputValue}"
-                      label="#{bindings.PAuditeurView1.hints.Candidatjuge.label}"
-                      required="#{bindings.PAuditeurView1.hints.Candidatjuge.mandatory}"
-                      shortDesc="#{bindings.PAuditeurView1.hints.Candidatjuge.tooltip}">
-          <f:validator binding="#{row.bindings.Candidatjuge.validator}"/>
-          <af:convertDateTime pattern="#{bindings.PAuditeurView1.hints.Candidatjuge.format}"/>
-        </af:inputDate>
-      </af:column>
-    </af:table>
+    <af:panelFormLayout>
+      <f:facet name="footer"/>
+      <af:commandButton text="Retour"
+                        action="retourDeAssignationJugesVersMenu"/>
+      <af:activeOutputText value="#{viewcontrollerBundle.ASSIGNATION_DES_JUGES}"
+                           inlineStyle="font-size:medium;"/>
+      <af:table value="#{bindings.AuditeurViewDevenirJuge1.collectionModel}"
+                var="row" rows="#{bindings.AuditeurViewDevenirJuge1.rangeSize}"
+                emptyText="#{bindings.AuditeurViewDevenirJuge1.viewable ? 'No rows yet.' : 'Access Denied.'}"
+                fetchSize="#{bindings.AuditeurViewDevenirJuge1.rangeSize}"
+                width="951">
+        <af:column sortProperty="Prenom" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.label}">
+          <af:inputText value="#{row.bindings.Prenom.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.tooltip}">
+            <f:validator binding="#{row.bindings.Prenom.validator}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Nom" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.label}">
+          <af:inputText value="#{row.bindings.Nom.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Nom.tooltip}">
+            <f:validator binding="#{row.bindings.Nom.validator}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Juge" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Juge.label}">
+          <af:inputDate value="#{row.bindings.Juge.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Juge.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Juge.mandatory}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Juge.tooltip}">
+            <f:validator binding="#{row.bindings.Juge.validator}"/>
+            <af:convertDateTime pattern="#{bindings.AuditeurViewDevenirJuge1.hints.Juge.format}"/>
+          </af:inputDate>
+        </af:column>
+        <af:column sortProperty="Candidatjuge" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Candidatjuge.label}">
+          <af:inputDate value="#{row.bindings.Candidatjuge.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Candidatjuge.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Candidatjuge.mandatory}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Candidatjuge.tooltip}">
+            <f:validator binding="#{row.bindings.Candidatjuge.validator}"/>
+            <af:convertDateTime pattern="#{bindings.AuditeurViewDevenirJuge1.hints.Candidatjuge.format}"/>
+          </af:inputDate>
+        </af:column>
+        <af:column sortProperty="Codeauditeur" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.label}">
+          <af:inputText value="#{row.bindings.Codeauditeur.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Codeauditeur.tooltip}">
+            <f:validator binding="#{row.bindings.Codeauditeur.validator}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Courriel" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.label}">
+          <af:inputText value="#{row.bindings.Courriel.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Courriel.tooltip}">
+            <f:validator binding="#{row.bindings.Courriel.validator}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Noauditeur" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.label}">
+          <af:inputText value="#{row.bindings.Noauditeur.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.tooltip}">
+            <f:validator binding="#{row.bindings.Noauditeur.validator}"/>
+            <af:convertNumber groupingUsed="false"
+                              pattern="#{bindings.AuditeurViewDevenirJuge1.hints.Noauditeur.format}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Telephone" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.label}">
+          <af:inputText value="#{row.bindings.Telephone.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Telephone.tooltip}">
+            <f:validator binding="#{row.bindings.Telephone.validator}"/>
+          </af:inputText>
+        </af:column>
+        <af:column sortProperty="Ville" sortable="false"
+                   headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.label}">
+          <af:inputText value="#{row.bindings.Ville.inputValue}"
+                        label="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.label}"
+                        required="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.mandatory}"
+                        columns="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.displayWidth}"
+                        maximumLength="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.precision}"
+                        shortDesc="#{bindings.AuditeurViewDevenirJuge1.hints.Ville.tooltip}">
+            <f:validator binding="#{row.bindings.Ville.validator}"/>
+          </af:inputText>
+        </af:column>
+      </af:table>
+    </af:panelFormLayout>
   </af:panelGroupLayout>
 </jsp:root>
