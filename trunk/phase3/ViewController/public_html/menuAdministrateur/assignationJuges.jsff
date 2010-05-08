@@ -8,15 +8,24 @@
   <af:panelGroupLayout>
     <af:panelFormLayout>
       <f:facet name="footer"/>
-      <af:commandButton text="Retour"
-                        action="retourDeAssignationJugesVersMenu"/>
+      <af:panelGroupLayout>
+        <af:commandButton actionListener="#{bindings.mettreJuge.execute}"
+                          text="Assigner"
+                          disabled="#{!bindings.mettreJuge.enabled}"
+                          partialTriggers="table1"/>
+        <af:commandButton actionListener="#{bindings.limoger.execute}"
+                          text="Limoger" disabled="#{!bindings.limoger.enabled}"
+                          partialTriggers="table1"/>
+        <af:commandButton text="Retour"
+                          action="retourDeAssignationJugesVersMenu"/>
+      </af:panelGroupLayout>
       <af:activeOutputText value="#{viewcontrollerBundle.ASSIGNATION_DES_JUGES}"
                            inlineStyle="font-size:medium;"/>
       <af:table value="#{bindings.AuditeurViewDevenirJuge1.collectionModel}"
                 var="row" rows="#{bindings.AuditeurViewDevenirJuge1.rangeSize}"
                 emptyText="#{bindings.AuditeurViewDevenirJuge1.viewable ? 'No rows yet.' : 'Access Denied.'}"
                 fetchSize="#{bindings.AuditeurViewDevenirJuge1.rangeSize}"
-                width="951">
+                width="951" rowSelection="single" id="table1">
         <af:column sortProperty="Prenom" sortable="false"
                    headerText="#{bindings.AuditeurViewDevenirJuge1.hints.Prenom.label}">
           <af:inputText value="#{row.bindings.Prenom.inputValue}"
