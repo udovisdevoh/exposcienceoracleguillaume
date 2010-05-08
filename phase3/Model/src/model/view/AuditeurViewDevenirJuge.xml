@@ -25,7 +25,10 @@
   FetchMode="FETCH_AS_NEEDED"
   PageIterMode="Full"
   UseGlueCode="false"
-  ComponentClass="model.view.AuditeurViewDevenirJugeImpl">
+  ComponentClass="model.view.AuditeurViewDevenirJugeImpl"
+  RowClass="model.view.AuditeurViewDevenirJugeRowImpl"
+  RowInterface="model.view.common.AuditeurViewDevenirJugeRow"
+  ClientRowProxyName="model.view.client.AuditeurViewDevenirJugeRowClient">
   <EntityUsage
     Name="PAuditeur"
     Entity="model.PAuditeur"/>
@@ -114,6 +117,19 @@
     EntityUsage="PAuditeur"
     AliasName="VILLE"/>
   <DesignTime>
-    <Attr Name="_codeGenFlag2" Value="Coll"/>
+    <Attr Name="_codeGenFlag2" Value="Access|Coll"/>
+    <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>
+  <ClientRowInterface>
+    <Method
+      Name="mettreJuge">
+      <Return
+        Type="void"/>
+    </Method>
+    <Method
+      Name="limoger">
+      <Return
+        Type="void"/>
+    </Method>
+  </ClientRowInterface>
 </ViewObject>
