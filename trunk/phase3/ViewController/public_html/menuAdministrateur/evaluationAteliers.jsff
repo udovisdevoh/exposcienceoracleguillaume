@@ -12,7 +12,8 @@
     <af:table value="#{bindings.PInscriptionView1.collectionModel}" var="row"
               rows="#{bindings.PInscriptionView1.rangeSize}"
               emptyText="#{bindings.PInscriptionView1.viewable ? 'No rows yet.' : 'Access Denied.'}"
-              fetchSize="#{bindings.PInscriptionView1.rangeSize}">
+              fetchSize="#{bindings.PInscriptionView1.rangeSize}"
+              rowSelection="single">
       <af:column sortProperty="Noauditeur" sortable="false"
                  headerText="#{bindings.PInscriptionView1.hints.Noauditeur.label}">
         <af:selectOneChoice value="#{row.bindings.Noauditeur.inputValue}"

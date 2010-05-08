@@ -28,7 +28,9 @@
   ComponentClass="model.view.AuditeurViewDevenirJugeImpl"
   RowClass="model.view.AuditeurViewDevenirJugeRowImpl"
   RowInterface="model.view.common.AuditeurViewDevenirJugeRow"
-  ClientRowProxyName="model.view.client.AuditeurViewDevenirJugeRowClient">
+  ClientRowProxyName="model.view.client.AuditeurViewDevenirJugeRowClient"
+  ComponentInterface="model.view.common.AuditeurViewDevenirJuge"
+  ClientProxyName="model.view.client.AuditeurViewDevenirJugeClient">
   <EntityUsage
     Name="PAuditeur"
     Entity="model.PAuditeur"/>
@@ -132,4 +134,16 @@
         Type="void"/>
     </Method>
   </ClientRowInterface>
+  <ClientInterface>
+    <Method
+      Name="mettreJugePasRow">
+      <Return
+        Type="void"/>
+    </Method>
+    <Method
+      Name="limogerPasRow">
+      <Return
+        Type="void"/>
+    </Method>
+  </ClientInterface>
 </ViewObject>

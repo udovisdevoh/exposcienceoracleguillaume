@@ -18,6 +18,7 @@ public class AuditeurViewDevenirJugeRowClient extends RowImpl implements Auditeu
     {
     }
 
+
     public void mettreJuge()
     {
         Object _ret =

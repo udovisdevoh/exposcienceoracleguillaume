@@ -30,17 +30,13 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
-    <methodAction IterBinding="AuditeurViewDevenirJuge1Iterator" id="mettreJuge"
-                  RequiresUpdateModel="true" Action="invokeMethod"
-                  MethodName="mettreJuge" IsViewObjectMethod="false"
-                  DataControl="AppModuleDataControl"
-                  InstanceName="bindings.AuditeurViewDevenirJuge1Iterator.currentRow"
-                  IsLocalObjectReference="true"/>
-    <methodAction IterBinding="AuditeurViewDevenirJuge1Iterator" id="limoger"
-                  RequiresUpdateModel="true" Action="invokeMethod"
-                  MethodName="limoger" IsViewObjectMethod="false"
-                  DataControl="AppModuleDataControl"
-                  InstanceName="bindings.AuditeurViewDevenirJuge1Iterator.currentRow"
-                  IsLocalObjectReference="true"/>
+    <methodAction id="mettreJugePasRow" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="mettreJugePasRow"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
+    <methodAction id="limogerPasRow" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="limogerPasRow"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
   </bindings>
 </pageDefinition>
