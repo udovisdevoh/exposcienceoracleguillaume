@@ -9,13 +9,12 @@
     <af:panelFormLayout>
       <f:facet name="footer"/>
       <af:panelGroupLayout>
-        <af:commandButton actionListener="#{bindings.mettreJuge.execute}"
+        <af:commandButton actionListener="#{bindings.mettreJugePasRow.execute}"
                           text="Assigner"
-                          disabled="#{!bindings.mettreJuge.enabled}"
-                          partialTriggers="table1"/>
-        <af:commandButton actionListener="#{bindings.limoger.execute}"
-                          text="Limoger" disabled="#{!bindings.limoger.enabled}"
-                          partialTriggers="table1"/>
+                          disabled="#{!bindings.mettreJugePasRow.enabled}"/>
+        <af:commandButton actionListener="#{bindings.limogerPasRow.execute}"
+                          text="Limoger"
+                          disabled="#{!bindings.limogerPasRow.enabled}"/>
         <af:commandButton text="Retour"
                           action="retourDeAssignationJugesVersMenu"/>
       </af:panelGroupLayout>
