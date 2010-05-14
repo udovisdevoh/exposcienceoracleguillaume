@@ -9,6 +9,14 @@
               id="AuditeurViewDevenirJuge1Iterator"/>
   </executables>
   <bindings>
+    <methodAction id="mettreJugePasRow" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="mettreJugePasRow"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
+    <methodAction id="limogerPasRow" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="limogerPasRow"
+                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
+                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
     <tree IterBinding="AuditeurViewDevenirJuge1Iterator"
           id="AuditeurViewDevenirJuge1">
       <nodeDefinition DefName="model.view.AuditeurViewDevenirJuge">
@@ -30,13 +38,5 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
-    <methodAction id="mettreJugePasRow" RequiresUpdateModel="true"
-                  Action="invokeMethod" MethodName="mettreJugePasRow"
-                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
-                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
-    <methodAction id="limogerPasRow" RequiresUpdateModel="true"
-                  Action="invokeMethod" MethodName="limogerPasRow"
-                  IsViewObjectMethod="true" DataControl="AppModuleDataControl"
-                  InstanceName="AppModuleDataControl.AuditeurViewDevenirJuge1"/>
   </bindings>
 </pageDefinition>
