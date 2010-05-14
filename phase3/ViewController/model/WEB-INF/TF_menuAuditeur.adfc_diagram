@@ -107,45 +107,6 @@
       <property
          name="x">678.0322</property>
    </View>
-   <View
-      id="View7">
-      <property
-         name="activityId">evaluationAtelier</property>
-      <property
-         name="description">&lt;html>&lt;p align="left" style="font-family:Segoe UI;font-size:12pt">view - evaluationAtelier&lt;/p>&lt;/html></property>
-      <property
-         name="exceptionHandler">false</property>
-      <property
-         name="rawDescription">view - evaluationAtelier</property>
-      <property
-         name="y">483.5</property>
-      <property
-         name="pageFragment">true</property>
-      <property
-         name="x">357.36133</property>
-      <property
-         name="realized">true</property>
-   </View>
-   <ControlFlowCase
-      islink="true"
-      id="ControlFlowCase8"
-      from="View7"
-      to="View2">
-      <property
-         name="fromOutcome">versMenuDeEvaluationAtelier</property>
-      <property
-         name="sdm:polyPoints">T44,353.86133,429.5,353.0,356.5413,B44</property>
-   </ControlFlowCase>
-   <ControlFlowCase
-      islink="true"
-      id="ControlFlowCase9"
-      from="View2"
-      to="View7">
-      <property
-         name="fromOutcome">versEvaluationAtelier</property>
-      <property
-         name="sdm:polyPoints">B56,360.0,356.5,360.86133,429.45868,T56</property>
-   </ControlFlowCase>
    <ControlFlowCase
       islink="true"
       id="ControlFlowCase12"
@@ -338,5 +299,46 @@
          name="status">ok</property>
       <property
          name="sdm:polyPoints">R50,342.01758,-39.5,500.36133,110.0,L46</property>
+   </ControlFlowCase>
+   <View
+      id="View33">
+      <property
+         name="activityId">evaluationAteliers</property>
+      <property
+         name="description">&lt;html>&lt;p align="left" style="font-family:Tahoma;font-size:11pt">view - evaluationAteliers&lt;/p>&lt;/html></property>
+      <property
+         name="binding">data</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="rawDescription">view - evaluationAteliers</property>
+      <property
+         name="y">510.5</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="realized">true</property>
+      <property
+         name="x">402.36133</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase34"
+      from="View2"
+      to="View33">
+      <property
+         name="fromOutcome">versEvaluation</property>
+      <property
+         name="sdm:polyPoints">B50,356.5,356.5,402.36133,456.5,T50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase35"
+      from="View33"
+      to="View2">
+      <property
+         name="fromOutcome">retourDeEvaluationAteliers</property>
+      <property
+         name="sdm:polyPoints">T56,405.86133,454.96063,360.0,356.5,B56</property>
    </ControlFlowCase>
 </SDM>

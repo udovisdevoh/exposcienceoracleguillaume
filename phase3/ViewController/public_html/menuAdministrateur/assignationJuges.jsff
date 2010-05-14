@@ -9,14 +9,14 @@
     <af:panelFormLayout>
       <f:facet name="footer"/>
       <af:panelGroupLayout>
+        <af:commandButton text="Retour"
+                          action="retourDeAssignationJugesVersMenu"/>
         <af:commandButton actionListener="#{bindings.mettreJugePasRow.execute}"
                           text="Assigner"
                           disabled="#{!bindings.mettreJugePasRow.enabled}"/>
         <af:commandButton actionListener="#{bindings.limogerPasRow.execute}"
                           text="Limoger"
                           disabled="#{!bindings.limogerPasRow.enabled}"/>
-        <af:commandButton text="Retour"
-                          action="retourDeAssignationJugesVersMenu"/>
       </af:panelGroupLayout>
       <af:activeOutputText value="#{viewcontrollerBundle.ASSIGNATION_DES_JUGES}"
                            inlineStyle="font-size:medium;"/>
