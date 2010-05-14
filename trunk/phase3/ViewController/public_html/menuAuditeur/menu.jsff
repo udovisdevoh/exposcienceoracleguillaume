@@ -16,7 +16,7 @@
       <af:commandImageLink text="Inscriptions aux ateliers"
                            action="versIncription"/>
       <af:commandImageLink text="#{viewcontrollerBundle.EVALUATION_DES_ATELIERS}"
-                           action="versEvaluationAtelier"/>
+                           action="versEvaluation"/>
       <af:commandImageLink text="Devenir juge"
                            action="versDevenirCandidatJuge"/>
     </af:panelGroupLayout>

@@ -26,9 +26,6 @@
     <view id="changeMotDePasse">
       <page>/menuAuditeur/changeMotDePasse.jsff</page>
     </view>
-    <view id="evaluationAtelier">
-      <page>/menuAuditeur/evaluationAtelier.jsff</page>
-    </view>
     <method-call id="getDateDevenuJuge">
       <method>#{bindings.getDateDevenuJuge.execute}</method>
       <return-value>#{pageFlowScope.dateDevenuJuge}</return-value>
@@ -49,19 +46,11 @@
         <fixed-outcome>versInfoPersonnellesFormulaire</fixed-outcome>
       </outcome>
     </method-call>
-    <control-flow-rule>
-      <from-activity-id>evaluationAtelier</from-activity-id>
-      <control-flow-case>
-        <from-outcome>versMenuDeEvaluationAtelier</from-outcome>
-        <to-activity-id>menu</to-activity-id>
-      </control-flow-case>
-    </control-flow-rule>
+    <view id="evaluationAteliers">
+      <page>/menuAdministrateur/evaluationAteliers.jsff</page>
+    </view>
     <control-flow-rule>
       <from-activity-id>menu</from-activity-id>
-      <control-flow-case>
-        <from-outcome>versEvaluationAtelier</from-outcome>
-        <to-activity-id>evaluationAtelier</to-activity-id>
-      </control-flow-case>
       <control-flow-case>
         <from-outcome>versIncription</from-outcome>
         <to-activity-id>inscriptionAteliers</to-activity-id>
@@ -77,6 +66,10 @@
       <control-flow-case>
         <from-outcome>versEditProfile</from-outcome>
         <to-activity-id>preEditProfile</to-activity-id>
+      </control-flow-case>
+      <control-flow-case>
+        <from-outcome>versEvaluation</from-outcome>
+        <to-activity-id>evaluationAteliers</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <control-flow-rule>
@@ -130,6 +123,13 @@
       <control-flow-case>
         <from-outcome>versInfoPersonnellesFormulaire</from-outcome>
         <to-activity-id>infoPersonnelle</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule>
+      <from-activity-id>evaluationAteliers</from-activity-id>
+      <control-flow-case>
+        <from-outcome>retourDeEvaluationAteliers</from-outcome>
+        <to-activity-id>menu</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>
