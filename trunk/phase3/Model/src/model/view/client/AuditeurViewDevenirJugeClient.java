@@ -9,7 +9,8 @@ import oracle.jbo.client.remote.ViewUsageImpl;
 // ---    Custom code may be added to this class.
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
-public class AuditeurViewDevenirJugeClient extends ViewUsageImpl implements AuditeurViewDevenirJuge
+public class AuditeurViewDevenirJugeClient extends ViewUsageImpl
+  implements AuditeurViewDevenirJuge
 {
     /**
      * This is the default constructor (do not remove).
@@ -25,17 +26,18 @@ public class AuditeurViewDevenirJugeClient extends ViewUsageImpl implements Audi
         return;
     }
 
-    public void mettreJugePasRow()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"mettreJugePasRow",null,null);
-        return;
-    }
 
-    public void limogerPasRow()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"limogerPasRow",null,null);
-        return;
-    }
+  public void mettreJugePasRow()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"mettreJugePasRow",null,null);
+    return;
+  }
+
+  public void limogerPasRow()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"limogerPasRow",null,null);
+    return;
+  }
 }
