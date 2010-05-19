@@ -15,13 +15,19 @@
   CustomQuery="false"
   FetchMode="FETCH_AS_NEEDED"
   PageIterMode="Full"
-  UseGlueCode="false">
+  UseGlueCode="false"
+  RowClass="model.view.PEvaluationViewRowImpl"
+  ComponentClass="model.view.PEvaluationViewImpl">
   <DesignTime>
-    <Attr Name="_codeGenFlag2" Value="Access|VarAccess"/>
+    <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
+    <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>
   <ViewAccessor
     Name="PCritereView1"
     ViewObjectName="model.view.PCritereView"/>
+  <ViewAccessor
+    Name="PAtelierView1"
+    ViewObjectName="model.view.PAtelierView"/>
   <EntityUsage
     Name="PEvaluation"
     Entity="model.PEvaluation"/>

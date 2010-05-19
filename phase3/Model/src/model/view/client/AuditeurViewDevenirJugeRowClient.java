@@ -9,7 +9,8 @@ import oracle.jbo.client.remote.RowImpl;
 // ---    Custom code may be added to this class.
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
-public class AuditeurViewDevenirJugeRowClient extends RowImpl implements AuditeurViewDevenirJugeRow
+public class AuditeurViewDevenirJugeRowClient extends RowImpl
+  implements AuditeurViewDevenirJugeRow
 {
     /**
      * This is the default constructor (do not remove).
@@ -19,17 +20,17 @@ public class AuditeurViewDevenirJugeRowClient extends RowImpl implements Auditeu
     }
 
 
-    public void mettreJuge()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"mettreJuge",null,null);
-        return;
-    }
+  public void mettreJuge()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"mettreJuge",null,null);
+    return;
+  }
 
-    public void limoger()
-    {
-        Object _ret =
-            getApplicationModuleProxy().riInvokeExportedMethod(this,"limoger",null,null);
-        return;
-    }
+  public void limoger()
+  {
+    Object _ret =
+      getApplicationModuleProxy().riInvokeExportedMethod(this,"limoger",null,null);
+    return;
+  }
 }

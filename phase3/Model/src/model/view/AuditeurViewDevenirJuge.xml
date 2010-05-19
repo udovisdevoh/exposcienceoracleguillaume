@@ -31,6 +31,18 @@
   ClientRowProxyName="model.view.client.AuditeurViewDevenirJugeRowClient"
   ComponentInterface="model.view.common.AuditeurViewDevenirJuge"
   ClientProxyName="model.view.client.AuditeurViewDevenirJugeClient">
+  <ViewAccessor
+    Name="PInscriptionView1"
+    ViewObjectName="model.view.PInscriptionView"/>
+  <ViewAccessor
+    Name="PCritereView1"
+    ViewObjectName="model.view.PCritereView"/>
+  <ViewAccessor
+    Name="PEvaluationView1"
+    ViewObjectName="model.view.PEvaluationView"/>
+  <ViewAccessor
+    Name="PAtelierView1"
+    ViewObjectName="model.view.PAtelierView"/>
   <EntityUsage
     Name="PAuditeur"
     Entity="model.PAuditeur"/>
