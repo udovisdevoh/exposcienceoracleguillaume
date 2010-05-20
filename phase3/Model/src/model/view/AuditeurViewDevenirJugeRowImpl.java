@@ -682,16 +682,18 @@ public class AuditeurViewDevenirJugeRowImpl extends ViewRowImpl implements Audit
         RowSet atelierRowSet = this.getPAtelierView1();
 
         System.out.println("Création des évaluations");
-        
+
         while (atelierRowSet.hasNext())
         {
-            PAtelierViewRowImpl atelier = (PAtelierViewRowImpl) atelierRowSet.next();
+            PAtelierViewRowImpl atelier =
+                (PAtelierViewRowImpl) atelierRowSet.next();
             Number noAtel = atelier.getNoatel();
             System.out.println("Numéro d'atelier: " + noAtel.toString());
-                
-            for (int i = 1;i <= 5; i++)
+
+            for (int i = 1; i <= 5; i++)
             {
-                evaluation = (PEvaluationViewRowImpl) evaluationViewImpl.createRow();
+                evaluation =
+                        (PEvaluationViewRowImpl) evaluationViewImpl.createRow();
                 evaluation.setNoauditeur(this.getNoauditeur());
                 evaluation.setNocritere(new Number(i));
                 evaluation.setNoatel(noAtel);
@@ -709,6 +711,21 @@ public class AuditeurViewDevenirJugeRowImpl extends ViewRowImpl implements Audit
 
         AppModuleImpl appModuleImpl =
             (AppModuleImpl) getApplicationModule();
+        appModuleImpl.getDBTransaction().commit();
+
+        PEvaluationViewImpl evaluationView =
+            (PEvaluationViewImpl) appModuleImpl.getPEvaluationView1();
+        while (evaluationView.hasNext())
+        {
+            PEvaluationViewRowImpl evaluationRow =
+                (PEvaluationViewRowImpl) evaluationView.next();
+            if (evaluationRow.getNoauditeur().equals(this.getNoauditeur()))
+            {
+                evaluationRow.remove();
+                System.out.println("On enlève une évaluation");
+            }
+        }
+
         appModuleImpl.getDBTransaction().commit();
     }
 
