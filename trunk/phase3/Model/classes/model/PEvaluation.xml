@@ -15,7 +15,6 @@
   </DesignTime>
   <Attribute
     Name="Noeval"
-    IsNotNull="true"
     Precision="4"
     Scale="0"
     ColumnName="NOEVAL"
